@@ -1,0 +1,37 @@
+.jl-more-topbox{background: #061529;}
+li{list-style: none;}
+
+
+
+.swiper-pagination-bullet {
+    background: #B3B3B3
+}
+
+.swiper-pagination-bullet-active {
+    background: #077CE0;
+}
+
+
+.yebz-box {
+    text-align: center;
+    padding: 5rem 0;
+}
+
+.icon-box__title {
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.icon-box__desc {
+    color: #999;
+}
+
+.yebz-btn {
+    margin: 3rem;
+}
+
+    .yebz-btn a {
+        text-decoration: none;
+    }
+
+ 

@@ -1,0 +1,7 @@
+﻿约定命名方法
+    Users.aspx       用户列表（网格）界面
+	UserNew.aspx     用户新增窗口
+	UserEdit.aspx    用户编辑窗口
+	UserView.aspx    用户查看窗口
+
+	后三个抽口合并

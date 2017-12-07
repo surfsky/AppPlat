@@ -1,0 +1,2035 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{632DC2E8-FB12-46CD-A97D-ED3D510E6B54}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>App</RootNamespace>
+    <AssemblyName>App</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <PackageAsSingleFile>true</PackageAsSingleFile>
+    <DesktopBuildPackageLocation>obj\Debug\Package\AppBox.zip</DesktopBuildPackageLocation>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="aliyun-net-sdk-core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\aliyun-net-sdk-core.dll</HintPath>
+    </Reference>
+    <Reference Include="aliyun-net-sdk-dysmsapi, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\aliyun-net-sdk-dysmsapi.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Cells, Version=8.3.2.1, Culture=neutral, PublicKeyToken=00725b1ceb58d0a9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="Aspose.Cells.GridWeb, Version=8.3.2.1, Culture=neutral, PublicKeyToken=00725b1ceb58d0a9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Aspose.Cells.GridWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.Extended, Version=6.0.0.0, Culture=neutral, PublicKeyToken=05b7e29bdd433584, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.Extended.6.1.0.168\lib\net45\EntityFramework.Extended.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="FineUI, Version=6.0.3.0, Culture=neutral, PublicKeyToken=0ff1835d01c384a9, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\FineUI\FineUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Kingsoc.Web.WebCall, Version=1.2.6163.20018, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Kingsoc.Web.WebCall.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.ReportViewer.WebForms, Version=12.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL" />
+    <Reference Include="Newtonsoft.Json, Version=10.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.10.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Senparc.Weixin, Version=4.14.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Senparc.Weixin.4.14.0\lib\net45\Senparc.Weixin.dll</HintPath>
+    </Reference>
+    <Reference Include="Senparc.Weixin.MP, Version=14.6.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Senparc.Weixin.MP.14.6.3\lib\net45\Senparc.Weixin.MP.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="topsdk, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\topsdk.dll</HintPath>
+    </Reference>
+    <Reference Include="URLRewriter, Version=1.0.3351.41601, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\URLRewriter.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admins\API.aspx.cs">
+      <DependentUpon>API.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\API.aspx.designer.cs">
+      <DependentUpon>API.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\DbForm.aspx.cs">
+      <DependentUpon>DbForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\DbForm.aspx.designer.cs">
+      <DependentUpon>DbForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\DbGrid.aspx.cs">
+      <DependentUpon>DbGrid.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\DbGrid.aspx.designer.cs">
+      <DependentUpon>DbGrid.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\DbSchema.ashx.cs">
+      <DependentUpon>DbSchema.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\AreaForm.aspx.cs">
+      <DependentUpon>AreaForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\AreaForm.aspx.designer.cs">
+      <DependentUpon>AreaForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\DeptForm.aspx.cs">
+      <DependentUpon>DeptForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\DeptForm.aspx.designer.cs">
+      <DependentUpon>DeptForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\Areas.aspx.cs">
+      <DependentUpon>Areas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Areas.aspx.designer.cs">
+      <DependentUpon>Areas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\Depts.aspx.cs">
+      <DependentUpon>Depts.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Depts.aspx.designer.cs">
+      <DependentUpon>Depts.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\Metadata.SqlServer\Column.cs" />
+    <Compile Include="Admins\Metadata.SqlServer\DbCommon.cs" />
+    <Compile Include="Admins\Metadata.SqlServer\SqlServerFetcher.cs" />
+    <Compile Include="Admins\Metadata.SqlServer\Table.cs" />
+    <Compile Include="Admins\Metadata.SqlServer\View.cs" />
+    <Compile Include="Admins\Logs.aspx.cs">
+      <DependentUpon>Logs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Logs.aspx.designer.cs">
+      <DependentUpon>Logs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\MenuForm.aspx.cs">
+      <DependentUpon>MenuForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\MenuForm.aspx.designer.cs">
+      <DependentUpon>MenuForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\Menus.aspx.cs">
+      <DependentUpon>Menus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Menus.aspx.designer.cs">
+      <DependentUpon>Menus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\Article.aspx.cs">
+      <DependentUpon>Article.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Article.aspx.designer.cs">
+      <DependentUpon>Article.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\Onlines.aspx.cs">
+      <DependentUpon>Onlines.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Onlines.aspx.designer.cs">
+      <DependentUpon>Onlines.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\PowerForm.aspx.cs">
+      <DependentUpon>PowerForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\PowerForm.aspx.designer.cs">
+      <DependentUpon>PowerForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\Profiles.aspx.cs">
+      <DependentUpon>Profiles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Profiles.aspx.designer.cs">
+      <DependentUpon>Profiles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\Configs.aspx.cs">
+      <DependentUpon>Configs.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Configs.aspx.designer.cs">
+      <DependentUpon>Configs.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\Resources.aspx.cs">
+      <DependentUpon>Resources.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Resources.aspx.designer.cs">
+      <DependentUpon>Resources.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\RoleForm.aspx.cs">
+      <DependentUpon>RoleForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\RoleForm.aspx.designer.cs">
+      <DependentUpon>RoleForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\RolePowers.aspx.cs">
+      <DependentUpon>RolePowers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\RolePowers.aspx.designer.cs">
+      <DependentUpon>RolePowers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\ArticleForm.aspx.cs">
+      <DependentUpon>ArticleForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\ArticleForm.aspx.designer.cs">
+      <DependentUpon>ArticleForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\TitleForm.aspx.cs">
+      <DependentUpon>TitleForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\TitleForm.aspx.designer.cs">
+      <DependentUpon>TitleForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\Articles.aspx.cs">
+      <DependentUpon>Articles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Articles.aspx.designer.cs">
+      <DependentUpon>Articles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\UserForm.aspx.cs">
+      <DependentUpon>UserForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\UserForm.aspx.designer.cs">
+      <DependentUpon>UserForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\Welcome.aspx.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Welcome.aspx.designer.cs">
+      <DependentUpon>Welcome.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\Roles.aspx.cs">
+      <DependentUpon>Roles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Roles.aspx.designer.cs">
+      <DependentUpon>Roles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\Titles.aspx.cs">
+      <DependentUpon>Titles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Titles.aspx.designer.cs">
+      <DependentUpon>Titles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\UserChangePwd.aspx.cs">
+      <DependentUpon>UserChangePwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\UserChangePwd.aspx.designer.cs">
+      <DependentUpon>UserChangePwd.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\Powers.aspx.cs">
+      <DependentUpon>Powers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Powers.aspx.designer.cs">
+      <DependentUpon>Powers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common.Math.cs" />
+    <Compile Include="Common.cs" />
+    <Compile Include="Common.UI.cs" />
+    <Compile Include="Components\AliSmsHelper.cs" />
+    <Compile Include="Components\AuthHelper.cs" />
+    <Compile Include="Components\DrawHelper.cs" />
+    <Compile Include="Components\ExcelHelper.cs" />
+    <Compile Include="Components\HttpHelper.cs" />
+    <Compile Include="Components\KeyFreeHelper.cs" />
+    <Compile Include="Components\MonitorModule.cs" />
+    <Compile Include="Components\ReflectionHelper.cs" />
+    <Compile Include="Controls\FormHelper.cs" />
+    <Compile Include="Controls\FormPage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\TwinTriggerBoxPro.cs" />
+    <Compile Include="Components\EFHelper.cs" />
+    <Compile Include="DAL\DbBase.cs" />
+    <Compile Include="DAL\DbVerifyCode.cs" />
+    <Compile Include="DAL\DbWorkflow.cs" />
+    <Compile Include="DAL\DbReport.cs" />
+    <Compile Include="DAL\Models\Area.cs" />
+    <Compile Include="DAL\Models\FitClassEnroll.cs" />
+    <Compile Include="DAL\Models\FitCustomer.cs" />
+    <Compile Include="DAL\Models\FitSalesman.cs" />
+    <Compile Include="DAL\Models\WFStep.cs" />
+    <Compile Include="DAL\Models\WF.cs" />
+    <Compile Include="DAL\Models\UserBalanceLog.cs" />
+    <Compile Include="DAL\Models\UserBalance.cs" />
+    <Compile Include="DAL\Models\VerifyCode.cs" />
+    <Compile Include="DAL\Models\WFTaskLog.cs" />
+    <Compile Include="DAL\Models\UserRecommend.cs" />
+    <Compile Include="DAL\Models\WFTask.cs" />
+    <Compile Include="DAL\Models\Status.cs" />
+    <Compile Include="DAL\Models\FitOrder.cs" />
+    <Compile Include="DAL\Models\FitClass.cs" />
+    <Compile Include="DAL\Models\FitUserCard.cs" />
+    <Compile Include="DAL\Models\FitCardUsage.cs" />
+    <Compile Include="DAL\Models\FitCard.cs" />
+    <Compile Include="DAL\Models\FitCoach.cs" />
+    <Compile Include="DAL\Models\Res.cs" />
+    <Compile Include="DAL\Models\Article.cs" />
+    <Compile Include="DAL\Models\FitStore.cs" />
+    <Compile Include="DAL\Models\RptGDP.cs" />
+    <Compile Include="Components\SerializeHelper.cs" />
+    <Compile Include="DAL\UIAttribute.cs" />
+    <Compile Include="Extensions.cs" />
+    <Compile Include="Components\CookieHelper.cs" />
+    <Compile Include="Components\GridHelper.cs" />
+    <Compile Include="Components\SessionHelper.cs" />
+    <Compile Include="Controls\GridPro.cs" />
+    <Compile Include="Fits\OrderForm.aspx.cs">
+      <DependentUpon>OrderForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fits\OrderForm.aspx.designer.cs">
+      <DependentUpon>OrderForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fits\CardForm.aspx.cs">
+      <DependentUpon>CardForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fits\CardForm.aspx.designer.cs">
+      <DependentUpon>CardForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fits\CustomerForm.aspx.cs">
+      <DependentUpon>CustomerForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fits\CustomerForm.aspx.designer.cs">
+      <DependentUpon>CustomerForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fits\SalesmanForm.aspx.cs">
+      <DependentUpon>SalesmanForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fits\SalesmanForm.aspx.designer.cs">
+      <DependentUpon>SalesmanForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fits\ClassForm.aspx.cs">
+      <DependentUpon>ClassForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fits\ClassForm.aspx.designer.cs">
+      <DependentUpon>ClassForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fits\Classes.aspx.cs">
+      <DependentUpon>Classes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fits\Classes.aspx.designer.cs">
+      <DependentUpon>Classes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fits\Complains.aspx.cs">
+      <DependentUpon>Complains.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fits\Complains.aspx.designer.cs">
+      <DependentUpon>Complains.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fits\SalesmanInvites.aspx.cs">
+      <DependentUpon>SalesmanInvites.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fits\SalesmanInvites.aspx.designer.cs">
+      <DependentUpon>SalesmanInvites.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fits\StoreForm.aspx.cs">
+      <DependentUpon>StoreForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fits\StoreForm.aspx.designer.cs">
+      <DependentUpon>StoreForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fits\Cards.aspx.cs">
+      <DependentUpon>Cards.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fits\Cards.aspx.designer.cs">
+      <DependentUpon>Cards.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fits\Orders.aspx.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fits\Orders.aspx.designer.cs">
+      <DependentUpon>Orders.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fits\Stores.aspx.cs">
+      <DependentUpon>Stores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fits\Stores.aspx.designer.cs">
+      <DependentUpon>Stores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fits\CustomerCards.aspx.cs">
+      <DependentUpon>CustomerCards.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fits\CustomerCards.aspx.designer.cs">
+      <DependentUpon>CustomerCards.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fits\CustomerCardUsage.aspx.cs">
+      <DependentUpon>CustomerCardUsage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fits\CustomerCardUsage.aspx.designer.cs">
+      <DependentUpon>CustomerCardUsage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fits\Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fits\Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Fits\CoachForm.aspx.cs">
+      <DependentUpon>CoachForm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Fits\CoachForm.aspx.designer.cs">
+      <DependentUpon>CoachForm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Handlers\VerifyCode.ashx.cs">
+      <DependentUpon>VerifyCode.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\DbUser.cs" />
+    <Compile Include="DAL\AppContext.cs" />
+    <Compile Include="DAL\AppDatabaseInitializer.cs" />
+    <Compile Include="DAL\Models\Config.cs" />
+    <Compile Include="DAL\Models\Dept.cs" />
+    <Compile Include="DAL\Models\User.cs" />
+    <Compile Include="DAL\Models\Role.cs" />
+    <Compile Include="DAL\Models\Title.cs" />
+    <Compile Include="DAL\Models\Online.cs" />
+    <Compile Include="DAL\Models\Log.cs" />
+    <Compile Include="DAL\Models\Power.cs" />
+    <Compile Include="DAL\Models\Menu.cs" />
+    <Compile Include="DAL\Interfaces.cs" />
+    <Compile Include="Controls\PageBase.cs" />
+    <Compile Include="Components\EncryptHelper.cs" />
+    <Compile Include="Components\PasswordHelper.cs" />
+    <Compile Include="Components\StringHelper.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Admins\Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admins\Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\AppMigrationConfiguration.cs" />
+    <Compile Include="Components\ScriptHelper.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\ReportDataView.aspx.cs">
+      <DependentUpon>ReportDataView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportDataView.aspx.designer.cs">
+      <DependentUpon>ReportDataView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ReportDataEdit.aspx.cs">
+      <DependentUpon>ReportDataEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportDataEdit.aspx.designer.cs">
+      <DependentUpon>ReportDataEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\RDLC\RDLCReport.ascx.cs">
+      <DependentUpon>RDLCReport.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\RDLC\RDLCReport.ascx.designer.cs">
+      <DependentUpon>RDLCReport.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\RDLC\Cross.cs">
+      <DependentUpon>Cross.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\RDLC\Cross.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Cross.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\RDLC\Report.aspx.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\RDLC\Report.aspx.designer.cs">
+      <DependentUpon>Report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\GDP.aspx.cs">
+      <DependentUpon>GDP.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\GDP.aspx.designer.cs">
+      <DependentUpon>GDP.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SimpleFormPro.cs" />
+    <Compile Include="Reports\ReportMonth.aspx.cs">
+      <DependentUpon>ReportMonth.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Reports\ReportMonth.aspx.designer.cs">
+      <DependentUpon>ReportMonth.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DAL\DbFit.cs" />
+    <Compile Include="Res\MdEditor\TestMd2.aspx.cs">
+      <DependentUpon>TestMd2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Res\MdEditor\TestMd2.aspx.designer.cs">
+      <DependentUpon>TestMd2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Res\MdEditor\TestMd3.aspx.cs">
+      <DependentUpon>TestMd3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Res\MdEditor\TestMd3.aspx.designer.cs">
+      <DependentUpon>TestMd3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Res\MdEditor\Uploader.ashx.cs">
+      <DependentUpon>Uploader.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Res\ueditor\net\fileUp.ashx.cs">
+      <DependentUpon>fileUp.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Res\ueditor\net\getContent.ashx.cs">
+      <DependentUpon>getContent.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Res\ueditor\net\getMovie.ashx.cs">
+      <DependentUpon>getMovie.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Res\ueditor\net\getRemoteImage.ashx.cs">
+      <DependentUpon>getRemoteImage.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Res\ueditor\net\imageManager.ashx.cs">
+      <DependentUpon>imageManager.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Res\ueditor\net\imageUp.ashx.cs">
+      <DependentUpon>imageUp.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Res\ueditor\net\scrawlUp.ashx.cs">
+      <DependentUpon>scrawlUp.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="Res\ueditor\net\Uploader.cs" />
+    <Compile Include="WeiXin\AuthPage.aspx.cs">
+      <DependentUpon>AuthPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WeiXin\AuthPage.aspx.designer.cs">
+      <DependentUpon>AuthPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WeiXin\BindTel.aspx.cs">
+      <DependentUpon>BindTel.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WeiXin\BindTel.aspx.designer.cs">
+      <DependentUpon>BindTel.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WeiXin\Components\API.cs" />
+    <Compile Include="WeiXin\Components\WeChatHelper.cs" />
+    <Compile Include="WeiXin\FitCards.aspx.cs">
+      <DependentUpon>FitCards.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WeiXin\FitCards.aspx.designer.cs">
+      <DependentUpon>FitCards.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WeiXin\FitClasses.aspx.cs">
+      <DependentUpon>FitClasses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WeiXin\FitClasses.aspx.designer.cs">
+      <DependentUpon>FitClasses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WeiXin\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WeiXin\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WeiXin\Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WeiXin\Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WeiXin\Me.aspx.cs">
+      <DependentUpon>Me.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WeiXin\Me.aspx.designer.cs">
+      <DependentUpon>Me.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WeiXin\MeEdit.aspx.cs">
+      <DependentUpon>MeEdit.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WeiXin\MeEdit.aspx.designer.cs">
+      <DependentUpon>MeEdit.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WeiXin\MeView.aspx.cs">
+      <DependentUpon>MeView.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WeiXin\MeView.aspx.designer.cs">
+      <DependentUpon>MeView.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WeiXin\SitePage.Master.cs">
+      <DependentUpon>SitePage.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WeiXin\SitePage.Master.designer.cs">
+      <DependentUpon>SitePage.Master</DependentUpon>
+    </Compile>
+    <Compile Include="WeiXin\FitStores.aspx.cs">
+      <DependentUpon>FitStores.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WeiXin\FitStores.aspx.designer.cs">
+      <DependentUpon>FitStores.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WeiXin\WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WeiXin\WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WeiXin\WebForm2.aspx.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WeiXin\WebForm2.aspx.designer.cs">
+      <DependentUpon>WebForm2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WeiXin\WebForm3.aspx.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WeiXin\WebForm3.aspx.designer.cs">
+      <DependentUpon>WebForm3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WeiXin\WeChatScan.aspx.cs">
+      <DependentUpon>WeChatScan.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WeiXin\WeChatScan.aspx.designer.cs">
+      <DependentUpon>WeChatScan.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admins\API.aspx" />
+    <Content Include="Admins\AreaForm.aspx" />
+    <Content Include="Admins\DbForm.aspx" />
+    <Content Include="Admins\DbGrid.aspx" />
+    <Content Include="Admins\DeptForm.aspx" />
+    <Content Include="Admins\Areas.aspx" />
+    <Content Include="Admins\Depts.aspx" />
+    <Content Include="Admins\Logs.aspx" />
+    <Content Include="Admins\MenuForm.aspx" />
+    <Content Include="Admins\Menus.aspx" />
+    <Content Include="Admins\Article.aspx" />
+    <Content Include="Admins\Onlines.aspx" />
+    <Content Include="Admins\PowerForm.aspx" />
+    <Content Include="Admins\Profiles.aspx" />
+    <Content Include="Admins\Resources.aspx" />
+    <Content Include="Admins\RoleForm.aspx" />
+    <Content Include="Admins\RolePowers.aspx" />
+    <Content Include="Admins\Roles.aspx" />
+    <Content Include="Admins\ArticleForm.aspx" />
+    <Content Include="Admins\TitleForm.aspx" />
+    <Content Include="Admins\Articles.aspx" />
+    <Content Include="Admins\Titles.aspx" />
+    <Content Include="Admins\UserForm.aspx" />
+    <Content Include="Admins\Users.aspx" />
+    <Content Include="Admins\UserChangePwd.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Admins\Configs.aspx" />
+    <Content Include="Admins\Welcome.aspx" />
+    <Content Include="Admins\help\help.htm" />
+    <Content Include="Admins\help\jisuanqi.htm" />
+    <Content Include="Admins\help\wannianli.htm" />
+    <Content Include="Admins\Powers.aspx" />
+    <Content Include="Admins\此目录放后台管理页面.txt" />
+    <Content Include="DAL\此目录放DAL及接口代码.txt" />
+    <Content Include="Default.aspx" />
+    <Content Include="Fits\OrderForm.aspx" />
+    <Content Include="Fits\CustomerForm.aspx" />
+    <Content Include="Fits\SalesmanForm.aspx" />
+    <Content Include="Fits\ClassForm.aspx" />
+    <Content Include="Fits\Classes.aspx" />
+    <Content Include="Fits\Complains.aspx" />
+    <Content Include="Fits\SalesmanInvites.aspx" />
+    <Content Include="Fits\StoreForm.aspx" />
+    <Content Include="Fits\Cards.aspx" />
+    <Content Include="Fits\Orders.aspx" />
+    <Content Include="Fits\Stores.aspx" />
+    <Content Include="Fits\CustomerCards.aspx" />
+    <Content Include="Fits\CustomerCardUsage.aspx" />
+    <Content Include="Fits\Users.aspx" />
+    <Content Include="Fits\CardForm.aspx" />
+    <Content Include="Fits\CoachForm.aspx" />
+    <Content Include="Fits\此目录放健身模块页面.txt" />
+    <Content Include="Global.asax" />
+    <Content Include="Handlers\此目录放页面处理器.txt" />
+    <Content Include="Components\此目录放UI无关的类.txt" />
+    <Content Include="Admins\Main.aspx" />
+    <Content Include="DAL\Models\此目录放数据模型.txt" />
+    <Content Include="Reports\ReportDataView.aspx" />
+    <Content Include="Reports\ReportDataEdit.aspx" />
+    <Content Include="Reports\RDLC\RDLCReport.ascx" />
+    <Content Include="Reports\RDLC\Report.aspx" />
+    <Content Include="Reports\GDP.aspx" />
+    <Content Include="Reports\ReportMonth.aspx" />
+    <Content Include="Reports\此目录放报表.txt" />
+    <Content Include="Res\css\jquery-weui.min.css" />
+    <Content Include="Res\epiceditor\js\epiceditor.js" />
+    <Content Include="Res\epiceditor\js\epiceditor.min.js" />
+    <Content Include="Res\epiceditor\test.html" />
+    <Content Include="Res\epiceditor\themes\base\epiceditor.css" />
+    <Content Include="Res\epiceditor\themes\editor\epic-dark.css" />
+    <Content Include="Res\epiceditor\themes\editor\epic-light.css" />
+    <Content Include="Res\epiceditor\themes\editor\epic-white.css" />
+    <Content Include="Res\epiceditor\themes\preview\bartik.css" />
+    <Content Include="Res\epiceditor\themes\preview\github.css" />
+    <Content Include="Res\epiceditor\themes\preview\preview-dark.css" />
+    <Content Include="Res\MdEditor\editor.md\css\editormd.css" />
+    <Content Include="Res\MdEditor\editor.md\css\editormd.logo.css" />
+    <Content Include="Res\MdEditor\editor.md\css\editormd.logo.min.css" />
+    <Content Include="Res\MdEditor\editor.md\css\editormd.min.css" />
+    <Content Include="Res\MdEditor\editor.md\css\editormd.preview.css" />
+    <Content Include="Res\MdEditor\editor.md\css\editormd.preview.min.css" />
+    <Content Include="Res\MdEditor\editor.md\docs\editormd.js.html" />
+    <Content Include="Res\MdEditor\editor.md\docs\fonts\OpenSans-Bold-webfont.svg" />
+    <Content Include="Res\MdEditor\editor.md\docs\fonts\OpenSans-BoldItalic-webfont.svg" />
+    <Content Include="Res\MdEditor\editor.md\docs\fonts\OpenSans-Italic-webfont.svg" />
+    <Content Include="Res\MdEditor\editor.md\docs\fonts\OpenSans-Light-webfont.svg" />
+    <Content Include="Res\MdEditor\editor.md\docs\fonts\OpenSans-LightItalic-webfont.svg" />
+    <Content Include="Res\MdEditor\editor.md\docs\fonts\OpenSans-Regular-webfont.svg" />
+    <Content Include="Res\MdEditor\editor.md\docs\index.html" />
+    <Content Include="Res\MdEditor\editor.md\docs\scripts\linenumber.js" />
+    <Content Include="Res\MdEditor\editor.md\docs\scripts\prettify\Apache-License-2.0.txt" />
+    <Content Include="Res\MdEditor\editor.md\docs\scripts\prettify\lang-css.js" />
+    <Content Include="Res\MdEditor\editor.md\docs\scripts\prettify\prettify.js" />
+    <Content Include="Res\MdEditor\editor.md\docs\styles\jsdoc-default.css" />
+    <Content Include="Res\MdEditor\editor.md\docs\styles\prettify-jsdoc.css" />
+    <Content Include="Res\MdEditor\editor.md\docs\styles\prettify-tomorrow.css" />
+    <Content Include="Res\MdEditor\editor.md\editormd.amd.js" />
+    <Content Include="Res\MdEditor\editor.md\editormd.amd.min.js" />
+    <Content Include="Res\MdEditor\editor.md\editormd.js" />
+    <Content Include="Res\MdEditor\editor.md\editormd.min.js" />
+    <Content Include="Res\MdEditor\editor.md\examples\%40links.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\auto-height.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\change-mode.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\code-fold.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\css\style.css" />
+    <Content Include="Res\MdEditor\editor.md\examples\custom-keyboard-shortcuts.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\custom-toolbar.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\custom-toolbar2！！！.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\define-plugin.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\delay-renderer-preview.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\dynamic-create-editormd.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\emoji.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\extends.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\external-use.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\flowchart.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\form-get-value.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\full.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\goto-line.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\html-preview-markdown-to-html-custom-toc-container.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\html-preview-markdown-to-html.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\html-tags-decode.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\image-cross-domain-upload.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\image-upload.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\images\4.jpg" />
+    <Content Include="Res\MdEditor\editor.md\examples\images\7.jpg" />
+    <Content Include="Res\MdEditor\editor.md\examples\images\8.jpg" />
+    <Content Include="Res\MdEditor\editor.md\examples\images\editormd-screenshot.png" />
+    <Content Include="Res\MdEditor\editor.md\examples\index.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\js\jquery.min.js" />
+    <Content Include="Res\MdEditor\editor.md\examples\js\require.min.js" />
+    <Content Include="Res\MdEditor\editor.md\examples\js\sea.js" />
+    <Content Include="Res\MdEditor\editor.md\examples\js\seajs-main.js" />
+    <Content Include="Res\MdEditor\editor.md\examples\js\zepto.min.js" />
+    <Content Include="Res\MdEditor\editor.md\examples\katex.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\manually-load-modules.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\multi-editormd.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\multi-languages.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\on-off.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\onchange.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\onfullscreen.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\onload.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\onpreviewing-onpreviewed.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\onresize.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\onscroll-onpreviewscroll.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\onwatch-onunwatch.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\page-break.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\php\cross-domain-upload.php" />
+    <Content Include="Res\MdEditor\editor.md\examples\php\editormd.uploader.class.php" />
+    <Content Include="Res\MdEditor\editor.md\examples\php\post.php" />
+    <Content Include="Res\MdEditor\editor.md\examples\php\upload.php" />
+    <Content Include="Res\MdEditor\editor.md\examples\php\upload_callback.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\readonly.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\resettings.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\search-replace.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\sequence-diagram.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\set-get-replace-selection.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\simple.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\sync-scrolling.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\task-lists.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\themes.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\toc.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\toolbar-auto-fixed.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\use-requirejs.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\use-seajs.html" />
+    <Content Include="Res\MdEditor\editor.md\examples\use-zepto.html" />
+    <Content Include="Res\MdEditor\editor.md\fonts\editormd-logo.svg" />
+    <Content Include="Res\MdEditor\editor.md\fonts\fontawesome-webfont.svg" />
+    <Content Include="Res\MdEditor\editor.md\Gulpfile.js" />
+    <Content Include="Res\MdEditor\editor.md\images\loading%402x.gif" />
+    <Content Include="Res\MdEditor\editor.md\images\loading%403x.gif" />
+    <Content Include="Res\MdEditor\editor.md\images\loading.gif" />
+    <Content Include="Res\MdEditor\editor.md\images\logos\editormd-favicon-16x16.ico" />
+    <Content Include="Res\MdEditor\editor.md\images\logos\editormd-favicon-24x24.ico" />
+    <Content Include="Res\MdEditor\editor.md\images\logos\editormd-favicon-32x32.ico" />
+    <Content Include="Res\MdEditor\editor.md\images\logos\editormd-favicon-48x48.ico" />
+    <Content Include="Res\MdEditor\editor.md\images\logos\editormd-favicon-64x64.ico" />
+    <Content Include="Res\MdEditor\editor.md\images\logos\editormd-logo-114x114.png" />
+    <Content Include="Res\MdEditor\editor.md\images\logos\editormd-logo-120x120.png" />
+    <Content Include="Res\MdEditor\editor.md\images\logos\editormd-logo-144x144.png" />
+    <Content Include="Res\MdEditor\editor.md\images\logos\editormd-logo-16x16.png" />
+    <Content Include="Res\MdEditor\editor.md\images\logos\editormd-logo-180x180.png" />
+    <Content Include="Res\MdEditor\editor.md\images\logos\editormd-logo-240x240.png" />
+    <Content Include="Res\MdEditor\editor.md\images\logos\editormd-logo-24x24.png" />
+    <Content Include="Res\MdEditor\editor.md\images\logos\editormd-logo-320x320.png" />
+    <Content Include="Res\MdEditor\editor.md\images\logos\editormd-logo-32x32.png" />
+    <Content Include="Res\MdEditor\editor.md\images\logos\editormd-logo-48x48.png" />
+    <Content Include="Res\MdEditor\editor.md\images\logos\editormd-logo-57x57.png" />
+    <Content Include="Res\MdEditor\editor.md\images\logos\editormd-logo-64x64.png" />
+    <Content Include="Res\MdEditor\editor.md\images\logos\editormd-logo-72x72.png" />
+    <Content Include="Res\MdEditor\editor.md\images\logos\editormd-logo-96x96.png" />
+    <Content Include="Res\MdEditor\editor.md\images\logos\vi.png" />
+    <Content Include="Res\MdEditor\editor.md\languages\en.js" />
+    <Content Include="Res\MdEditor\editor.md\languages\zh-tw.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addons.min.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\comment\comment.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\comment\continuecomment.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\dialog\dialog.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\dialog\dialog.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\display\fullscreen.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\display\fullscreen.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\display\panel.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\display\placeholder.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\display\rulers.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\edit\closebrackets.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\edit\closetag.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\edit\continuelist.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\edit\matchbrackets.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\edit\matchtags.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\edit\trailingspace.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\fold\brace-fold.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\fold\comment-fold.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\fold\foldcode.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\fold\foldgutter.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\fold\foldgutter.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\fold\indent-fold.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\fold\markdown-fold.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\fold\xml-fold.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\hint\anyword-hint.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\hint\css-hint.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\hint\html-hint.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\hint\javascript-hint.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\hint\show-hint.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\hint\show-hint.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\hint\sql-hint.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\hint\xml-hint.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\lint\coffeescript-lint.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\lint\css-lint.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\lint\javascript-lint.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\lint\json-lint.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\lint\lint.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\lint\lint.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\lint\yaml-lint.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\merge\merge.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\merge\merge.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\mode\loadmode.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\mode\multiplex.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\mode\multiplex_test.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\mode\overlay.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\mode\simple.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\runmode\colorize.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\runmode\runmode-standalone.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\runmode\runmode.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\runmode\runmode.node.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\scroll\annotatescrollbar.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\scroll\scrollpastend.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\scroll\simplescrollbars.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\scroll\simplescrollbars.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\search\match-highlighter.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\search\matchesonscrollbar.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\search\matchesonscrollbar.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\search\search.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\search\searchcursor.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\selection\active-line.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\selection\mark-selection.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\selection\selection-pointer.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\tern\tern.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\tern\tern.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\tern\worker.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\addon\wrap\hardwrap.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\codemirror.min.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\codemirror.min.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\lib\codemirror.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\lib\codemirror.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\modes.min.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\apl\apl.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\apl\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\asterisk\asterisk.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\asterisk\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\clike\clike.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\clike\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\clike\scala.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\clojure\clojure.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\clojure\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\cobol\cobol.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\cobol\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\coffeescript\coffeescript.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\coffeescript\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\commonlisp\commonlisp.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\commonlisp\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\css\css.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\css\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\css\less.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\css\less_test.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\css\scss.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\css\scss_test.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\css\test.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\cypher\cypher.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\cypher\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\dart\dart.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\dart\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\diff\diff.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\diff\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\django\django.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\django\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\dockerfile\dockerfile.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\dockerfile\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\dtd\dtd.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\dtd\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\dylan\dylan.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\dylan\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\d\d.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\d\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\ebnf\ebnf.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\ebnf\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\ecl\ecl.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\ecl\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\eiffel\eiffel.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\eiffel\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\erlang\erlang.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\erlang\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\forth\forth.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\forth\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\fortran\fortran.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\fortran\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\gas\gas.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\gas\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\gfm\gfm.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\gfm\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\gfm\test.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\gherkin\gherkin.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\gherkin\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\go\go.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\go\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\groovy\groovy.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\groovy\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\haml\haml.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\haml\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\haml\test.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\haskell\haskell.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\haskell\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\haxe\haxe.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\haxe\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\htmlembedded\htmlembedded.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\htmlembedded\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\htmlmixed\htmlmixed.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\htmlmixed\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\http\http.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\http\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\idl\idl.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\idl\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\jade\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\jade\jade.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\javascript\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\javascript\javascript.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\javascript\json-ld.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\javascript\test.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\javascript\typescript.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\jinja2\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\jinja2\jinja2.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\julia\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\julia\julia.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\kotlin\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\kotlin\kotlin.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\livescript\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\livescript\livescript.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\lua\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\lua\lua.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\markdown\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\markdown\markdown.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\markdown\test.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\meta.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\mirc\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\mirc\mirc.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\mllike\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\mllike\mllike.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\modelica\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\modelica\modelica.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\nginx\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\nginx\nginx.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\ntriples\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\ntriples\ntriples.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\octave\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\octave\octave.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\pascal\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\pascal\pascal.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\pegjs\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\pegjs\pegjs.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\perl\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\perl\perl.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\php\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\php\php.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\php\test.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\pig\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\pig\pig.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\properties\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\properties\properties.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\puppet\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\puppet\puppet.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\python\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\python\python.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\q\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\q\q.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\rpm\changes\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\rpm\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\rpm\rpm.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\rst\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\rst\rst.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\ruby\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\ruby\ruby.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\ruby\test.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\rust\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\rust\rust.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\r\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\r\r.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\sass\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\sass\sass.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\scheme\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\scheme\scheme.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\shell\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\shell\shell.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\shell\test.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\sieve\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\sieve\sieve.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\slim\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\slim\slim.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\slim\test.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\smalltalk\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\smalltalk\smalltalk.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\smartymixed\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\smartymixed\smartymixed.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\smarty\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\smarty\smarty.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\solr\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\solr\solr.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\soy\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\soy\soy.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\sparql\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\sparql\sparql.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\spreadsheet\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\spreadsheet\spreadsheet.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\sql\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\sql\sql.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\stex\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\stex\stex.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\stex\test.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\stylus\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\stylus\stylus.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\tcl\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\tcl\tcl.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\textile\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\textile\test.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\textile\textile.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\tiddlywiki\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\tiddlywiki\tiddlywiki.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\tiddlywiki\tiddlywiki.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\tiki\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\tiki\tiki.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\tiki\tiki.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\toml\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\toml\toml.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\tornado\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\tornado\tornado.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\turtle\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\turtle\turtle.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\vbscript\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\vbscript\vbscript.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\vb\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\vb\vb.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\velocity\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\velocity\velocity.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\verilog\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\verilog\test.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\verilog\verilog.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\xml\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\xml\test.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\xml\xml.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\xquery\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\xquery\test.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\xquery\xquery.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\yaml\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\yaml\yaml.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\z80\index.html" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\mode\z80\z80.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\theme\3024-day.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\theme\3024-night.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\theme\ambiance-mobile.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\theme\ambiance.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\theme\base16-dark.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\theme\base16-light.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\theme\blackboard.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\theme\cobalt.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\theme\colorforth.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\theme\eclipse.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\theme\elegant.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\theme\erlang-dark.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\theme\lesser-dark.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\theme\mbo.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\theme\mdn-like.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\theme\midnight.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\theme\monokai.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\theme\neat.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\theme\neo.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\theme\night.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\theme\paraiso-dark.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\theme\paraiso-light.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\theme\pastel-on-dark.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\theme\rubyblue.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\theme\solarized.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\theme\the-matrix.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\theme\tomorrow-night-bright.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\theme\tomorrow-night-eighties.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\theme\twilight.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\theme\vibrant-ink.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\theme\xq-dark.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\theme\xq-light.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\theme\zenburn.css" />
+    <Content Include="Res\MdEditor\editor.md\lib\flowchart.min.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\jquery.flowchart.min.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\marked.min.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\prettify.min.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\raphael.min.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\sequence-diagram.min.js" />
+    <Content Include="Res\MdEditor\editor.md\lib\underscore.min.js" />
+    <Content Include="Res\MdEditor\editor.md\plugins\code-block-dialog\code-block-dialog.js" />
+    <Content Include="Res\MdEditor\editor.md\plugins\emoji-dialog\emoji-dialog.js" />
+    <Content Include="Res\MdEditor\editor.md\plugins\goto-line-dialog\goto-line-dialog.js" />
+    <Content Include="Res\MdEditor\editor.md\plugins\help-dialog\help-dialog.js" />
+    <Content Include="Res\MdEditor\editor.md\plugins\html-entities-dialog\html-entities-dialog.js" />
+    <Content Include="Res\MdEditor\editor.md\plugins\image-dialog\image-dialog.js" />
+    <Content Include="Res\MdEditor\editor.md\plugins\link-dialog\link-dialog.js" />
+    <Content Include="Res\MdEditor\editor.md\plugins\plugin-template.js" />
+    <Content Include="Res\MdEditor\editor.md\plugins\preformatted-text-dialog\preformatted-text-dialog.js" />
+    <Content Include="Res\MdEditor\editor.md\plugins\reference-link-dialog\reference-link-dialog.js" />
+    <Content Include="Res\MdEditor\editor.md\plugins\table-dialog\table-dialog.js" />
+    <Content Include="Res\MdEditor\editor.md\plugins\test-plugin\test-plugin.js" />
+    <Content Include="Res\MdEditor\editor.md\src\editormd.js" />
+    <Content Include="Res\MdEditor\editor.md\tests\bootstrap-test.html" />
+    <Content Include="Res\MdEditor\editor.md\tests\codemirror-searchbox-test.html" />
+    <Content Include="Res\MdEditor\editor.md\tests\codemirror-test.html" />
+    <Content Include="Res\MdEditor\editor.md\tests\css\bootstrap-theme.min.css" />
+    <Content Include="Res\MdEditor\editor.md\tests\css\bootstrap.min.css" />
+    <Content Include="Res\MdEditor\editor.md\tests\js\bootstrap.min.js" />
+    <Content Include="Res\MdEditor\editor.md\tests\js\searchbox.js" />
+    <Content Include="Res\MdEditor\editor.md\tests\katex-tests.html" />
+    <Content Include="Res\MdEditor\editor.md\tests\marked-%40at-test.html" />
+    <Content Include="Res\MdEditor\editor.md\tests\marked-emoji-test.html" />
+    <Content Include="Res\MdEditor\editor.md\tests\marked-heading-link-test.html" />
+    <Content Include="Res\MdEditor\editor.md\tests\marked-todo-list-test.html" />
+    <Content Include="Res\MdEditor\editor.md\tests\qunit\qunit-1.16.0.css" />
+    <Content Include="Res\MdEditor\editor.md\tests\qunit\qunit-1.16.0.js" />
+    <Content Include="Res\MdEditor\Files\201604281507557685547-A.png" />
+    <Content Include="Res\MdEditor\TestMd1.html" />
+    <Content Include="Res\MdEditor\TestMd2.aspx" />
+    <Content Include="Res\MdEditor\TestMd3.aspx" />
+    <Content Include="Res\neworder.mp3" />
+    <Content Include="Res\images\card_icon.png" />
+    <Content Include="Res\images\mapicon.png" />
+    <Content Include="Res\images\map_icon.png" />
+    <Content Include="Res\images\phone_icon.png" />
+    <Content Include="Res\images\user_icon.png" />
+    <Content Include="Res\js\jquery-weui.min.js" />
+    <Content Include="Res\js\jquery.min.js" />
+    <Content Include="Res\css\login.css" />
+    <Content Include="Res\css\main.css" />
+    <Content Include="Res\css\weui.min.css" />
+    <Content Include="Res\images\barbg.jpg" />
+    <Content Include="Res\js\jquery-1.10.2.js" />
+    <Content Include="Res\js\jquery-1.10.2.min.js" />
+    <Content Include="Res\js\bmap.js" />
+    <Content Include="Res\js\main.js" />
+    <Content Include="Res\js\weui.min.js" />
+    <Content Include="Res\js\zepto.min.js" />
+    <Content Include="Res\ueditor\dialogs\anchor\anchor.html" />
+    <Content Include="Res\ueditor\dialogs\attachment\attachment.css" />
+    <Content Include="Res\ueditor\dialogs\attachment\attachment.html" />
+    <Content Include="Res\ueditor\dialogs\attachment\callbacks.js" />
+    <Content Include="Res\ueditor\dialogs\attachment\fileTypeImages\icon_chm.gif" />
+    <Content Include="Res\ueditor\dialogs\attachment\fileTypeImages\icon_default.png" />
+    <Content Include="Res\ueditor\dialogs\attachment\fileTypeImages\icon_doc.gif" />
+    <Content Include="Res\ueditor\dialogs\attachment\fileTypeImages\icon_exe.gif" />
+    <Content Include="Res\ueditor\dialogs\attachment\fileTypeImages\icon_mp3.gif" />
+    <Content Include="Res\ueditor\dialogs\attachment\fileTypeImages\icon_mv.gif" />
+    <Content Include="Res\ueditor\dialogs\attachment\fileTypeImages\icon_pdf.gif" />
+    <Content Include="Res\ueditor\dialogs\attachment\fileTypeImages\icon_ppt.gif" />
+    <Content Include="Res\ueditor\dialogs\attachment\fileTypeImages\icon_psd.gif" />
+    <Content Include="Res\ueditor\dialogs\attachment\fileTypeImages\icon_rar.gif" />
+    <Content Include="Res\ueditor\dialogs\attachment\fileTypeImages\icon_txt.gif" />
+    <Content Include="Res\ueditor\dialogs\attachment\fileTypeImages\icon_xls.gif" />
+    <Content Include="Res\ueditor\dialogs\attachment\fileTypeMaps.js" />
+    <Content Include="Res\ueditor\dialogs\background\background.css" />
+    <Content Include="Res\ueditor\dialogs\background\background.html" />
+    <Content Include="Res\ueditor\dialogs\background\background.js" />
+    <Content Include="Res\ueditor\dialogs\emotion\emotion.css" />
+    <Content Include="Res\ueditor\dialogs\emotion\emotion.html" />
+    <Content Include="Res\ueditor\dialogs\emotion\emotion.js" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\0.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\babycat\C_0001.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\babycat\C_0002.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\babycat\C_0003.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\babycat\C_0004.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\babycat\C_0005.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\babycat\C_0006.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\babycat\C_0007.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\babycat\C_0008.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\babycat\C_0009.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\babycat\C_0010.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\babycat\C_0011.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\babycat\C_0012.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\babycat\C_0013.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\babycat\C_0014.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\babycat\C_0015.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\babycat\C_0016.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\babycat\C_0017.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\babycat\C_0018.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\babycat\C_0019.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\babycat\C_0020.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bface.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0001.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0002.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0003.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0004.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0005.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0006.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0007.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0008.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0009.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0010.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0011.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0012.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0013.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0014.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0015.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0016.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0017.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0018.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0019.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0020.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0021.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0022.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0023.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0024.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0025.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0026.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0027.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0028.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0029.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0030.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0031.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0032.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0033.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0034.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0035.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0036.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0037.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0038.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0039.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0040.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0041.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0042.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0043.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0044.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0045.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0046.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0047.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0048.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0049.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0050.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0051.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0052.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0053.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0054.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0055.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0056.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0057.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0058.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0059.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0060.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0061.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0062.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\bobo\b_0063.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\cface.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_01.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_02.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_03.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_04.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_05.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_06.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_07.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_08.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_09.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_10.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_11.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_12.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_13.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_14.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_15.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_16.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_17.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_18.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_19.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_20.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_21.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_22.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_23.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_24.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_25.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_26.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_27.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_28.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_29.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_30.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_31.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_32.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_33.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_34.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_35.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_36.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_37.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_38.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_39.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_40.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_41.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_42.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_43.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_44.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_45.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_46.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_47.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_48.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_49.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\face\i_f_50.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\fface.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0001.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0002.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0003.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0004.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0005.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0006.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0007.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0008.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0009.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0010.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0011.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0012.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0013.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0014.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0015.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0016.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0017.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0018.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0019.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0020.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0021.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0022.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0023.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0024.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0025.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0026.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0027.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0028.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0029.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0030.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0031.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0032.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0033.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0034.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0035.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0036.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0037.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0038.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0039.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0040.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0041.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0042.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0043.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0044.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0045.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0046.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0047.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0048.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0049.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0050.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0051.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0052.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0053.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0054.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0055.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0056.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0057.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0058.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0059.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0060.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0061.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0062.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0063.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0064.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0065.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0066.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0067.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0068.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0069.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0070.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0071.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0072.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0073.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0074.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0075.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0076.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0077.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0078.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0079.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0080.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0081.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0082.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0083.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jx2\j_0084.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\jxface2.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0001.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0002.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0003.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0004.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0005.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0006.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0007.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0008.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0009.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0010.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0011.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0012.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0013.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0014.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0015.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0016.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0017.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0018.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0019.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0020.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0021.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0022.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0023.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0024.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0025.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0026.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0027.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0028.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0029.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0030.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0031.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0032.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0033.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0034.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0035.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0036.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0037.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0038.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0039.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0040.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0041.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0042.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0043.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0044.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0045.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0046.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0047.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0048.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0049.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0050.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0051.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\ldw\w_0052.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\neweditor-tab-bg.png" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tface.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0001.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0002.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0003.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0004.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0005.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0006.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0007.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0008.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0009.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0010.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0011.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0012.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0013.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0014.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0015.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0016.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0017.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0018.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0019.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0020.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0021.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0022.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0023.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0024.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0025.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0026.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0027.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0028.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0029.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0030.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0031.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0032.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0033.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0034.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0035.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0036.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0037.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0038.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0039.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\tsj\t_0040.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\wface.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\yface.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0001.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0002.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0003.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0004.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0005.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0006.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0007.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0008.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0009.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0010.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0011.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0012.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0013.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0014.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0015.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0016.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0017.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0018.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0019.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0020.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0021.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0022.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0023.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0024.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0025.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0026.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0027.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0028.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0029.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0030.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0031.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0032.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0033.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0034.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0035.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0036.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0037.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0038.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0039.gif" />
+    <Content Include="Res\ueditor\dialogs\emotion\images\youa\y_0040.gif" />
+    <Content Include="Res\ueditor\dialogs\gmap\gmap.html" />
+    <Content Include="Res\ueditor\dialogs\help\help.css" />
+    <Content Include="Res\ueditor\dialogs\help\help.html" />
+    <Content Include="Res\ueditor\dialogs\help\help.js" />
+    <Content Include="Res\ueditor\dialogs\highlightcode\highlightcode.html" />
+    <Content Include="Res\ueditor\dialogs\image\image.css" />
+    <Content Include="Res\ueditor\dialogs\image\image.html" />
+    <Content Include="Res\ueditor\dialogs\image\image.js" />
+    <Content Include="Res\ueditor\dialogs\image\images\center_focus.jpg" />
+    <Content Include="Res\ueditor\dialogs\image\images\left_focus.jpg" />
+    <Content Include="Res\ueditor\dialogs\image\images\none_focus.jpg" />
+    <Content Include="Res\ueditor\dialogs\image\images\right_focus.jpg" />
+    <Content Include="Res\ueditor\dialogs\image\imageUploader.swf" />
+    <Content Include="Res\ueditor\dialogs\insertframe\insertframe.html" />
+    <Content Include="Res\ueditor\dialogs\internal.js" />
+    <Content Include="Res\ueditor\dialogs\link\link.html" />
+    <Content Include="Res\ueditor\dialogs\map\map.html" />
+    <Content Include="Res\ueditor\dialogs\music\music.css" />
+    <Content Include="Res\ueditor\dialogs\music\music.html" />
+    <Content Include="Res\ueditor\dialogs\music\music.js" />
+    <Content Include="Res\ueditor\dialogs\scrawl\images\addimg.png" />
+    <Content Include="Res\ueditor\dialogs\scrawl\images\brush.png" />
+    <Content Include="Res\ueditor\dialogs\scrawl\images\delimg.png" />
+    <Content Include="Res\ueditor\dialogs\scrawl\images\delimgH.png" />
+    <Content Include="Res\ueditor\dialogs\scrawl\images\empty.png" />
+    <Content Include="Res\ueditor\dialogs\scrawl\images\emptyH.png" />
+    <Content Include="Res\ueditor\dialogs\scrawl\images\eraser.png" />
+    <Content Include="Res\ueditor\dialogs\scrawl\images\redo.png" />
+    <Content Include="Res\ueditor\dialogs\scrawl\images\redoH.png" />
+    <Content Include="Res\ueditor\dialogs\scrawl\images\scale.png" />
+    <Content Include="Res\ueditor\dialogs\scrawl\images\scaleH.png" />
+    <Content Include="Res\ueditor\dialogs\scrawl\images\size.png" />
+    <Content Include="Res\ueditor\dialogs\scrawl\images\undo.png" />
+    <Content Include="Res\ueditor\dialogs\scrawl\images\undoH.png" />
+    <Content Include="Res\ueditor\dialogs\scrawl\scrawl.css" />
+    <Content Include="Res\ueditor\dialogs\scrawl\scrawl.html" />
+    <Content Include="Res\ueditor\dialogs\scrawl\scrawl.js" />
+    <Content Include="Res\ueditor\dialogs\searchreplace\searchreplace.html" />
+    <Content Include="Res\ueditor\dialogs\searchreplace\searchreplace.js" />
+    <Content Include="Res\ueditor\dialogs\snapscreen\snapscreen.html" />
+    <Content Include="Res\ueditor\dialogs\spechars\spechars.html" />
+    <Content Include="Res\ueditor\dialogs\spechars\spechars.js" />
+    <Content Include="Res\ueditor\dialogs\table\dragicon.png" />
+    <Content Include="Res\ueditor\dialogs\table\edittable.css" />
+    <Content Include="Res\ueditor\dialogs\table\edittable.html" />
+    <Content Include="Res\ueditor\dialogs\table\edittable.js" />
+    <Content Include="Res\ueditor\dialogs\table\edittd.html" />
+    <Content Include="Res\ueditor\dialogs\table\edittip.html" />
+    <Content Include="Res\ueditor\dialogs\table\table.html" />
+    <Content Include="Res\ueditor\dialogs\table\table.js" />
+    <Content Include="Res\ueditor\dialogs\tangram.js" />
+    <Content Include="Res\ueditor\dialogs\template\config.js" />
+    <Content Include="Res\ueditor\dialogs\template\images\bg.gif" />
+    <Content Include="Res\ueditor\dialogs\template\images\pre0.png" />
+    <Content Include="Res\ueditor\dialogs\template\images\pre1.png" />
+    <Content Include="Res\ueditor\dialogs\template\images\pre2.png" />
+    <Content Include="Res\ueditor\dialogs\template\images\pre3.png" />
+    <Content Include="Res\ueditor\dialogs\template\images\pre4.png" />
+    <Content Include="Res\ueditor\dialogs\template\template.css" />
+    <Content Include="Res\ueditor\dialogs\template\template.html" />
+    <Content Include="Res\ueditor\dialogs\template\template.js" />
+    <Content Include="Res\ueditor\dialogs\video\images\center_focus.jpg" />
+    <Content Include="Res\ueditor\dialogs\video\images\left_focus.jpg" />
+    <Content Include="Res\ueditor\dialogs\video\images\none_focus.jpg" />
+    <Content Include="Res\ueditor\dialogs\video\images\right_focus.jpg" />
+    <Content Include="Res\ueditor\dialogs\video\video.css" />
+    <Content Include="Res\ueditor\dialogs\video\video.html" />
+    <Content Include="Res\ueditor\dialogs\video\video.js" />
+    <Content Include="Res\ueditor\dialogs\webapp\webapp.html" />
+    <Content Include="Res\ueditor\dialogs\wordimage\fClipboard_ueditor.swf" />
+    <Content Include="Res\ueditor\dialogs\wordimage\imageUploader.swf" />
+    <Content Include="Res\ueditor\dialogs\wordimage\wordimage.html" />
+    <Content Include="Res\ueditor\dialogs\wordimage\wordimage.js" />
+    <Content Include="Res\ueditor\lang\en\en.js" />
+    <Content Include="Res\ueditor\lang\en\images\addimage.png" />
+    <Content Include="Res\ueditor\lang\en\images\alldeletebtnhoverskin.png" />
+    <Content Include="Res\ueditor\lang\en\images\alldeletebtnupskin.png" />
+    <Content Include="Res\ueditor\lang\en\images\background.png" />
+    <Content Include="Res\ueditor\lang\en\images\button.png" />
+    <Content Include="Res\ueditor\lang\en\images\copy.png" />
+    <Content Include="Res\ueditor\lang\en\images\deletedisable.png" />
+    <Content Include="Res\ueditor\lang\en\images\deleteenable.png" />
+    <Content Include="Res\ueditor\lang\en\images\imglabel.png" />
+    <Content Include="Res\ueditor\lang\en\images\listbackground.png" />
+    <Content Include="Res\ueditor\lang\en\images\localimage.png" />
+    <Content Include="Res\ueditor\lang\en\images\music.png" />
+    <Content Include="Res\ueditor\lang\en\images\rotateleftdisable.png" />
+    <Content Include="Res\ueditor\lang\en\images\rotateleftenable.png" />
+    <Content Include="Res\ueditor\lang\en\images\rotaterightdisable.png" />
+    <Content Include="Res\ueditor\lang\en\images\rotaterightenable.png" />
+    <Content Include="Res\ueditor\lang\en\images\upload.png" />
+    <Content Include="Res\ueditor\lang\zh-cn\images\copy.png" />
+    <Content Include="Res\ueditor\lang\zh-cn\images\imglabel.png" />
+    <Content Include="Res\ueditor\lang\zh-cn\images\localimage.png" />
+    <Content Include="Res\ueditor\lang\zh-cn\images\music.png" />
+    <Content Include="Res\ueditor\lang\zh-cn\images\upload.png" />
+    <Content Include="Res\ueditor\lang\zh-cn\zh-cn.js" />
+    <Content Include="Res\ueditor\net\upload\2014-03-28\4652ff30-e54a-469d-bbac-4f2bbd880ea9.jpg" />
+    <Content Include="Res\ueditor\themes\default\css\ueditor.css" />
+    <Content Include="Res\ueditor\themes\default\dialogbase.css" />
+    <Content Include="Res\ueditor\themes\default\iframe.css" />
+    <Content Include="Res\ueditor\themes\default\images\anchor.gif" />
+    <Content Include="Res\ueditor\themes\default\images\arrow.png" />
+    <Content Include="Res\ueditor\themes\default\images\arrow_down.png" />
+    <Content Include="Res\ueditor\themes\default\images\arrow_up.png" />
+    <Content Include="Res\ueditor\themes\default\images\button-bg.gif" />
+    <Content Include="Res\ueditor\themes\default\images\cancelbutton.gif" />
+    <Content Include="Res\ueditor\themes\default\images\center_focus.jpg" />
+    <Content Include="Res\ueditor\themes\default\images\cursor_h.gif" />
+    <Content Include="Res\ueditor\themes\default\images\cursor_h.png" />
+    <Content Include="Res\ueditor\themes\default\images\cursor_v.gif" />
+    <Content Include="Res\ueditor\themes\default\images\cursor_v.png" />
+    <Content Include="Res\ueditor\themes\default\images\dialog-title-bg.png" />
+    <Content Include="Res\ueditor\themes\default\images\filescan.png" />
+    <Content Include="Res\ueditor\themes\default\images\highlighted.gif" />
+    <Content Include="Res\ueditor\themes\default\images\icons-all.gif" />
+    <Content Include="Res\ueditor\themes\default\images\icons.gif" />
+    <Content Include="Res\ueditor\themes\default\images\icons.png" />
+    <Content Include="Res\ueditor\themes\default\images\left.jpg" />
+    <Content Include="Res\ueditor\themes\default\images\left_focus.jpg" />
+    <Content Include="Res\ueditor\themes\default\images\lock.gif" />
+    <Content Include="Res\ueditor\themes\default\images\logo.png" />
+    <Content Include="Res\ueditor\themes\default\images\menu\sparator_v.png" />
+    <Content Include="Res\ueditor\themes\default\images\neweditor-tab-bg.png" />
+    <Content Include="Res\ueditor\themes\default\images\none.jpg" />
+    <Content Include="Res\ueditor\themes\default\images\none_focus.jpg" />
+    <Content Include="Res\ueditor\themes\default\images\pagebreak.gif" />
+    <Content Include="Res\ueditor\themes\default\images\right.jpg" />
+    <Content Include="Res\ueditor\themes\default\images\right_focus.jpg" />
+    <Content Include="Res\ueditor\themes\default\images\scale.png" />
+    <Content Include="Res\ueditor\themes\default\images\spacer.gif" />
+    <Content Include="Res\ueditor\themes\default\images\sparator_v.png" />
+    <Content Include="Res\ueditor\themes\default\images\table-cell-align.png" />
+    <Content Include="Res\ueditor\themes\default\images\tablepicker\highlighted.gif" />
+    <Content Include="Res\ueditor\themes\default\images\tablepicker\unhighlighted.gif" />
+    <Content Include="Res\ueditor\themes\default\images\tangram-colorpicker.png" />
+    <Content Include="Res\ueditor\themes\default\images\toolbar_bg.png" />
+    <Content Include="Res\ueditor\themes\default\images\topbottom.jpg" />
+    <Content Include="Res\ueditor\themes\default\images\topbottom_focus.jpg" />
+    <Content Include="Res\ueditor\themes\default\images\unhighlighted.gif" />
+    <Content Include="Res\ueditor\themes\default\images\upload.png" />
+    <Content Include="Res\ueditor\themes\default\images\videologo.gif" />
+    <Content Include="Res\ueditor\themes\default\images\word.gif" />
+    <Content Include="Res\ueditor\themes\default\images\wordpaste.png" />
+    <Content Include="Res\ueditor\themes\default\ueditor.css" />
+    <Content Include="Res\ueditor\themes\iframe.css" />
+    <Content Include="Res\ueditor\third-party\codemirror2.15\codemirror.css" />
+    <Content Include="Res\ueditor\third-party\codemirror2.15\codemirror.js" />
+    <Content Include="Res\ueditor\third-party\codemirror\codemirror.css" />
+    <Content Include="Res\ueditor\third-party\codemirror\codemirror.js" />
+    <Content Include="Res\ueditor\third-party\snapscreen\setup.exe" />
+    <Content Include="Res\ueditor\third-party\snapscreen\Snapsie.dll" />
+    <Content Include="Res\ueditor\third-party\snapscreen\test.html" />
+    <Content Include="Res\ueditor\third-party\snapscreen\UEditorSnapscreen.exe" />
+    <Content Include="Res\ueditor\third-party\snapscreen\user_manual.txt" />
+    <Content Include="Res\ueditor\third-party\swfupload\fileprogress.js" />
+    <Content Include="Res\ueditor\third-party\swfupload\swfupload.cookies.js" />
+    <Content Include="Res\ueditor\third-party\swfupload\swfupload.js" />
+    <Content Include="Res\ueditor\third-party\swfupload\swfupload.proxy.js" />
+    <Content Include="Res\ueditor\third-party\swfupload\swfupload.queue.js" />
+    <Content Include="Res\ueditor\third-party\swfupload\swfupload.speed.js" />
+    <Content Include="Res\ueditor\third-party\swfupload\swfupload.swf" />
+    <Content Include="Res\ueditor\third-party\swfupload\swfupload_fp9.swf" />
+    <Content Include="Res\ueditor\third-party\SyntaxHighlighter\shCore.js" />
+    <Content Include="Res\ueditor\third-party\SyntaxHighlighter\shCoreDefault.css" />
+    <Content Include="Res\ueditor\ueditor.all.js" />
+    <Content Include="Res\ueditor\ueditor.all.min.js" />
+    <Content Include="Res\ueditor\ueditor.config.js" />
+    <Content Include="Res\ueditor\ueditor.parse.js" />
+    <Content Include="Res\WeiXin\image\icon004.png" />
+    <Content Include="Res\WeiXin\image\icon005.png" />
+    <Content Include="Res\WeiXin\image\icon006.png" />
+    <Content Include="Res\WeiXin\image\icon007.png" />
+    <Content Include="Res\WeiXin\image\icon008.png" />
+    <Content Include="Res\WeiXin\image\icon009.png" />
+    <Content Include="Res\WeiXin\image\icon010.png" />
+    <Content Include="Res\WeiXin\image\icon011.png" />
+    <Content Include="Res\WeiXin\image\icon012.png" />
+    <Content Include="Res\WeiXin\image\icon013.png" />
+    <Content Include="Res\WeiXin\image\icon015.png" />
+    <Content Include="Res\WeiXin\image\icon016.png" />
+    <Content Include="Res\WeiXin\image\icon017.png" />
+    <Content Include="Res\WeiXin\image\icon019.png" />
+    <Content Include="Res\WeiXin\image\icon020.png" />
+    <Content Include="Res\WeiXin\image\icon021.png" />
+    <Content Include="Res\WeiXin\image\icon022.png" />
+    <Content Include="Res\WeiXin\image\myClass.png" />
+    <Content Include="Res\WeiXin\image\pic004.png" />
+    <Content Include="Res\WeiXin\image\pic007.png" />
+    <Content Include="Res\WeiXin\image\pic008.png" />
+    <Content Include="Res\WeiXin\image\pic009.png" />
+    <Content Include="Res\WeiXin\image\wxScan.png" />
+    <Content Include="Res\此目录放辅助资源.txt" />
+    <Content Include="Task.AppPlat.txt" />
+    <Content Include="Task.txt" />
+    <Content Include="Test\此目录放临时测试代码.txt" />
+    <Content Include="WeiXin\AuthPage.aspx" />
+    <Content Include="WeiXin\BindTel.aspx" />
+    <Content Include="WeiXin\FitCards.aspx" />
+    <Content Include="WeiXin\FitClasses.aspx" />
+    <Content Include="WeiXin\Login.aspx" />
+    <Content Include="WeiXin\Main.aspx" />
+    <Content Include="WeiXin\Me.aspx" />
+    <Content Include="WeiXin\MeEdit.aspx" />
+    <Content Include="WeiXin\MeView.aspx" />
+    <Content Include="WeiXin\FitStores.aspx" />
+    <Content Include="WeiXin\WebForm1.aspx" />
+    <Content Include="WeiXin\WebForm2.aspx" />
+    <Content Include="WeiXin\WebForm3.aspx" />
+    <Content Include="WeiXin\WeChatScan.aspx" />
+    <Content Include="WeiXin\此目录放微信系统相关页面及代码.txt" />
+    <Content Include="发布说明.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Admins\Deprecate\" />
+    <Folder Include="App_Data\" />
+    <Folder Include="Logs\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Reports\RDLC\Cross.xsc">
+      <DependentUpon>Cross.xsd</DependentUpon>
+    </Content>
+    <Content Include="Handlers\VerifyCode.ashx" />
+    <Compile Include="Common.Web.cs" />
+    <Content Include="Admins\DbSchema.ashx" />
+    <None Include="Reports\RDLC\Cross.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>Cross.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <Content Include="Reports\RDLC\Cross.xss">
+      <DependentUpon>Cross.xsd</DependentUpon>
+    </Content>
+    <Content Include="Res\js\jquery.custom.js" />
+    <Content Include="WeiXin\SitePage.Master" />
+    <Content Include="Res\ueditor\net\fileUp.ashx" />
+    <Content Include="Res\ueditor\net\getContent.ashx" />
+    <Content Include="Res\ueditor\net\getMovie.ashx" />
+    <Content Include="Res\ueditor\net\getRemoteImage.ashx" />
+    <Content Include="Res\ueditor\net\imageManager.ashx" />
+    <Content Include="Res\ueditor\net\imageUp.ashx" />
+    <Content Include="Res\ueditor\net\scrawlUp.ashx" />
+    <Content Include="Res\ueditor\net\upload\web.config" />
+    <Content Include="Res\ueditor\third-party\source code for imgupload with flash.zip" />
+    <Content Include="Res\MdEditor\editor.md\.gitignore" />
+    <Content Include="Res\MdEditor\editor.md\.jshintrc" />
+    <Content Include="Res\MdEditor\editor.md\bower.json" />
+    <Content Include="Res\MdEditor\editor.md\BUGS.md" />
+    <Content Include="Res\MdEditor\editor.md\CHANGE.md" />
+    <Content Include="Res\MdEditor\editor.md\docs\fonts\OpenSans-Bold-webfont.eot" />
+    <Content Include="Res\MdEditor\editor.md\docs\fonts\OpenSans-Bold-webfont.woff" />
+    <Content Include="Res\MdEditor\editor.md\docs\fonts\OpenSans-BoldItalic-webfont.eot" />
+    <Content Include="Res\MdEditor\editor.md\docs\fonts\OpenSans-BoldItalic-webfont.woff" />
+    <Content Include="Res\MdEditor\editor.md\docs\fonts\OpenSans-Italic-webfont.eot" />
+    <Content Include="Res\MdEditor\editor.md\docs\fonts\OpenSans-Italic-webfont.woff" />
+    <Content Include="Res\MdEditor\editor.md\docs\fonts\OpenSans-Light-webfont.eot" />
+    <Content Include="Res\MdEditor\editor.md\docs\fonts\OpenSans-Light-webfont.woff" />
+    <Content Include="Res\MdEditor\editor.md\docs\fonts\OpenSans-LightItalic-webfont.eot" />
+    <Content Include="Res\MdEditor\editor.md\docs\fonts\OpenSans-LightItalic-webfont.woff" />
+    <Content Include="Res\MdEditor\editor.md\docs\fonts\OpenSans-Regular-webfont.eot" />
+    <Content Include="Res\MdEditor\editor.md\docs\fonts\OpenSans-Regular-webfont.woff" />
+    <Content Include="Res\MdEditor\editor.md\examples\test.md" />
+    <Content Include="Res\MdEditor\editor.md\fonts\editormd-logo.eot" />
+    <Content Include="Res\MdEditor\editor.md\fonts\editormd-logo.ttf" />
+    <Content Include="Res\MdEditor\editor.md\fonts\editormd-logo.woff" />
+    <Content Include="Res\MdEditor\editor.md\fonts\fontawesome-webfont.eot" />
+    <Content Include="Res\MdEditor\editor.md\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Res\MdEditor\editor.md\fonts\fontawesome-webfont.woff" />
+    <Content Include="Res\MdEditor\editor.md\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Res\MdEditor\editor.md\fonts\FontAwesome.otf" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\AUTHORS" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\bower.json" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\LICENSE" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\package.json" />
+    <Content Include="Res\MdEditor\editor.md\lib\codemirror\README.md" />
+    <Content Include="Res\MdEditor\editor.md\LICENSE" />
+    <Content Include="Res\MdEditor\editor.md\package.json" />
+    <Content Include="Res\MdEditor\editor.md\plugins\emoji-dialog\emoji.json" />
+    <Content Include="Res\MdEditor\editor.md\plugins\help-dialog\help.md" />
+    <Content Include="Res\MdEditor\editor.md\plugins\html-entities-dialog\html-entities.json" />
+    <Content Include="Res\MdEditor\editor.md\README.md" />
+    <Content Include="Res\MdEditor\editor.md\scss\editormd.codemirror.scss" />
+    <Content Include="Res\MdEditor\editor.md\scss\editormd.dialog.scss" />
+    <Content Include="Res\MdEditor\editor.md\scss\editormd.form.scss" />
+    <Content Include="Res\MdEditor\editor.md\scss\editormd.grid.scss" />
+    <Content Include="Res\MdEditor\editor.md\scss\editormd.logo.scss" />
+    <Content Include="Res\MdEditor\editor.md\scss\editormd.menu.scss" />
+    <Content Include="Res\MdEditor\editor.md\scss\editormd.preview.scss" />
+    <Content Include="Res\MdEditor\editor.md\scss\editormd.preview.themes.scss" />
+    <Content Include="Res\MdEditor\editor.md\scss\editormd.scss" />
+    <Content Include="Res\MdEditor\editor.md\scss\editormd.tab.scss" />
+    <Content Include="Res\MdEditor\editor.md\scss\editormd.themes.scss" />
+    <Content Include="Res\MdEditor\editor.md\scss\font-awesome.scss" />
+    <Content Include="Res\MdEditor\editor.md\scss\github-markdown.scss" />
+    <Content Include="Res\MdEditor\editor.md\scss\lib\prefixes.scss" />
+    <Content Include="Res\MdEditor\editor.md\scss\lib\variables.scss" />
+    <Content Include="Res\MdEditor\editor.md\scss\prettify.scss" />
+    <Content Include="Res\MdEditor\Uploader.ashx" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Reports\RDLC\Cross_1x1.rdlc" />
+    <EmbeddedResource Include="Reports\RDLC\Cross_1x2.rdlc" />
+    <EmbeddedResource Include="Reports\RDLC\Cross_1x3.rdlc" />
+    <EmbeddedResource Include="Reports\RDLC\Cross_2x1.rdlc" />
+    <EmbeddedResource Include="Reports\RDLC\Cross_2x2.rdlc" />
+    <EmbeddedResource Include="Reports\RDLC\Cross_2x3.rdlc" />
+    <EmbeddedResource Include="Reports\RDLC\Cross_3x1.rdlc" />
+    <EmbeddedResource Include="Reports\RDLC\Cross_3x2.rdlc" />
+    <EmbeddedResource Include="Reports\RDLC\Cross_3x3.rdlc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\App.Controls\App.Controls.csproj">
+      <Project>{06a03549-06e9-4f1f-ba62-d99f067a1547}</Project>
+      <Name>App.Controls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>5625</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:5625/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

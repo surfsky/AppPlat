@@ -1,0 +1,37 @@
+﻿<html>
+    <body>
+        <div id="edt">
+            <textarea style="display:none;">### Custom toolbar</textarea>
+        </div>
+        <input type="button" title="Get" onclick="alert(editor.getMarkdown());" value="Get" />
+        <input type="button" title="Set" onclick="editor.setMarkdown('## Hello world');"  value="Set" />
+         
+        <link rel="stylesheet" href="./editor.md/css/editormd.css" />
+        <script src="./editor.md/examples/js/jquery.min.js"></script>
+        <script src="./editor.md/editormd.js"></script> 
+        <script type="text/javascript">
+            var editor;
+
+            // init
+            $(function() {
+                editor = editormd("edt", {
+                    height: 640,
+                    path : './editor.md/lib/',
+                    watch : false,
+                    toolbarIcons : function() {
+                        return [
+                              "h1", "h2", "h3", "|", 
+                              "bold", "del", "italic", "quote", "|", 
+                              "list-ul", "list-ol", "hr", "table", "|",
+                              "link", "image", "||",
+                              "watch", "fullscreen"
+                         ]
+                    },
+                    imageUpload    : true,
+                    imageFormats   : ["jpg", "jpeg", "gif", "png", "bmp", "webp"],
+                    imageUploadURL : "Uploader.ashx"
+                });
+            });
+        </script>
+    </body>
+</html>

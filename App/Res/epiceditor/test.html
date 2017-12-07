@@ -1,0 +1,27 @@
+<html>
+  <body>
+  <div id="example-1"></div>
+
+  <script src="./epiceditor/js/epiceditor.min.js"></script>
+  <script>
+      var opts ={ 
+          container: 'example-1'
+          //,file: { defaultContent: "#EpicEditor\nThis is some default content. Go ahead, _change me_. " }
+          ,focusOnLoad: false
+          ,autogrow: {minHeight: 500}
+          ,theme: {
+              base: '/themes/base/epiceditor.css?2',
+              preview: '/themes/preview/preview-light.css',
+              editor: '/themes/editor/epic-light.css'
+           }
+          ,string: {
+              togglePreview: '预览模式',
+              toggleEdit: '编辑模式',
+              toggleFullscreen: '全屏模式'
+          }
+      };
+      editor = new EpicEditor(opts).load()
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,46 @@
+﻿/* 
+调整下顶部和底部的样式。
+这些样式可用Chrome来查看和调整：
+    打开“开发者工具”
+    点击左上角第一个按钮(select a element in the page to inspect)
+    再去点击页面上的元素
+        可在右侧“style”面板中看它都用了哪些样式
+        可在右侧“compute”面板中看它最终的样式
+        可修改或屏蔽，调整到你最想要的样式，然后将样式拷贝到这里
+    如果没起效果，加上!important参数，即可生效
+*/
+.f-theme-neptune .topbar {
+    background-color: #005999!important;
+    background-image: url("../images/barbg.jpg");
+    background-repeat: no-repeat;
+}
+.x-toolbar.x-toolbar-default .x-btn-default-toolbar-small {
+    background-image: none;
+    border-color: #005999;
+    background-color: #005999!important;
+}
+.f-theme-neptune .topbar .x-toolbar-text {
+    color: #fff;
+    font-weight: bold;
+}
+.f-theme-neptune .topbar .x-toolbar-text span.label {
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    font-weight: normal;
+}
+
+/* bottombar */
+.bottombar {
+    width: 100%;
+    font-size: 12px;
+}
+.f-theme-neptune .bottombar{
+    background-color: #1475BB;
+    color: #fff;
+}
+.f-theme-neptune .bottombar a {
+    color: #fff;
+}
+.bottombar .x-form-display-field-default{
+    color: white;
+}

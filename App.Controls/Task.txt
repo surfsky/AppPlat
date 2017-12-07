@@ -1,0 +1,10 @@
+﻿控件库项目。包括：
+- ECharts
+- MdEditor
+
+
+/2017-05-08
+/增加App.Controls.ECharts命名空间 
+/修改Echarts部分字符串属性为枚举
+/实现系列图标
+/自动设置系列图标（若不设置Series属性的话）

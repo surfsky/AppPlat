@@ -1,0 +1,19 @@
+2017-11-29 21:14:11,992 [1] INFO  App - Start
+2017-11-29 21:14:12,044 [1] INFO  App - ==== Application_Start ====
+2017-11-29 21:14:25,879 [5] INFO  App - 2017-11-29 21:14:25:805 请求 http://localhost:5625/Default.aspx, IP地址 ::1, 耗时 8.8530 秒
+2017-11-29 21:14:28,471 [5] INFO  App - 2017-11-29 21:14:28:387 请求 http://localhost:5625/Handlers/VerifyCode.ashx, IP地址 ::1, 耗时 0.1490 秒
+2017-11-29 21:14:30,593 [5] INFO  App - 2017-11-29 21:14:30:566 请求 http://localhost:5625/__browserLink/requestData/002861e766064839a41545a3945e8b84?version=2, IP地址 ::1, 耗时 0.0810 秒
+2017-11-29 21:15:18,197 [6] INFO  App - 更新数据，ID=1, Type=App.DAL.User, Data={"InUsed":true,....
+2017-11-29 21:15:19,296 [6] INFO  App - 登录成功
+2017-11-29 21:15:19,838 [6] INFO  App - 2017-11-29 21:15:19:810 请求 http://localhost:5625/WebCall.App.DAL.DbUser.axd/Login?userName=admin&password=admin&verifyCode=naae, IP地址 ::1, 耗时 3.6320 秒
+2017-11-29 21:15:24,103 [10] INFO  App - 2017-11-29 21:15:24:076 请求 http://localhost:5625/admins/main.aspx, IP地址 ::1, 耗时 1.1390 秒
+2017-11-29 21:15:27,303 [10] INFO  App - 2017-11-29 21:15:27:274 请求 http://localhost:5625/__browserLink/requestData/85e459a5c3734a8b9c692aba06b5ecb1?version=2, IP地址 ::1, 耗时 0.0030 秒
+2017-11-29 21:15:29,180 [8] INFO  App - 2017-11-29 21:15:29:152 请求 http://localhost:5625/admins/Welcome.aspx, IP地址 ::1, 耗时 3.0870 秒
+2017-11-29 21:15:32,144 [6] INFO  App - 2017-11-29 21:15:32:106 请求 http://localhost:5625/__browserLink/requestData/8e63d237d1124496b4eab69c31e62582?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-11-29 21:15:38,970 [6] INFO  App - 2017-11-29 21:15:38:906 请求 http://localhost:5625/admins/Logs.aspx, IP地址 ::1, 耗时 1.3260 秒
+2017-11-29 21:15:40,262 [10] INFO  App - 2017-11-29 21:15:40:233 请求 http://localhost:5625/Res/Icon/Comment.png, IP地址 ::1, 耗时 0.0020 秒
+2017-11-29 21:15:41,262 [8] INFO  App - 2017-11-29 21:15:41:189 请求 http://localhost:5625/__browserLink/requestData/81a894e497b844f2a00e192d16c9e578?version=2, IP地址 ::1, 耗时 0.0030 秒
+2017-11-29 21:15:48,776 [6] INFO  App - 2017-11-29 21:15:48:749 请求 http://localhost:5625/admins/Logs.aspx, IP地址 ::1, 耗时 0.8930 秒
+2017-11-29 21:15:49,001 [10] INFO  App - 2017-11-29 21:15:48:973 请求 http://localhost:5625/Res/Icon/Exclamation.png, IP地址 ::1, 耗时 0.0000 秒
+2017-11-29 21:15:56,521 [6] INFO  App - 2017-11-29 21:15:56:492 请求 http://localhost:5625/admins/main.aspx, IP地址 ::1, 耗时 0.0210 秒
+2017-11-29 21:16:06,464 [8] INFO  App - 2017-11-29 21:16:06:432 请求 http://localhost:5625/admins/Logs.aspx, IP地址 ::1, 耗时 1.0100 秒

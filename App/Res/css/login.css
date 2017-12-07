@@ -1,0 +1,43 @@
+﻿@charset "utf-8";
+/* CSS Document */
+/*css restet*/
+body, div, ul, li { margin:0; padding:0; font-family:"微软雅黑"; font-size:14px;  color:#666; }
+img { border:0; }
+ol, ul { list-style:none; }
+a { text-decoration:none; }
+dl,dt,dd { margin:0;}
+.clear { clear:both; }
+
+.top{height:95px; background:url(../images/topBg.gif) repeat-x;}
+.middle{ height:512px; background:url(../images/bg.jpg) no-repeat;}
+.footer{ height:80px; padding-top:30px;text-align:center; line-height:28px; background:#eee; }
+.toplogo{width:980px; height:95px; margin:0 auto;}
+.toplogo img{ margin:15px;}
+.middle-box{width:980px; height:512px; margin:0 auto;}
+.middle-box-lt{ float:left; margin-top:137px; }
+.middle-box-lt dl dd{float:left; margin:52px 0 0 30px;}
+.middle-box-lt dl dd span img{margin-top:30px;}
+.middle-box-rt{float:right; width:330px; height:315px; margin:104px 24px 0 0; background:url(../images/formBg.png) no-repeat; }
+
+.logintit{ font-size:18px; color:#fff; font-weight:normal;}
+
+.middle-box-rt ul{margin:25px 0 0 42px;}
+.middle-box-rt ul li{margin:10px 0;}
+.user{ background:url(../images/formUser.gif) left no-repeat;}
+.user input{ margin-left:50px; padding-left:4px; width:190px; height:36px; line-height:36px; border:0; font-size:14px; color:#666;}
+
+.password{ background:url(../images/formpassword.gif) left no-repeat;}
+.password input{ margin-left:50px; padding-left:4px; width:190px; height:36px; line-height:36px; border:0; font-size:14px; color:#666;}
+
+.VFcode{ background:url(../images/formVFcode.gif) left no-repeat;}
+.VFcode input{ margin-left:50px; padding-left:4px; width:95px; height:36px; line-height:36px; border:0; font-size:14px; color:#666;}
+
+.FGtxt a{ margin-left:180px; display:block; width:70px; color:#fff;}
+
+.FGtxt a:hover{color:#f7de0b;}
+.login a{ display:block; width:245px; height:47px; text-indent:-9999em; background:url(../images/btnLogin.gif) no-repeat;}
+.login a:hover{background:url(../images/btnLogin-D.gif) no-repeat;}
+
+
+
+

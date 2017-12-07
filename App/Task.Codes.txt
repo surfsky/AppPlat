@@ -1,0 +1,142 @@
+﻿-------------------------------------
+参考代码
+-------------------------------------
+FineUI 信息提示
+        // 清空提示信息
+        // 也有问题。以后的“保存成功”都不显示了。
+        function clearInfo() {
+            var lblInfo = $("#RegionPanel1_Region2_Grid2_Toolbar1_lblInfo-inputEl");
+            lblInfo.html("<span></span>");
+        }
+
+        // 显示提示窗口
+        function showNotify(value) {
+            // 有问题，标签时显示时不显示，估计和默认的显隐逻辑冲突了
+            //$("#f_ajax_loading").text('保存成功').show();
+            //setTimeout("$('#f_ajax_loading').text('正在加载...').hide()", 3000);
+
+            // 小提示窗口，带标题栏关闭按钮。太丑了，不用。（供参考）
+            // new Ext.ux.Notification({
+            //    autoHide: true,
+            //    hideDelay: 2000
+            //}).showMessage('操作提示', '<h1>' + value + '</h1>', true);
+        }
+        PageContext.RegisterStartupScript("showNotify('已保存');");
+
+阿里大鱼的短信接口
+        /*
+        // 阿里大鱼（已被合并）
+        using Top.Api;
+        using Top.Api.Request;
+        using Top.Api.Response; 
+        /// <summary>
+        /// 发短信(阿里大鱼)
+        /// https://api.alidayu.com/docs/api.htm?spm=a3142.7629065.4.7.3SzX6a&apiId=25450
+        /// 阿里大鱼已经升级到阿里云云通讯短信服务
+        /// https://dayu.aliyun.com/settled
+        /// </summary>
+        public static void SendMsg(string number, string context)
+        {
+            string url = "http://gw.api.taobao.com/router/rest";
+            string appkey = "23401893";
+            string secret = "61e024d6257701827001cd8ba6ebed27";
+
+            ITopClient client = new DefaultTopClient(url, appkey, secret, "json");
+            AlibabaAliqinFcSmsNumSendRequest req = new AlibabaAliqinFcSmsNumSendRequest();
+            req.Extend = "123456";
+            req.SmsType = "normal";
+            req.SmsFreeSignName = "城市优选";
+            req.SmsParam = "{\"code\":\"" + context + "\",\"product\":\"城市优选\"}";
+            req.RecNum = number;
+            req.SmsTemplateCode = "SMS_14280425";
+            AlibabaAliqinFcSmsNumSendResponse rsp = client.Execute(req);
+        }
+        */
+
+FineUI按钮、windows列、绑定列
+		<f:Button ID="btnClose"  Icon="SystemSaveClose" OnClick="btnClose_Click" runat="server" Text="关闭" Hidden="true" />
+		<f:WindowField  WindowID="Window1" DataTextField="Coach.User.Name" DataIFrameUrlFields="Coach.User.ID" DataIFrameUrlFormatString="CoachForm.aspx?userid={0}&mode=view" Width="100px" HeaderText="教练" />
+        <f:WindowField  WindowID="Window1" Text="学员" DataIFrameUrlFields="ID" DataIFrameUrlFormatString="ClassEnrolls.aspx?classId={0}&mode=view" Width="100px" HeaderText="学员" />
+        <f:BoundField DataField="Type" SortField="Type" HeaderText="类别" Width="100" ColumnID="Type" />
+
+
+物理删除
+        /// <summary>物理删除用户（并删除关联部门、角色、职位等数据）</summary>
+        /// <remarks>随着实际项目功能扩展，还可能需要删除很多表。用户表非常重要，建议使用逻辑删除。</remarks>
+        public static void DeleteUsersPhysical(List<int> ids)
+        {
+            Set.Where(t => ids.Contains(t.ID)).Where(t => t.Name != "admin").ToList()
+                .ForEach(t => { t.Titles = null; t.Dept = null; t.Roles = null; });
+            Db.SaveChanges();
+            Set.Where(t => ids.Contains(t.ID)).Where(t => t.Name != "admin").Delete();
+        }
+            List<string> powerNames = powers.Select(t => t.Name).ToList();
+
+
+			
+按日期写日志（会文件访问冲突，暂停该功能）
+        void WriteLog(string info)
+        {
+            string fileName = string.Format("~/Logs/{0:yyyyMMdd}.log", DateTime.Now);
+            string filePath = HttpContext.Current.Server.MapPath(fileName);
+            using (FileStream fs = new FileStream(filePath, FileMode.OpenOrCreate | FileMode.Append))
+            {
+                StreamWriter sw = new StreamWriter(fs);
+                sw.WriteLine(info);
+                sw.Close();
+                fs.Close();
+            }
+        }
+
+
+json.net 序列化对象时过长，引用异常
+		// 转化为json字符串。
+        // 多层嵌套互相引用会报错，想法解决：
+        // - 只输出一层数据，不递归下去
+        // - 只输出简单数据
+        // - 直接写解析方法
+        static string ToJson(object data)
+        {
+            if (data == null)
+                return "";
+
+            string json;
+            try
+            {
+                JsonSerializerSettings setting = new JsonSerializerSettings();
+                setting.DateFormatHandling = Newtonsoft.Json.DateFormatHandling.MicrosoftDateFormat;
+                setting.DateFormatString = "yyyy-MM-dd HH:mm:ss";
+                setting.NullValueHandling = NullValueHandling.Ignore;
+                setting.ReferenceLoopHandling = ReferenceLoopHandling.Ignore;
+                setting.PreserveReferencesHandling = PreserveReferencesHandling.None;
+                setting.MetadataPropertyHandling = MetadataPropertyHandling.Ignore;
+                setting.MaxDepth = 2;
+                json = JsonConvert.SerializeObject(data, setting);
+                if (json.Length > 500)
+                    json = json.Substring(0, 500);
+            }
+            catch { json = ""; }
+            return json;
+        }
+
+
+在网站后台启动进程
+        ScheduleEngine _engine;
+        _engine = StartScheduleEngine();
+        // 启动任务引擎（未测试）
+        ScheduleEngine StartScheduleEngine()
+        {
+            Logger2.Info("App.Consoler {0}", ReflectionHelper.AssemblyVersion);
+            string configFile = string.Format("{0}schedule.config", Server.MapPath("~/"));
+            var engine = new ScheduleEngine(configFile);
+            engine.ConfigFailure += (info) => Logger2.Error("{0}", info);
+            engine.TaskSuccess += (task, info) => Logger2.Info("{0} {1} ok", task.Name, task.Data);
+            engine.TaskFailure += (task, info) => Logger2.Warn("{0} {1} fail, times={2}, info={3}", task.Name, task.Data, task.Failure.TryTimes, info);
+            engine.Start();
+            return engine;
+
+            // 启动外部调度器进程( 需文件 App.Consoler.exe.config, Schedule.config)
+            //string filePath = Server.MapPath("./bin/App.Consoler.exe");
+            //IOHelper.RunAndKeepLiving(filePath, 5000);
+        }
+		_engine?.Stop();
