@@ -17,7 +17,7 @@ namespace App.DAL
     /// <summary>
     /// 基础用户表（登录+通用信息+会员信息）
     /// </summary>
-    public class User : DbBase<User>, ILogicDelete
+    public class User : EntityBase<User>, ILogicDelete
     {
         //------------------------------------------------------
         // 属性

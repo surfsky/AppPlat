@@ -38,7 +38,7 @@ namespace App.DAL
     /// 订单详情参看 OrderItem 表。
     /// 如果是简单的单商品订单系统，直接在summary上填写商品信息即可。
     /// </summary>
-    public class Order : DbBase<Order>
+    public class Order : EntityBase<Order>
     {
         [UI("状态")]                   public OrderStatus? Sts { get; set; }
         [UI("用户")]                   public int? UserID { get; set; }
@@ -114,7 +114,7 @@ namespace App.DAL
             order.UserID = userId; 
             order.CreateDt = DateTime.Now;
             order.SerialNo = BuildSerialNo();
-            order.SaveNew();
+            order.Save();
             return order;
         }
 
@@ -138,7 +138,7 @@ namespace App.DAL
             oi.Price = price;
             oi.Cnt = cnt;
             oi.Money = money;
-            oi.SaveNew(false);
+            oi.Save(false);
 
             // 修改商品销售数
             if (productId != null)

@@ -13,7 +13,7 @@ namespace App.DAL
     /// <summary>
     /// 系统菜单
     /// </summary>
-    public class Menu : DbBase<Menu>, ITree, ICloneable
+    public class Menu : EntityBase<Menu>, ITree, ICloneable
     {
         [UI("名称"), Required, StringLength(50)]     public string Name { get; set; }
         [UI("图片URL"), StringLength(200)]           public string ImageUrl { get; set; }

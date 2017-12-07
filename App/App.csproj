@@ -342,7 +342,7 @@
     </Compile>
     <Compile Include="Controls\IDataForm.cs" />
     <Compile Include="Controls\TwinTriggerBoxPro.cs" />
-    <Compile Include="DAL\DbBase.cs" />
+    <Compile Include="DAL\EntityBase.cs" />
     <Compile Include="DAL\DbVerifyCode.cs" />
     <Compile Include="DAL\Models\Area.cs" />
     <Compile Include="DAL\Models\Message.cs" />
@@ -358,7 +358,7 @@
     <Compile Include="DAL\Models\Article.cs" />
     <Compile Include="DAL\Models\Store.cs" />
     <Compile Include="DAL\Models\RptGDP.cs" />
-    <Compile Include="DAL\QrCodeData.cs" />
+    <Compile Include="Components\QrCodeData.cs" />
     <Compile Include="Components\GridHelper.cs" />
     <Compile Include="Controls\GridPro.cs" />
     <Compile Include="Handlers\Logout.ashx.cs">

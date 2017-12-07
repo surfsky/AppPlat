@@ -47,7 +47,7 @@ namespace App.DAL
     /// 简短的消息（感觉和文章、文档、公文很相似）
     /// 非即时性的消息。
     /// </summary>
-    public class Message : DbBase<Message>
+    public class Message : EntityBase<Message>
     {
         [UI("消息类别")]  public MessageType? Type { get; set; }
         [UI("消息通道")]  public MessageWay? Way { get; set; }
@@ -72,7 +72,7 @@ namespace App.DAL
         public static Message Add()
         {
             var item = new Message() { CreateDt = DateTime.Now };
-            item.SaveNew();
+            item.Save();
             return item;
         }
 

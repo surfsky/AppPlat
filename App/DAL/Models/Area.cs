@@ -12,7 +12,7 @@ namespace App.DAL
     /// <summary>
     /// 区域表（全国）
     /// </summary>
-    public class Area : DbBase<Area>, ITree, ICloneable
+    public class Area : EntityBase<Area>, ITree, ICloneable
     {
         [UI("名称")]                   public string Name { get; set; }
         [UI("顺序")]                   public int? Seq { get; set; }

@@ -26,7 +26,7 @@ namespace App.Controls
     /// 重载三个虚方法：NewData(), ShowData(), CollectData()
     /// </example>
     public class FormPage<T> : PageBase, IDataForm<T> 
-        where T : DbBase<T>
+        where T : EntityBase<T>
     {
         //---------------------------------------------
         // 成员
@@ -76,7 +76,7 @@ namespace App.Controls
         public virtual void SaveData(T item)
         {
             if (this.Mode == PageMode.New)
-                item.SaveNew();
+                item.Save();
             else
                 item.Save();
         }

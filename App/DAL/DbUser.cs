@@ -249,7 +249,7 @@ namespace App.DAL
                     user.InUsed = true;
                     user.Gender = userInfo.sex == 1 ? "男" : "女";
                     user.Roles = new List<RoleType>() { RoleType.Customer };
-                    user.SaveNew();
+                    user.Save();
                     LoginSuccess(user);
 
                     if (inviterId != "-1" && DESEncrypt.DecryptDES(inviterId) != inviterId)//这个解密失败，会返回传入的值
@@ -267,7 +267,7 @@ namespace App.DAL
                             invite.Source = InviteSource.WeiXin;
                             invite.CreateDt = DateTime.Now;
                             invite.RegistDt = user.CreateDt;
-                            invite.SaveNew();
+                            invite.Save();
                             result = new DataResult("true", "受邀,绑定成功", null, null);
                         }
                     }

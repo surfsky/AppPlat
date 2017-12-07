@@ -57,7 +57,7 @@ namespace App.Components
                 From = from,
                 IP = ip.IsNullOrEmpty() ? Asp.GetClientIP() : ip
             };
-            log.SaveNew(false);
+            log.Save(false);
         }
     }
 }

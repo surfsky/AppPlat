@@ -83,7 +83,7 @@ namespace App.DAL
     /// 角色拥有的权限
     /// TODO: 因为数据库冲突临时改名，以后再改为RolePower
     /// </summary>
-    public class RolePower : DbBase<RolePower>
+    public class RolePower : EntityBase<RolePower>
     {
         public RoleType Role { get; set; }
         public PowerType Power { get; set; }

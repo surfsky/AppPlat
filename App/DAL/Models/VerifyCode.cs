@@ -13,7 +13,7 @@ namespace App.DAL
     /// <summary>
     /// 短信验证码
     /// </summary>
-    public class VerifyCode : DbBase<VerifyCode>
+    public class VerifyCode : EntityBase<VerifyCode>
     {
         [UI("验证码")]                          public string Code { get; set; }
         [UI("手机号")]                          public string Mobile { get; set; }

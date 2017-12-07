@@ -12,7 +12,7 @@ namespace App.DAL
     /// <summary>
     /// 订单详情表
     /// </summary>
-    public class OrderItem : DbBase<OrderItem>
+    public class OrderItem : EntityBase<OrderItem>
     {
         [UI("订单")]                   public int? OrderID { get; set; }
         [UI("明目")]                   public string Title { get; set; }

@@ -25,7 +25,7 @@ namespace App.DAL
     /// <summary>
     /// 用户账户流水
     /// </summary>
-    public class AccountLog : DbBase<AccountLog>
+    public class AccountLog : EntityBase<AccountLog>
     {
         [UI("类型")]                     public AccountLogType Type { get; set; }
         [UI("创建时间")]                 public DateTime? CreateDt { get; set; }

@@ -11,7 +11,7 @@ namespace App.DAL
     /// <summary>
     /// GDP 数据（报表示例，详见/Report目录）
     /// </summary>
-    public class RptGDP : DbBase<RptGDP>
+    public class RptGDP : EntityBase<RptGDP>
     {
         [UI("季度")]            public string Quarter { get; set; }
 

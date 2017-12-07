@@ -12,7 +12,7 @@ namespace App.DAL
     /// <summary>
     /// 部门表
     /// </summary>
-    public class Dept : DbBase<Dept>, ITree, ICloneable
+    public class Dept : EntityBase<Dept>, ITree, ICloneable
     {
         [UI("名称")]          public string Name { get; set; }
         [UI("排序")]          public int Seq { get; set; }

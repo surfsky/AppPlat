@@ -13,7 +13,7 @@ namespace App.DAL
     /// <summary>
     /// 在线信息
     /// </summary>
-    public class Online : DbBase<Online>
+    public class Online : EntityBase<Online>
     {
         [UI("最后访问的IP地址")]   public string IP { get; set; }
         [UI("用户最后登录时间")]   public DateTime? LoginDt { get; set; }
@@ -41,23 +41,12 @@ namespace App.DAL
         {
             var now = DateTime.Now;
             Online online = Set.Where(o => o.User.ID == userId).FirstOrDefault();
-            if (online != null)
-            {
-                online.UserID = userId;
-                online.IP = Asp.GetClientIP();
-                online.LoginDt = now;
-                online.UpdateDt = now;
-                online.Save(false);
-            }
-            else
-            {
-                online = new Online();
-                online.UserID = userId;
-                online.IP = Asp.GetClientIP();
-                online.LoginDt = now;
-                online.UpdateDt = now;
-                online.SaveNew(false);
-            }
+            online = online ?? new Online();
+            online.UserID = userId;
+            online.IP = Asp.GetClientIP();
+            online.LoginDt = now;
+            online.UpdateDt = now;
+            online.Save(false);
 
             // 记录本次更新时间
             HttpContext.Current.Session[Common.SESSION_ONLINE_UPDATE_TIME] = now;

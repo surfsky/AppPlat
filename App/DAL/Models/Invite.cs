@@ -37,7 +37,7 @@ namespace App.DAL
     /// (1）该表可用于推广营销登记用，用于推广结算
     ///（2）推荐时先查找该用户手机是否已经注册；再查找本表看该手机是否已经被别人推荐了；实在没有才新增一条记录。
     /// </summary>
-    public class Invite : DbBase<Invite>
+    public class Invite : EntityBase<Invite>
     {
         [UI("来源")]                           public InviteSource? Source { get; set; }
         [UI("状态")]                           public InviteStatus? Sts { get; set; }

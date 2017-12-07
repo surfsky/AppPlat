@@ -11,7 +11,7 @@ namespace App.DAL
     /// <summary>
     /// 门店、商店
     /// </summary>
-    public class Store : DbBase<Store>
+    public class Store : EntityBase<Store>
     {
         [UI("城市")]                public int? CityID { get; set; }
         [UI("名称")]                public string Name { get; set; }

@@ -16,7 +16,7 @@ namespace App.DAL
     /// 资源表
     /// 可考虑加上缩小图片，视频截图等功能
     /// </summary>
-    public class Res : DbBase<Res>
+    public class Res : EntityBase<Res>
     {
         [UI("键")]             public string Key { get; set; }
         [UI("文件名")]         public string Name { get; set; }
@@ -154,7 +154,7 @@ namespace App.DAL
         public static void Add(string key, string virtualName)
         {
             Res res = new Res(key, virtualName);
-            res.SaveNew();
+            res.Save();
         }
 
 

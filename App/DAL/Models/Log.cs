@@ -23,7 +23,7 @@ namespace App.DAL
     /// <summary>
     /// 日志
     /// </summary>
-    public class Log : DbBase<Log>
+    public class Log : EntityBase<Log>
     {
         [UI("级别")]                               public LogLevel? Lvl { get; set; }
         [UI("操作者")]                             public string Operator { get; set; }

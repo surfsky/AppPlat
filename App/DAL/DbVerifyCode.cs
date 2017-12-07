@@ -67,7 +67,7 @@ namespace App.DAL
                         vCode.Source = source;
                         vCode.Mobile = mobile; 
                         AliSmsHelper.SendSmsRegist(mobile, vCode.Code);
-                        vCode.SaveNew();
+                        vCode.Save();
                         result = new DataResult("true", "获取成功", null, null);
                     }
                 }

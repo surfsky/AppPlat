@@ -13,7 +13,7 @@ namespace App.DAL
     /// <summary>
     /// 职称（头衔）表
     /// </summary>
-    public class Title : DbBase<Title>
+    public class Title : EntityBase<Title>
     {
         [UI("职称（头衔）"), StringLength(50)]  public string Name { get; set; }
         [UI("备注"), StringLength(500)]         public string Remark { get; set; }

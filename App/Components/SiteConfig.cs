@@ -110,7 +110,7 @@ namespace App
                 var id = (int)value;
                 var name = value.GetDescription();
                 var cfg = new Config() { Category = category, Key = value.ToString(), Value = id.ToString(), Title = name };
-                cfg.SaveNew(false);
+                cfg.Save(false);
             }
         }
 

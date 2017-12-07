@@ -24,7 +24,7 @@ namespace App.DAL
     /// <summary>
     /// 文章。简单的内容管理系统，带图片。
     /// </summary>
-    public class Article : DbBase<Article>
+    public class Article : EntityBase<Article>
     {
         [UI("类别")]                                 public ArticleType? Type { get; set; }
         [UI("标题")]                                 public string Title { get; set; }
@@ -49,7 +49,7 @@ namespace App.DAL
         public static Article Add()
         {
             var news = new Article() { PostDt = DateTime.Now };
-            news.SaveNew();
+            news.Save();
             return news;
         }
 

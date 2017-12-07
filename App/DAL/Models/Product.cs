@@ -26,7 +26,7 @@ namespace App.DAL
     /// 商品。
     /// 简化的商品模型。不同规格包装色彩的商品算不同商品，要记录多条。
     /// </summary>
-    public class Product : DbBase<Product>
+    public class Product : EntityBase<Product>
     {
         // 基础属性
         [UI("创建日期")]     public DateTime? CreateDt { get; set; }

@@ -14,7 +14,7 @@ namespace App.DAL
     /// 系统所有的状态信息、枚举信息都可在本表维护。可供用户在后台查看、修改。
     /// 系统运行类的参数信息直接保存在Web.Config文件内，仅程序员可修改。
     /// </summary>
-    public class Config : DbBase<Config>
+    public class Config : EntityBase<Config>
     {
         [UI("类别")]     public string Category { get; set; }
         [UI("键")]       public string Key { get; set; }
@@ -44,7 +44,7 @@ namespace App.DAL
         {
             Config config = Config.Search(category, key).FirstOrDefault();
             if (config == null)
-                new Config() { Key = key, Value = value, Category = category }.SaveNew();
+                new Config() { Key = key, Value = value, Category = category }.Save();
             else
             {
                 config.Value = value;

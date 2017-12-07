@@ -12,7 +12,7 @@ namespace App.DAL
     /// <summary>
     /// 用户账户表
     /// </summary>
-    public class Account : DbBase<Account>
+    public class Account : EntityBase<Account>
     {
         [UI("余额")]                     public string Balance { get; set; }
         [UI("总收入")]                   public float? TotalIncome { get; set; } = 0;
@@ -38,7 +38,7 @@ namespace App.DAL
             {
                 item = new Account();
                 item.UserID = userId;
-                item.SaveNew();
+                item.Save();
             }
             return item;
         }
