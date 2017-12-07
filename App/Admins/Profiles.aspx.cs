@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 using FineUI;
 using System.Linq;
 using App.DAL;
-using Kingsoc.Web.WebCall;
+using App.HttpApi;
 
 namespace App.Admins
 {

@@ -1,6 +1,6 @@
 ﻿using App.Components;
 using App.DAL;
-using Kingsoc.Web.WebCall;
+using App.HttpApi;
 using Newtonsoft.Json;
 using Senparc.Weixin.MP;
 using Senparc.Weixin.MP.AdvancedAPIs;

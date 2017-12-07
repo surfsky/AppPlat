@@ -31,8 +31,8 @@ namespace App.Admins
         {
             ArrayList arr = new ArrayList
             {
-                  new { Name = "App.DAL.DbUser", URL = "../WebCall.App.DAL.DbUser.axd/api", Description = "用户相关数据接口" }
-                 ,new { Name = "App.DAL.DbVerifyCode",  URL = "../WebCall.App.DAL.DbVerifyCode.axd/api",  Description = "短信验证码接口" }
+                  new { Name = "App.DAL.DbUser", URL = "../HttpApi.App.DAL.DbUser.axd/api", Description = "用户相关数据接口" }
+                 ,new { Name = "App.DAL.DbVerifyCode",  URL = "../HttpApi.App.DAL.DbVerifyCode.axd/api",  Description = "短信验证码接口" }
             };
 
             Grid1.DataSource = arr;

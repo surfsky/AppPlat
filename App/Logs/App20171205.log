@@ -1,0 +1,552 @@
+2017-12-05 09:10:17,537 [1] INFO  App - App logger start
+2017-12-05 09:10:17,607 [1] INFO  App - ==== Application_Start ====
+2017-12-05 09:20:32,994 [1] INFO  App - App logger start
+2017-12-05 09:20:33,011 [1] INFO  App - ==== Application_Start ====
+2017-12-05 09:24:43,732 [1] INFO  App - App logger start
+2017-12-05 09:24:43,743 [1] INFO  App - ==== Application_Start ====
+2017-12-05 09:27:24,605 [5] INFO  App - 2017-12-05 09:27:24:599 请求 http://localhost:5625/Default.aspx, IP地址 ::1, 耗时 40.5930 秒
+2017-12-05 09:27:25,625 [6] INFO  App - Application_End
+2017-12-05 09:27:54,136 [11] INFO  App - App logger start
+2017-12-05 09:27:54,155 [11] INFO  App - ==== Application_Start ====
+2017-12-05 09:28:21,728 [13] INFO  App - 2017-12-05 09:28:21:719 请求 http://localhost:5625/Handlers/VerifyCode.ashx, IP地址 ::1, 耗时 0.0830 秒
+2017-12-05 09:28:22,055 [5] INFO  App - Application_End
+2017-12-05 09:28:39,801 [1] INFO  App - App logger start
+2017-12-05 09:28:39,813 [1] INFO  App - ==== Application_Start ====
+2017-12-05 09:28:45,752 [6] INFO  App - Application_End
+2017-12-05 09:31:17,652 [11] INFO  App - App logger start
+2017-12-05 09:31:17,676 [11] INFO  App - ==== Application_Start ====
+2017-12-05 09:31:18,474 [18] INFO  App - 2017-12-05 09:31:18:470 请求 http://localhost:5625/WebCall.App.DAL.DbUser.axd/Login?userName=admin&password=admin&verifyCode=t55x, IP地址 ::1, 耗时 0.4010 秒
+2017-12-05 09:31:18,717 [5] INFO  App - Application_End
+2017-12-05 09:31:26,902 [1] INFO  App - App logger start
+2017-12-05 09:31:26,921 [1] INFO  App - ==== Application_Start ====
+2017-12-05 09:31:27,624 [5] INFO  App - 2017-12-05 09:31:27:595 请求 http://localhost:5625/Handlers/VerifyCode.ashx?0.6518687205389142, IP地址 ::1, 耗时 0.0370 秒
+2017-12-05 09:31:27,625 [24] INFO  App - 2017-12-05 09:31:27:597 请求 http://localhost:5625/Handlers/VerifyCode.ashx?0.07990183751098812, IP地址 ::1, 耗时 0.0390 秒
+2017-12-05 09:31:44,138 [5] INFO  App - 更新数据，ID=1, Type=App.DAL.User, Data={"InUsed":true,....
+2017-12-05 09:31:56,513 [5] INFO  App - 登录成功
+2017-12-05 09:31:56,627 [5] INFO  App - 2017-12-05 09:31:56:623 请求 http://localhost:5625/WebCall.App.DAL.DbUser.axd/Login?userName=admin&password=admin&verifyCode=e4hj, IP地址 ::1, 耗时 21.5970 秒
+2017-12-05 09:31:56,792 [18] INFO  App - Application_End
+2017-12-05 09:32:05,019 [17] INFO  App - App logger start
+2017-12-05 09:32:05,041 [17] INFO  App - ==== Application_Start ====
+2017-12-05 09:32:19,168 [18] INFO  App - 2017-12-05 09:32:19:164 请求 http://localhost:5625/admins/main.aspx, IP地址 ::1, 耗时 10.0230 秒
+2017-12-05 09:32:19,396 [24] INFO  App - Application_End
+2017-12-05 09:32:29,189 [1] INFO  App - App logger start
+2017-12-05 09:32:29,202 [1] INFO  App - ==== Application_Start ====
+2017-12-05 09:32:50,009 [5] INFO  App - 2017-12-05 09:32:50:001 请求 http://localhost:5625/admins/Welcome.aspx, IP地址 ::1, 耗时 16.8050 秒
+2017-12-05 09:32:50,240 [18] INFO  App - Application_End
+2017-12-05 09:33:00,768 [11] INFO  App - App logger start
+2017-12-05 09:33:00,789 [11] INFO  App - ==== Application_Start ====
+2017-12-05 09:33:19,976 [24] INFO  App - 2017-12-05 09:33:19:973 请求 http://localhost:5625/admins/main.aspx, IP地址 ::1, 耗时 13.9810 秒
+2017-12-05 09:33:20,376 [19] INFO  App - Application_End
+2017-12-05 09:33:26,702 [5] INFO  App - Application_End
+2017-12-05 09:33:53,520 [11] INFO  App - App logger start
+2017-12-05 09:33:53,537 [11] INFO  App - ==== Application_Start ====
+2017-12-05 09:34:07,524 [18] INFO  App - 2017-12-05 09:34:07:521 请求 http://localhost:5625/Fits/Users.aspx?roleGroup=customer, IP地址 ::1, 耗时 6.6580 秒
+2017-12-05 09:34:07,755 [19] INFO  App - Application_End
+2017-12-05 09:34:18,156 [1] INFO  App - App logger start
+2017-12-05 09:34:18,181 [1] INFO  App - ==== Application_Start ====
+2017-12-05 09:34:18,532 [5] INFO  App - 2017-12-05 09:34:18:523 请求 http://localhost:5625/Files/Users/201711082301338185514-banner2.png, IP地址 ::1, 耗时 0.0030 秒
+2017-12-05 09:34:18,554 [5] INFO  App - 2017-12-05 09:34:18:550 请求 http://localhost:5625/Files/Users/201711050057323840037-TB24txGabMlyKJjSZFAXXbkLXXa_!!0-rate.jpg_400x400.jpg, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 09:34:18,614 [5] INFO  App - 2017-12-05 09:34:18:612 请求 http://localhost:5625/Files/Users/201711050106186009983-TB2NHZuriC9MuFjSZFoXXbUzFXa_!!0-rate.jpg_400x400.jpg, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 09:34:18,744 [5] INFO  App - 2017-12-05 09:34:18:737 请求 http://localhost:5625/Files/Users/201711080927158465985-banner2.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 09:34:18,788 [5] INFO  App - 2017-12-05 09:34:18:786 请求 http://localhost:5625/Files/Users/201711051628110901360-TB2iEE1wl8lpuFjy0FnXXcZyXXa_!!0-rate.jpg_400x400.jpg, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 09:34:18,814 [5] INFO  App - 2017-12-05 09:34:18:810 请求 http://localhost:5625/Files/Users/201711050056508939930-TB2iEE1wl8lpuFjy0FnXXcZyXXa_!!0-rate.jpg_400x400.jpg, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 09:34:19,004 [18] INFO  App - Application_End
+2017-12-05 09:34:29,816 [11] INFO  App - App logger start
+2017-12-05 09:34:29,833 [11] INFO  App - ==== Application_Start ====
+2017-12-05 09:34:30,572 [18] INFO  App - 2017-12-05 09:34:30:496 请求 http://localhost:5625/Files/Users/201711050112257968980-TB2RoOwX1IPyuJjSspcXXXiApXa_!!0-rate.jpg_400x400.jpg, IP地址 ::1, 耗时 0.0250 秒
+2017-12-05 09:34:30,630 [20] INFO  App - 2017-12-05 09:34:30:565 请求 http://localhost:5625/Files/Users/201711050121395787709-TB24txGabMlyKJjSZFAXXbkLXXa_!!0-rate.jpg_400x400.jpg, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 09:34:30,695 [5] INFO  App - 2017-12-05 09:34:30:650 请求 http://localhost:5625/Files/Users/201710271501565026094-defaultUser.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 09:34:30,716 [19] INFO  App - Application_End
+2017-12-05 09:34:44,233 [11] INFO  App - App logger start
+2017-12-05 09:34:44,243 [11] INFO  App - ==== Application_Start ====
+2017-12-05 09:34:50,379 [19] INFO  App - Application_End
+2017-12-05 09:46:17,600 [1] INFO  App - App logger start
+2017-12-05 09:46:17,615 [1] INFO  App - ==== Application_Start ====
+2017-12-05 09:47:11,316 [1] INFO  App - App logger start
+2017-12-05 09:47:11,335 [1] INFO  App - ==== Application_Start ====
+2017-12-05 09:47:38,190 [5] INFO  App - Application_End
+2017-12-05 09:47:44,607 [1] INFO  App - App logger start
+2017-12-05 09:47:44,620 [1] INFO  App - ==== Application_Start ====
+2017-12-05 09:48:04,522 [9] INFO  App - 2017-12-05 09:48:04:519 请求 http://localhost:5625/Admins/Main.aspx, IP地址 ::1, 耗时 8.8310 秒
+2017-12-05 09:48:04,849 [6] INFO  App - Application_End
+2017-12-05 09:48:12,674 [14] INFO  App - App logger start
+2017-12-05 09:48:12,685 [14] INFO  App - ==== Application_Start ====
+2017-12-05 09:48:28,054 [9] INFO  App - 2017-12-05 09:48:28:052 请求 http://localhost:5625/admins/Welcome.aspx, IP地址 ::1, 耗时 11.4480 秒
+2017-12-05 09:48:28,328 [5] INFO  App - Application_End
+2017-12-05 09:48:41,183 [14] INFO  App - App logger start
+2017-12-05 09:48:41,195 [14] INFO  App - ==== Application_Start ====
+2017-12-05 09:48:49,013 [5] INFO  App - 2017-12-05 09:48:49:009 请求 http://localhost:5625/Admins/Main.aspx, IP地址 ::1, 耗时 4.4330 秒
+2017-12-05 09:48:49,416 [6] INFO  App - Application_End
+2017-12-05 09:50:46,858 [14] INFO  App - App logger start
+2017-12-05 09:50:46,871 [14] INFO  App - ==== Application_Start ====
+2017-12-05 09:51:01,242 [10] INFO  App - 更新数据，ID=1, Type=App.DAL.Article, Data={"Type":"New....
+2017-12-05 09:51:02,919 [10] INFO  App - 2017-12-05 09:51:02:916 请求 http://localhost:5625/Admins/Article.aspx?id=1, IP地址 ::1, 耗时 10.8470 秒
+2017-12-05 09:51:04,247 [10] INFO  App - 2017-12-05 09:51:04:244 请求 http://localhost:5625/__browserLink/requestData/be1e7bf49161462fbd6a0dbe524aac00?version=2, IP地址 ::1, 耗时 0.1020 秒
+2017-12-05 09:51:30,165 [10] INFO  App - Application_End
+2017-12-05 10:09:54,833 [1] INFO  App - App logger start
+2017-12-05 10:09:54,846 [1] INFO  App - ==== Application_Start ====
+2017-12-05 10:10:37,051 [7] INFO  App - 2017-12-05 10:10:37:048 请求 http://localhost:5625/Admins/Main.aspx, IP地址 ::1, 耗时 1.0750 秒
+2017-12-05 10:10:40,232 [7] INFO  App - 2017-12-05 10:10:40:228 请求 http://localhost:5625/admins/Welcome.aspx, IP地址 ::1, 耗时 1.4050 秒
+2017-12-05 10:10:40,254 [6] INFO  App - 2017-12-05 10:10:40:247 请求 http://localhost:5625/__browserLink/requestData/8ef5b1938526471a90ab39bce6a99b1a?version=2, IP地址 ::1, 耗时 0.2410 秒
+2017-12-05 10:10:43,963 [7] INFO  App - 2017-12-05 10:10:43:961 请求 http://localhost:5625/__browserLink/requestData/cfcee9405bce4905b35aa74d72644dec?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 10:10:53,498 [6] INFO  App - Application_End
+2017-12-05 10:11:18,117 [9] INFO  App - App logger start
+2017-12-05 10:11:18,140 [9] INFO  App - ==== Application_Start ====
+2017-12-05 10:11:47,051 [6] INFO  App - 2017-12-05 10:11:47:028 请求 http://localhost:5625/Admins/Main.aspx, IP地址 ::1, 耗时 7.7980 秒
+2017-12-05 10:11:47,053 [7] INFO  App - 2017-12-05 10:11:47:028 请求 http://localhost:5625/Admins/Main.aspx, IP地址 ::1, 耗时 15.5280 秒
+2017-12-05 10:27:09,616 [1] INFO  App - App logger start
+2017-12-05 10:27:09,636 [1] INFO  App - ==== Application_Start ====
+2017-12-05 10:27:19,860 [11] INFO  App - Application_End
+2017-12-05 10:27:26,104 [1] INFO  App - App logger start
+2017-12-05 10:27:26,121 [1] INFO  App - ==== Application_Start ====
+2017-12-05 10:27:56,591 [11] INFO  App - 2017-12-05 10:27:56:590 请求 http://localhost:5625/Admins/Main.aspx, IP地址 ::1, 耗时 18.8360 秒
+2017-12-05 10:27:56,989 [6] INFO  App - Application_End
+2017-12-05 10:28:04,511 [1] INFO  App - App logger start
+2017-12-05 10:28:04,523 [1] INFO  App - ==== Application_Start ====
+2017-12-05 10:28:30,770 [11] INFO  App - 2017-12-05 10:28:30:767 请求 http://localhost:5625/admins/Welcome.aspx, IP地址 ::1, 耗时 16.1990 秒
+2017-12-05 10:28:31,074 [12] INFO  App - Application_End
+2017-12-05 10:29:03,379 [1] INFO  App - App logger start
+2017-12-05 10:29:03,393 [1] INFO  App - ==== Application_Start ====
+2017-12-05 10:29:22,477 [8] INFO  App - 2017-12-05 10:29:22:472 请求 http://localhost:5625/Admins/Main.aspx, IP地址 ::1, 耗时 5.7150 秒
+2017-12-05 10:29:24,910 [9] INFO  App - 2017-12-05 10:29:24:897 请求 http://localhost:5625/Admins/Main.aspx, IP地址 ::1, 耗时 3.1160 秒
+2017-12-05 10:29:32,166 [9] INFO  App - 2017-12-05 10:29:32:163 请求 http://localhost:5625/admins/Welcome.aspx, IP地址 ::1, 耗时 1.8510 秒
+2017-12-05 10:29:37,072 [6] INFO  App - 2017-12-05 10:29:36:770 请求 http://localhost:5625/__browserLink/requestData/22dcd6ceef1c49cf93652de67476c1ff?version=2, IP地址 ::1, 耗时 0.1720 秒
+2017-12-05 10:29:37,552 [7] INFO  App - 2017-12-05 10:29:37:335 请求 http://localhost:5625/__browserLink/requestData/73df58eeff5645459fd858021251f33a?version=2, IP地址 ::1, 耗时 0.0050 秒
+2017-12-05 10:29:37,845 [9] INFO  App - Application_End
+2017-12-05 10:30:05,747 [10] INFO  App - App logger start
+2017-12-05 10:30:05,759 [10] INFO  App - ==== Application_Start ====
+2017-12-05 10:30:24,673 [7] INFO  App - 2017-12-05 10:30:24:663 请求 http://localhost:5625/Admins/Main.aspx, IP地址 ::1, 耗时 9.9300 秒
+2017-12-05 10:30:54,638 [7] INFO  App - Application_End
+2017-12-05 10:39:17,411 [1] INFO  App - App logger start
+2017-12-05 10:39:17,426 [1] INFO  App - ==== Application_Start ====
+2017-12-05 10:40:23,620 [1] INFO  App - App logger start
+2017-12-05 10:40:23,660 [1] INFO  App - ==== Application_Start ====
+2017-12-05 10:42:51,670 [1] INFO  App - App logger start
+2017-12-05 10:42:51,690 [1] INFO  App - ==== Application_Start ====
+2017-12-05 10:44:36,293 [1] INFO  App - App logger start
+2017-12-05 10:44:36,317 [1] INFO  App - ==== Application_Start ====
+2017-12-05 10:45:56,386 [1] INFO  App - App logger start
+2017-12-05 10:45:56,398 [1] INFO  App - ==== Application_Start ====
+2017-12-05 10:47:37,308 [1] INFO  App - App logger start
+2017-12-05 10:47:37,324 [1] INFO  App - ==== Application_Start ====
+2017-12-05 10:48:52,404 [9] INFO  App - 2017-12-05 10:48:52:402 请求 http://localhost:5625/Admins/Main.aspx, IP地址 ::1, 耗时 1.5500 秒
+2017-12-05 10:48:56,497 [5] INFO  App - 2017-12-05 10:48:56:494 请求 http://localhost:5625/admins/Welcome.aspx, IP地址 ::1, 耗时 1.3470 秒
+2017-12-05 10:49:01,053 [9] INFO  App - 2017-12-05 10:49:01:024 请求 http://localhost:5625/__browserLink/requestData/68e6565ead424bbcbefe7f49fc691f28?version=2, IP地址 ::1, 耗时 0.1100 秒
+2017-12-05 10:49:01,146 [9] INFO  App - 2017-12-05 10:49:01:143 请求 http://localhost:5625/__browserLink/requestData/8f0b925d941f45d6adaf67c1cfa824fc?version=2, IP地址 ::1, 耗时 0.0020 秒
+2017-12-05 10:49:25,655 [5] INFO  App - 2017-12-05 10:49:25:653 请求 http://localhost:5625/Admins/Main.aspx, IP地址 ::1, 耗时 0.1240 秒
+2017-12-05 15:01:41,517 [1] INFO  App - App logger start
+2017-12-05 15:01:41,530 [1] INFO  App - ==== Application_Start ====
+2017-12-05 15:03:12,425 [5] ERROR App - Application_Error: System.EventArgs
+2017-12-05 15:05:06,424 [6] INFO  App - 2017-12-05 15:05:06:419 请求 http://localhost:5625/Admins/Main.aspx, IP地址 ::1, 耗时 1.4120 秒
+2017-12-05 15:05:11,514 [5] INFO  App - 2017-12-05 15:05:11:512 请求 http://localhost:5625/admins/Welcome.aspx, IP地址 ::1, 耗时 1.5730 秒
+2017-12-05 15:05:13,417 [6] INFO  App - 2017-12-05 15:05:13:404 请求 http://localhost:5625/__browserLink/requestData/fbadae69386347eabe5d483c8a5c6088?version=2, IP地址 ::1, 耗时 0.1020 秒
+2017-12-05 15:05:15,552 [6] INFO  App - 2017-12-05 15:05:15:551 请求 http://localhost:5625/__browserLink/requestData/963886cd11e64104ae58c9ef5e5a898e?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:05:40,693 [8] INFO  App - 2017-12-05 15:05:40:691 请求 http://localhost:5625/Admins/Main.aspx, IP地址 ::1, 耗时 0.2100 秒
+2017-12-05 15:06:10,723 [6] INFO  App - 2017-12-05 15:06:10:722 请求 http://localhost:5625/Admins/Main.aspx, IP地址 ::1, 耗时 0.1040 秒
+2017-12-05 15:06:10,954 [8] INFO  App - 2017-12-05 15:06:10:952 请求 http://localhost:5625/Default.aspx?ReturnUrl=%2fAdmins%2fMain.aspx, IP地址 ::1, 耗时 0.1380 秒
+2017-12-05 15:06:11,848 [9] INFO  App - 2017-12-05 15:06:11:818 请求 http://localhost:5625/Handlers/VerifyCode.ashx, IP地址 ::1, 耗时 0.1090 秒
+2017-12-05 15:06:12,447 [8] INFO  App - 2017-12-05 15:06:12:446 请求 http://localhost:5625/__browserLink/requestData/5dab4ec5ebc34c468a9322b3d8da0166?version=2, IP地址 ::1, 耗时 0.0020 秒
+2017-12-05 15:18:40,250 [1] INFO  App - App logger start
+2017-12-05 15:18:40,261 [1] INFO  App - ==== Application_Start ====
+2017-12-05 15:18:46,352 [5] INFO  App - 2017-12-05 15:18:46:344 请求 http://localhost:5625/Default.aspx, IP地址 ::1, 耗时 4.5550 秒
+2017-12-05 15:18:47,250 [8] INFO  App - 2017-12-05 15:18:47:248 请求 http://localhost:5625/Handlers/VerifyCode.ashx, IP地址 ::1, 耗时 0.0560 秒
+2017-12-05 15:18:47,764 [8] INFO  App - 2017-12-05 15:18:47:750 请求 http://localhost:5625/__browserLink/requestData/6956ec00a88644de80bc3455aa1223a2?version=2, IP地址 ::1, 耗时 0.1050 秒
+2017-12-05 15:18:57,739 [5] INFO  App - 2017-12-05 15:18:57:737 请求 http://localhost:5625/Default.aspx, IP地址 ::1, 耗时 0.0700 秒
+2017-12-05 15:18:58,388 [8] INFO  App - 2017-12-05 15:18:58:350 请求 http://localhost:5625/res/css/login.css, IP地址 ::1, 耗时 0.0070 秒
+2017-12-05 15:18:58,444 [5] INFO  App - 2017-12-05 15:18:58:357 请求 http://localhost:5625/res/js/jquery-1.10.2.min.js, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:18:58,795 [5] INFO  App - 2017-12-05 15:18:58:701 请求 http://localhost:5625/res/js/function.js, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:18:58,810 [8] INFO  App - 2017-12-05 15:18:58:783 请求 http://localhost:5625/res/js/dd_png.js, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:18:58,825 [6] INFO  App - 2017-12-05 15:18:58:812 请求 http://localhost:5625/Handlers/VerifyCode.ashx, IP地址 ::1, 耗时 0.0200 秒
+2017-12-05 15:18:59,093 [8] INFO  App - 2017-12-05 15:18:59:041 请求 http://localhost:5625/res/images/formBg.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:18:59,103 [6] INFO  App - 2017-12-05 15:18:59:061 请求 http://localhost:5625/res/images/bg.jpg, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:18:59,408 [5] INFO  App - 2017-12-05 15:18:59:072 请求 http://localhost:5625/res/images/formpassword.gif, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:18:59,635 [6] INFO  App - 2017-12-05 15:18:59:363 请求 http://localhost:5625/res/images/formUser.gif, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:18:59,738 [8] INFO  App - 2017-12-05 15:18:59:203 请求 http://localhost:5625/res/images/formVFcode.gif, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:18:59,744 [5] INFO  App - 2017-12-05 15:18:59:712 请求 http://localhost:5625/res/images/btnLogin.gif, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:19:00,235 [8] INFO  App - 2017-12-05 15:19:00:232 请求 http://localhost:5625/__browserLink/requestData/8163fe9dd7c74c9caeb8755e5dc4a7b9?version=2, IP地址 ::1, 耗时 0.0030 秒
+2017-12-05 15:19:08,250 [5] INFO  App - 更新数据，ID=1, Type=App.DAL.User, Data={"InUsed":true,....
+2017-12-05 15:19:08,425 [5] INFO  App - 登录成功
+2017-12-05 15:19:08,644 [5] INFO  App - 2017-12-05 15:19:08:619 请求 http://localhost:5625/WebCall.App.DAL.DbUser.axd/Login?userName=admin&password=admin&verifyCode=tmkg, IP地址 ::1, 耗时 0.8830 秒
+2017-12-05 15:19:12,931 [5] INFO  App - 2017-12-05 15:19:12:924 请求 http://localhost:5625/admins/main.aspx, IP地址 ::1, 耗时 0.7700 秒
+2017-12-05 15:19:15,417 [5] INFO  App - 2017-12-05 15:19:15:415 请求 http://localhost:5625/admins/Welcome.aspx, IP地址 ::1, 耗时 0.6290 秒
+2017-12-05 15:19:20,403 [6] INFO  App - 2017-12-05 15:19:20:385 请求 http://localhost:5625/__browserLink/requestData/7e892f1d5edb478292d1910d9d57a315?version=2, IP地址 ::1, 耗时 0.0030 秒
+2017-12-05 15:19:20,502 [5] INFO  App - 2017-12-05 15:19:20:468 请求 http://localhost:5625/__browserLink/requestData/03d0fe2c05a041439fc831f4f69e897b?version=2, IP地址 ::1, 耗时 0.0040 秒
+2017-12-05 15:19:45,395 [10] INFO  App - 2017-12-05 15:19:45:394 请求 http://localhost:5625/admins/main.aspx, IP地址 ::1, 耗时 0.2040 秒
+2017-12-05 15:19:52,401 [5] INFO  App - 2017-12-05 15:19:52:400 请求 http://localhost:5625/admins/Depts.aspx, IP地址 ::1, 耗时 0.2690 秒
+2017-12-05 15:19:53,526 [10] INFO  App - 2017-12-05 15:19:53:520 请求 http://localhost:5625/extjs/res/images/elbow.gif, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:19:53,537 [5] INFO  App - 2017-12-05 15:19:53:522 请求 http://localhost:5625/extjs/res/images/elbow-end.gif, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:19:54,288 [5] INFO  App - 2017-12-05 15:19:54:273 请求 http://localhost:5625/__browserLink/requestData/553b28bd1c764af1a1529a72d2ef05cc?version=2, IP地址 ::1, 耗时 0.0020 秒
+2017-12-05 15:20:03,508 [5] INFO  App - 2017-12-05 15:20:03:507 请求 http://localhost:5625/admins/Menus.aspx, IP地址 ::1, 耗时 0.0760 秒
+2017-12-05 15:20:05,870 [5] INFO  App - 2017-12-05 15:20:05:868 请求 http://localhost:5625/__browserLink/requestData/b44cd74372814118b9759fce7a048744?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:20:36,062 [10] INFO  App - 2017-12-05 15:20:36:061 请求 http://localhost:5625/admins/Menus.aspx, IP地址 ::1, 耗时 1.4780 秒
+2017-12-05 15:20:43,021 [5] INFO  App - 2017-12-05 15:20:43:009 请求 http://localhost:5625/admins/Menus.aspx, IP地址 ::1, 耗时 0.5090 秒
+2017-12-05 15:20:46,631 [5] INFO  App - 2017-12-05 15:20:46:630 请求 http://localhost:5625/admins/Menus.aspx, IP地址 ::1, 耗时 0.3280 秒
+2017-12-05 15:20:49,977 [10] INFO  App - 2017-12-05 15:20:49:976 请求 http://localhost:5625/admins/Menus.aspx, IP地址 ::1, 耗时 0.2690 秒
+2017-12-05 15:20:54,357 [10] INFO  App - 2017-12-05 15:20:54:355 请求 http://localhost:5625/admins/Menus.aspx, IP地址 ::1, 耗时 0.3150 秒
+2017-12-05 15:21:52,502 [11] INFO  App - 2017-12-05 15:21:52:362 请求 http://localhost:5625/admins/main.aspx, IP地址 ::1, 耗时 0.1380 秒
+2017-12-05 15:21:53,294 [5] INFO  App - 2017-12-05 15:21:53:291 请求 http://localhost:5625/extjs/res/ext-theme-neptune/theme-neptune-all_1.css?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:21:53,298 [11] INFO  App - 2017-12-05 15:21:53:292 请求 http://localhost:5625/extjs/res/ext-theme-neptune/theme-neptune-all_2.css?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:21:53,410 [11] INFO  App - 2017-12-05 15:21:53:357 请求 http://localhost:5625/extjs/res/theme-neptune.css?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:21:53,470 [5] INFO  App - 2017-12-05 15:21:53:440 请求 http://localhost:5625/extjs/ext-all.js?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:21:53,530 [11] INFO  App - 2017-12-05 15:21:53:467 请求 http://localhost:5625/res/css/main.css, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:21:53,741 [5] INFO  App - 2017-12-05 15:21:53:653 请求 http://localhost:5625/res/loading/_3/ffffff_444444.gif, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:21:53,758 [11] INFO  App - 2017-12-05 15:21:53:746 请求 http://localhost:5625/extjs/ext-fineui.js?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:21:53,839 [10] INFO  App - 2017-12-05 15:21:53:822 请求 http://localhost:5625/extjs/lang/zh_CN.js?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:21:53,859 [5] INFO  App - 2017-12-05 15:21:53:842 请求 http://localhost:5625/extjs/res/ext-theme-neptune/theme-neptune.js?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:21:55,394 [5] INFO  App - 2017-12-05 15:21:55:386 请求 http://localhost:5625/admins/Welcome.aspx, IP地址 ::1, 耗时 0.3740 秒
+2017-12-05 15:21:55,722 [11] INFO  App - 2017-12-05 15:21:55:636 请求 http://localhost:5625/admins/Menus.aspx, IP地址 ::1, 耗时 0.0960 秒
+2017-12-05 15:21:59,836 [5] INFO  App - 2017-12-05 15:21:59:833 请求 http://localhost:5625/__browserLink/requestData/721bf0a92d084fe69ab86480b8012c6c?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:22:00,154 [11] INFO  App - 2017-12-05 15:22:00:143 请求 http://localhost:5625/__browserLink/requestData/33f1f9b99bc345db892684d3b171cd7f?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:22:00,315 [10] INFO  App - 2017-12-05 15:22:00:302 请求 http://localhost:5625/__browserLink/requestData/f96c26dd51d842e88436049eee8b2bd5?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:22:12,654 [5] INFO  App - 2017-12-05 15:22:12:653 请求 http://localhost:5625/admins/main.aspx, IP地址 ::1, 耗时 0.0460 秒
+2017-12-05 15:22:13,462 [11] INFO  App - 2017-12-05 15:22:13:431 请求 http://localhost:5625/extjs/res/ext-theme-neptune/theme-neptune-all_1.css?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:22:13,490 [10] INFO  App - 2017-12-05 15:22:13:458 请求 http://localhost:5625/extjs/res/theme-neptune.css?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:22:13,534 [13] INFO  App - 2017-12-05 15:22:13:462 请求 http://localhost:5625/res/css/main.css, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:22:13,663 [5] INFO  App - 2017-12-05 15:22:13:461 请求 http://localhost:5625/extjs/res/ext-theme-neptune/theme-neptune-all_2.css?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:22:13,676 [10] INFO  App - 2017-12-05 15:22:13:665 请求 http://localhost:5625/extjs/ext-fineui.js?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:22:13,738 [13] INFO  App - 2017-12-05 15:22:13:676 请求 http://localhost:5625/extjs/lang/zh_CN.js?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:22:13,767 [12] INFO  App - 2017-12-05 15:22:13:645 请求 http://localhost:5625/res/loading/_3/ffffff_444444.gif, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:22:13,773 [11] INFO  App - 2017-12-05 15:22:13:655 请求 http://localhost:5625/extjs/ext-all.js?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:22:13,810 [6] INFO  App - 2017-12-05 15:22:13:765 请求 http://localhost:5625/extjs/res/ext-theme-neptune/theme-neptune.js?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:22:16,191 [10] INFO  App - 2017-12-05 15:22:16:189 请求 http://localhost:5625/__browserLink/requestData/f4c610fb736d460bb0900351f72ec206?version=2, IP地址 ::1, 耗时 0.0050 秒
+2017-12-05 15:22:16,415 [5] INFO  App - 2017-12-05 15:22:16:410 请求 http://localhost:5625/admins/Welcome.aspx, IP地址 ::1, 耗时 1.3270 秒
+2017-12-05 15:22:17,079 [11] INFO  App - 2017-12-05 15:22:17:038 请求 http://localhost:5625/admins/Menus.aspx, IP地址 ::1, 耗时 0.1540 秒
+2017-12-05 15:22:20,486 [10] INFO  App - 2017-12-05 15:22:20:447 请求 http://localhost:5625/__browserLink/requestData/799a840977104eb4acf19da786dcd9bb?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:22:21,142 [11] INFO  App - 2017-12-05 15:22:21:138 请求 http://localhost:5625/__browserLink/requestData/8306e4dc384642029940ec2065a1e35b?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:22:45,602 [6] INFO  App - 2017-12-05 15:22:45:601 请求 http://localhost:5625/admins/main.aspx, IP地址 ::1, 耗时 0.0880 秒
+2017-12-05 15:23:25,934 [12] INFO  App - 2017-12-05 15:23:25:933 请求 http://localhost:5625/admins/Users.aspx, IP地址 ::1, 耗时 0.3580 秒
+2017-12-05 15:23:27,598 [12] INFO  App - 2017-12-05 15:23:27:572 请求 http://localhost:5625/Files/Users/201711081019121372757-banner3.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:23:27,655 [14] INFO  App - 2017-12-05 15:23:27:593 请求 http://localhost:5625/res/images/blank.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:23:27,688 [8] INFO  App - 2017-12-05 15:23:27:588 请求 http://localhost:5625/Files/Users/636432292167317403_manage_r.gif, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:23:27,706 [6] INFO  App - 2017-12-05 15:23:27:591 请求 http://localhost:5625/Files/Users/636396201176205158_cat.jpg, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:23:27,737 [15] INFO  App - 2017-12-05 15:23:27:638 请求 http://localhost:5625/Files/Users/201710251601342380268-TB2pgcPaVT.F1JjSZFEXXc1TVXa_!!0-rate.jpg_400x400.jpg, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:23:27,783 [16] INFO  App - 2017-12-05 15:23:27:683 请求 http://localhost:5625/extjs/res/images/bullet_cross.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:23:28,455 [12] INFO  App - 2017-12-05 15:23:28:453 请求 http://localhost:5625/__browserLink/requestData/df3a8715f1124f408f2fa8ba835370d6?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:23:34,925 [12] INFO  App - 2017-12-05 15:23:34:923 请求 http://localhost:5625/admins/UserForm.aspx?mode=view&id=20, IP地址 ::1, 耗时 0.4220 秒
+2017-12-05 15:23:37,597 [12] INFO  App - 2017-12-05 15:23:37:592 请求 http://localhost:5625/__browserLink/requestData/b2b635b9ad3b4837a35da30135543fea?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:23:46,275 [12] INFO  App - 2017-12-05 15:23:46:265 请求 http://localhost:5625/admins/Users.aspx, IP地址 ::1, 耗时 0.4090 秒
+2017-12-05 15:26:13,066 [1] INFO  App - App logger start
+2017-12-05 15:26:13,078 [1] INFO  App - ==== Application_Start ====
+2017-12-05 15:26:22,361 [7] INFO  App - 2017-12-05 15:26:22:359 请求 http://localhost:5625/Admins/Main.aspx, IP地址 ::1, 耗时 0.9110 秒
+2017-12-05 15:26:24,798 [5] INFO  App - 2017-12-05 15:26:24:796 请求 http://localhost:5625/admins/Welcome.aspx, IP地址 ::1, 耗时 0.9390 秒
+2017-12-05 15:26:25,886 [8] INFO  App - 2017-12-05 15:26:25:814 请求 http://localhost:5625/__browserLink/requestData/961716a2941b41af9ec884e6591a22a0?version=2, IP地址 ::1, 耗时 0.0690 秒
+2017-12-05 15:26:28,532 [5] INFO  App - 2017-12-05 15:26:28:530 请求 http://localhost:5625/__browserLink/requestData/a19d275a495a4791812c386862c013fc?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:26:30,989 [5] INFO  App - 2017-12-05 15:26:30:924 请求 http://localhost:5625/admins/Depts.aspx, IP地址 ::1, 耗时 0.6530 秒
+2017-12-05 15:26:33,064 [5] INFO  App - 2017-12-05 15:26:33:062 请求 http://localhost:5625/__browserLink/requestData/1f7acb6ad9b94da2bcefa02fa6165317?version=2, IP地址 ::1, 耗时 0.0030 秒
+2017-12-05 15:26:38,106 [5] INFO  App - 2017-12-05 15:26:38:105 请求 http://localhost:5625/admins/DeptForm.aspx?mode=edit&id=11, IP地址 ::1, 耗时 0.3390 秒
+2017-12-05 15:26:39,888 [5] INFO  App - 2017-12-05 15:26:39:885 请求 http://localhost:5625/__browserLink/requestData/9b9967f6d0bc4c6d8dc9ef65bf18b6e3?version=2, IP地址 ::1, 耗时 0.0030 秒
+2017-12-05 15:26:41,730 [7] INFO  App - 更新数据，ID=11, Type=App.DAL.Dept, Data={"Name":"行政部2"....
+2017-12-05 15:26:41,853 [7] INFO  App - 2017-12-05 15:26:41:845 请求 http://localhost:5625/admins/DeptForm.aspx?mode=edit&id=11, IP地址 ::1, 耗时 0.5170 秒
+2017-12-05 15:26:43,666 [8] INFO  App - 2017-12-05 15:26:43:664 请求 http://localhost:5625/admins/Depts.aspx, IP地址 ::1, 耗时 0.4820 秒
+2017-12-05 15:26:45,236 [5] INFO  App - 2017-12-05 15:26:45:234 请求 http://localhost:5625/admins/DeptForm.aspx?mode=edit&id=11, IP地址 ::1, 耗时 0.3010 秒
+2017-12-05 15:26:47,383 [7] INFO  App - 2017-12-05 15:26:47:380 请求 http://localhost:5625/__browserLink/requestData/7466c2ae2de54ac09285c24457c3e4f5?version=2, IP地址 ::1, 耗时 0.0020 秒
+2017-12-05 15:26:49,922 [7] INFO  App - 更新数据，ID=11, Type=App.DAL.Dept, Data={"ID":11,"Name....
+2017-12-05 15:26:50,064 [7] INFO  App - 2017-12-05 15:26:50:063 请求 http://localhost:5625/admins/DeptForm.aspx?mode=edit&id=11, IP地址 ::1, 耗时 0.3810 秒
+2017-12-05 15:26:51,636 [8] INFO  App - 2017-12-05 15:26:51:624 请求 http://localhost:5625/admins/Depts.aspx, IP地址 ::1, 耗时 0.3880 秒
+2017-12-05 15:26:53,015 [7] INFO  App - 2017-12-05 15:26:53:013 请求 http://localhost:5625/admins/Titles.aspx, IP地址 ::1, 耗时 0.1920 秒
+2017-12-05 15:26:54,426 [8] INFO  App - 2017-12-05 15:26:54:422 请求 http://localhost:5625/extjs/res/ext-theme-neptune/images/form/search-trigger.png, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:26:54,431 [7] INFO  App - 2017-12-05 15:26:54:423 请求 http://localhost:5625/extjs/res/ext-theme-neptune/images/form/clear-trigger.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:26:55,220 [7] INFO  App - 2017-12-05 15:26:55:165 请求 http://localhost:5625/Admins/Main.aspx, IP地址 ::1, 耗时 0.2800 秒
+2017-12-05 15:26:55,283 [8] INFO  App - 2017-12-05 15:26:55:253 请求 http://localhost:5625/__browserLink/requestData/e05c9b1092874d34a8b0c769165fd96b?version=2, IP地址 ::1, 耗时 0.0040 秒
+2017-12-05 15:26:56,205 [7] INFO  App - 2017-12-05 15:26:56:201 请求 http://localhost:5625/admins/Articles.aspx, IP地址 ::1, 耗时 0.3710 秒
+2017-12-05 15:26:57,674 [5] INFO  App - 2017-12-05 15:26:57:665 请求 http://localhost:5625/res/icon/system_new.gif, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:26:57,751 [8] INFO  App - 2017-12-05 15:26:57:749 请求 http://localhost:5625/res/icon/eye.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:26:58,720 [5] INFO  App - 2017-12-05 15:26:58:718 请求 http://localhost:5625/__browserLink/requestData/0c75ad830b264b22b2281006aefdf740?version=2, IP地址 ::1, 耗时 0.0020 秒
+2017-12-05 15:26:59,638 [8] INFO  App - 2017-12-05 15:26:59:637 请求 http://localhost:5625/admins/Onlines.aspx, IP地址 ::1, 耗时 0.2060 秒
+2017-12-05 15:27:02,071 [5] INFO  App - 2017-12-05 15:27:02:067 请求 http://localhost:5625/__browserLink/requestData/08ad544c28af43eb90bfbea59919853c?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:27:05,696 [7] ERROR App - Application_Error: System.EventArgs
+2017-12-05 15:27:11,412 [5] INFO  App - 2017-12-05 15:27:11:411 请求 http://localhost:5625/Reports/GDP.aspx, IP地址 ::1, 耗时 0.2290 秒
+2017-12-05 15:27:13,792 [7] INFO  App - 2017-12-05 15:27:13:791 请求 http://localhost:5625/__browserLink/requestData/ef57b691a2a846f5be9dd11370ebe088?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:27:17,251 [8] INFO  App - 2017-12-05 15:27:17:250 请求 http://localhost:5625/Reports/GDP.aspx, IP地址 ::1, 耗时 0.0760 秒
+2017-12-05 15:27:19,588 [5] INFO  App - 2017-12-05 15:27:19:587 请求 http://localhost:5625/__browserLink/requestData/d00952d34197427d9497ccb7df358273?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:30:49,223 [1] INFO  App - App logger start
+2017-12-05 15:30:49,235 [1] INFO  App - ==== Application_Start ====
+2017-12-05 15:31:02,460 [7] INFO  App - 2017-12-05 15:31:02:458 请求 http://localhost:5625/Admins/Main.aspx, IP地址 ::1, 耗时 1.2640 秒
+2017-12-05 15:31:09,983 [7] INFO  App - 2017-12-05 15:31:09:812 请求 http://localhost:5625/__browserLink/requestData/40d6f12955da4552a1a4d88f2de28084?version=2, IP地址 ::1, 耗时 0.6910 秒
+2017-12-05 15:31:10,852 [5] INFO  App - 2017-12-05 15:31:10:849 请求 http://localhost:5625/admins/Welcome.aspx, IP地址 ::1, 耗时 3.7220 秒
+2017-12-05 15:31:14,323 [5] INFO  App - 2017-12-05 15:31:14:296 请求 http://localhost:5625/__browserLink/requestData/5a15e61b3d7d416c9b8693a1c6b27c2c?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:31:37,588 [7] INFO  App - 2017-12-05 15:31:37:587 请求 http://localhost:5625/Admins/Main.aspx, IP地址 ::1, 耗时 0.1290 秒
+2017-12-05 15:36:05,994 [1] INFO  App - App logger start
+2017-12-05 15:36:06,003 [1] INFO  App - ==== Application_Start ====
+2017-12-05 15:36:12,034 [6] INFO  App - 2017-12-05 15:36:12:031 请求 http://localhost:5625/Admins/Main.aspx, IP地址 ::1, 耗时 0.8390 秒
+2017-12-05 15:36:15,313 [5] INFO  App - 2017-12-05 15:36:15:312 请求 http://localhost:5625/admins/Welcome.aspx, IP地址 ::1, 耗时 1.1010 秒
+2017-12-05 15:36:15,543 [6] INFO  App - 2017-12-05 15:36:15:405 请求 http://localhost:5625/__browserLink/requestData/ee99575d8cee4065b89d6944e63ffae3?version=2, IP地址 ::1, 耗时 0.1720 秒
+2017-12-05 15:36:18,768 [5] INFO  App - 2017-12-05 15:36:18:767 请求 http://localhost:5625/__browserLink/requestData/d84a4b4575124a20ba5627171479732a?version=2, IP地址 ::1, 耗时 0.0020 秒
+2017-12-05 15:36:44,702 [5] INFO  App - 2017-12-05 15:36:44:699 请求 http://localhost:5625/Admins/Main.aspx, IP地址 ::1, 耗时 0.1680 秒
+2017-12-05 15:36:56,586 [5] INFO  App - Application_End
+2017-12-05 15:37:45,258 [1] INFO  App - App logger start
+2017-12-05 15:37:45,272 [1] INFO  App - ==== Application_Start ====
+2017-12-05 15:37:53,017 [5] INFO  App - 更新数据，ID=1, Type=App.DAL.Article, Data={"Type":"New....
+2017-12-05 15:37:53,535 [5] INFO  App - 2017-12-05 15:37:53:533 请求 http://localhost:5625/Admins/Article.aspx?id=1, IP地址 ::1, 耗时 4.3380 秒
+2017-12-05 15:37:54,781 [5] INFO  App - 2017-12-05 15:37:54:779 请求 http://localhost:5625/__browserLink/requestData/8ed2bb3c964d45dc8a2b65bb439bf7db?version=2, IP地址 ::1, 耗时 0.1240 秒
+2017-12-05 15:38:01,914 [12] INFO  App - 2017-12-05 15:38:01:910 请求 http://localhost:5625/admins/Depts.aspx, IP地址 ::1, 耗时 0.5800 秒
+2017-12-05 15:38:04,580 [5] INFO  App - 2017-12-05 15:38:04:554 请求 http://localhost:5625/__browserLink/requestData/66f18dc2498c4bb482dd1f38afb9db32?version=2, IP地址 ::1, 耗时 0.0040 秒
+2017-12-05 15:38:04,836 [9] INFO  App - 2017-12-05 15:38:04:833 请求 http://localhost:5625/admins/Titles.aspx, IP地址 ::1, 耗时 0.2810 秒
+2017-12-05 15:38:07,641 [9] INFO  App - 2017-12-05 15:38:07:618 请求 http://localhost:5625/__browserLink/requestData/2b34ab8014a64c4c93cbd3d3683e51ec?version=2, IP地址 ::1, 耗时 0.0020 秒
+2017-12-05 15:38:07,876 [5] INFO  App - 2017-12-05 15:38:07:874 请求 http://localhost:5625/admins/Articles.aspx, IP地址 ::1, 耗时 0.2570 秒
+2017-12-05 15:38:09,853 [5] INFO  App - 2017-12-05 15:38:09:852 请求 http://localhost:5625/__browserLink/requestData/40a5e0d21f3f447d819bd461207ef99b?version=2, IP地址 ::1, 耗时 0.0020 秒
+2017-12-05 15:38:10,373 [12] INFO  App - 2017-12-05 15:38:10:371 请求 http://localhost:5625/admins/Onlines.aspx, IP地址 ::1, 耗时 0.1960 秒
+2017-12-05 15:38:12,998 [5] ERROR App - Application_Error: System.EventArgs
+2017-12-05 15:38:13,669 [12] INFO  App - 2017-12-05 15:38:13:664 请求 http://localhost:5625/__browserLink/requestData/ff48efc2daee4a84bfcb00ffcb9ade0e?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:38:17,624 [12] INFO  App - 2017-12-05 15:38:17:623 请求 http://localhost:5625/Reports/GDP.aspx, IP地址 ::1, 耗时 0.2460 秒
+2017-12-05 15:38:20,630 [5] INFO  App - 2017-12-05 15:38:20:628 请求 http://localhost:5625/__browserLink/requestData/7c19c9b8824f46b182eef59472ecda93?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:38:31,119 [5] INFO  App - 2017-12-05 15:38:31:117 请求 http://localhost:5625/Reports/GDP.aspx, IP地址 127.0.0.1, 耗时 0.4190 秒
+2017-12-05 15:38:31,395 [9] INFO  App - 2017-12-05 15:38:31:392 请求 http://localhost:5625/Reports/GDP.aspx, IP地址 127.0.0.1, 耗时 0.1710 秒
+2017-12-05 15:38:31,665 [5] INFO  App - 2017-12-05 15:38:31:664 请求 http://localhost:5625/Reports/GDP.aspx, IP地址 127.0.0.1, 耗时 0.2060 秒
+2017-12-05 15:38:31,859 [9] INFO  App - 2017-12-05 15:38:31:854 请求 http://localhost:5625/Reports/GDP.aspx, IP地址 127.0.0.1, 耗时 0.1370 秒
+2017-12-05 15:38:32,025 [5] INFO  App - 2017-12-05 15:38:32:020 请求 http://localhost:5625/Reports/GDP.aspx, IP地址 127.0.0.1, 耗时 0.1270 秒
+2017-12-05 15:38:32,234 [9] INFO  App - 2017-12-05 15:38:32:232 请求 http://localhost:5625/Reports/GDP.aspx, IP地址 127.0.0.1, 耗时 0.1560 秒
+2017-12-05 15:38:32,734 [5] INFO  App - 2017-12-05 15:38:32:731 请求 http://localhost:5625/Reports/GDP.aspx, IP地址 127.0.0.1, 耗时 0.3920 秒
+2017-12-05 15:38:34,015 [9] INFO  App - 2017-12-05 15:38:34:014 请求 http://localhost:5625/Reports/GDP.aspx, IP地址 ::1, 耗时 0.3600 秒
+2017-12-05 15:38:36,044 [5] INFO  App - 2017-12-05 15:38:36:041 请求 http://localhost:5625/Reports/GDP.aspx, IP地址 ::1, 耗时 0.1270 秒
+2017-12-05 15:38:42,002 [13] INFO  App - 2017-12-05 15:38:41:998 请求 http://localhost:5625/admins/Users.aspx, IP地址 ::1, 耗时 1.4060 秒
+2017-12-05 15:38:44,957 [5] INFO  App - 2017-12-05 15:38:44:956 请求 http://localhost:5625/__browserLink/requestData/d81456f501f946b48e75e6cc0657eea1?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:38:49,107 [5] INFO  App - 2017-12-05 15:38:49:088 请求 http://localhost:5625/admins/UserForm.aspx?mode=edit&id=20, IP地址 ::1, 耗时 1.6260 秒
+2017-12-05 15:38:54,060 [5] INFO  App - 2017-12-05 15:38:54:009 请求 http://localhost:5625/__browserLink/requestData/a971ed9473264f0ea7b976aa8ca898eb?version=2, IP地址 ::1, 耗时 0.0070 秒
+2017-12-05 15:39:13,504 [5] INFO  App - 更新数据，ID=20, Type=App.DAL.User, Data={"InUsed":true....
+2017-12-05 15:39:13,612 [5] INFO  App - 2017-12-05 15:39:13:610 请求 http://localhost:5625/admins/UserForm.aspx?mode=edit&id=20&_dc=1512459553165, IP地址 ::1, 耗时 0.3350 秒
+2017-12-05 15:39:17,938 [9] INFO  App - 2017-12-05 15:39:17:875 请求 http://localhost:5625/admins/Users.aspx, IP地址 ::1, 耗时 1.0560 秒
+2017-12-05 15:39:23,582 [5] INFO  App - 2017-12-05 15:39:23:580 请求 http://localhost:5625/admins/RolePowers.aspx, IP地址 ::1, 耗时 0.1680 秒
+2017-12-05 15:39:24,608 [11] INFO  App - 2017-12-05 15:39:24:605 请求 http://localhost:5625/extjs/Ext.ux.Notification.js, IP地址 ::1, 耗时 0.0050 秒
+2017-12-05 15:39:25,348 [11] INFO  App - 2017-12-05 15:39:25:096 请求 http://localhost:5625/res/icon/accept.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:39:25,601 [9] INFO  App - 2017-12-05 15:39:25:244 请求 http://localhost:5625/res/icon/group_edit.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:39:27,601 [11] INFO  App - 2017-12-05 15:39:27:566 请求 http://localhost:5625/__browserLink/requestData/795f7c5ac96c495ebba56d337ad2fc89?version=2, IP地址 ::1, 耗时 0.0060 秒
+2017-12-05 15:39:27,886 [9] INFO  App - 2017-12-05 15:39:27:882 请求 http://localhost:5625/admins/RolePowers.aspx, IP地址 ::1, 耗时 0.2900 秒
+2017-12-05 15:39:28,429 [11] INFO  App - 2017-12-05 15:39:28:416 请求 http://localhost:5625/admins/RolePowers.aspx, IP地址 ::1, 耗时 0.1090 秒
+2017-12-05 15:39:34,226 [9] INFO  App - 2017-12-05 15:39:34:221 请求 http://localhost:5625/admins/RolePowers.aspx, IP地址 ::1, 耗时 3.5270 秒
+2017-12-05 15:39:35,187 [5] INFO  App - 2017-12-05 15:39:35:186 请求 http://localhost:5625/admins/RolePowers.aspx, IP地址 ::1, 耗时 0.7500 秒
+2017-12-05 15:39:35,590 [12] INFO  App - 2017-12-05 15:39:35:589 请求 http://localhost:5625/admins/RolePowers.aspx, IP地址 ::1, 耗时 0.1340 秒
+2017-12-05 15:39:35,899 [9] INFO  App - 2017-12-05 15:39:35:898 请求 http://localhost:5625/admins/RolePowers.aspx, IP地址 ::1, 耗时 0.2140 秒
+2017-12-05 15:39:36,144 [11] INFO  App - 2017-12-05 15:39:36:142 请求 http://localhost:5625/admins/RolePowers.aspx, IP地址 ::1, 耗时 0.1320 秒
+2017-12-05 15:39:36,335 [9] INFO  App - 2017-12-05 15:39:36:334 请求 http://localhost:5625/admins/RolePowers.aspx, IP地址 ::1, 耗时 0.1400 秒
+2017-12-05 15:42:33,165 [1] INFO  App - App logger start
+2017-12-05 15:42:33,176 [1] INFO  App - ==== Application_Start ====
+2017-12-05 15:42:44,886 [6] INFO  App - 2017-12-05 15:42:44:881 请求 http://localhost:5625/Admins/Main.aspx, IP地址 ::1, 耗时 1.0890 秒
+2017-12-05 15:42:48,020 [5] INFO  App - 2017-12-05 15:42:48:018 请求 http://localhost:5625/admins/Welcome.aspx, IP地址 ::1, 耗时 1.1320 秒
+2017-12-05 15:42:53,101 [8] INFO  App - 2017-12-05 15:42:53:081 请求 http://localhost:5625/__browserLink/requestData/84b8d92508d4455bb7082346daa18d38?version=2, IP地址 ::1, 耗时 0.0560 秒
+2017-12-05 15:42:53,116 [5] INFO  App - 2017-12-05 15:42:53:097 请求 http://localhost:5625/__browserLink/requestData/e187b4a625bc4a47a88514d1a473fad1?version=2, IP地址 ::1, 耗时 0.1430 秒
+2017-12-05 15:42:54,655 [5] INFO  App - 2017-12-05 15:42:54:652 请求 http://localhost:5625/admins/Menus.aspx, IP地址 ::1, 耗时 0.3030 秒
+2017-12-05 15:42:57,640 [5] INFO  App - 2017-12-05 15:42:57:634 请求 http://localhost:5625/__browserLink/requestData/5288e164ec4843e48f28a53dc561e928?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:43:02,196 [8] INFO  App - 2017-12-05 15:43:02:194 请求 http://localhost:5625/admins/Menus.aspx, IP地址 ::1, 耗时 1.1420 秒
+2017-12-05 15:43:17,353 [5] INFO  App - 2017-12-05 15:43:17:352 请求 http://localhost:5625/Admins/Main.aspx, IP地址 ::1, 耗时 0.1010 秒
+2017-12-05 15:43:27,814 [5] INFO  App - 2017-12-05 15:43:27:812 请求 http://localhost:5625/Admins/Main.aspx, IP地址 ::1, 耗时 0.0580 秒
+2017-12-05 15:43:28,904 [5] INFO  App - 2017-12-05 15:43:28:814 请求 http://localhost:5625/extjs/res/ext-theme-neptune/theme-neptune-all_2.css?v6.0.3, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:43:28,969 [6] INFO  App - 2017-12-05 15:43:28:902 请求 http://localhost:5625/extjs/res/ext-theme-neptune/theme-neptune-all_1.css?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:43:28,972 [9] INFO  App - 2017-12-05 15:43:28:931 请求 http://localhost:5625/extjs/res/theme-neptune.css?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:43:28,978 [5] INFO  App - 2017-12-05 15:43:28:963 请求 http://localhost:5625/extjs/ext-all.js?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:43:29,017 [9] INFO  App - 2017-12-05 15:43:29:003 请求 http://localhost:5625/extjs/ext-fineui.js?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:43:29,033 [6] INFO  App - 2017-12-05 15:43:29:020 请求 http://localhost:5625/res/css/main.css, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:43:29,269 [6] INFO  App - 2017-12-05 15:43:29:184 请求 http://localhost:5625/extjs/lang/zh_CN.js?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:43:29,326 [9] INFO  App - 2017-12-05 15:43:29:257 请求 http://localhost:5625/res/loading/_3/ffffff_444444.gif, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:43:29,363 [5] INFO  App - 2017-12-05 15:43:29:253 请求 http://localhost:5625/extjs/res/ext-theme-neptune/theme-neptune.js?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:43:31,873 [5] INFO  App - 2017-12-05 15:43:31:871 请求 http://localhost:5625/admins/Welcome.aspx, IP地址 ::1, 耗时 1.0900 秒
+2017-12-05 15:43:32,221 [9] INFO  App - 2017-12-05 15:43:32:219 请求 http://localhost:5625/admins/Menus.aspx, IP地址 ::1, 耗时 0.0500 秒
+2017-12-05 15:43:33,377 [5] INFO  App - 2017-12-05 15:43:33:362 请求 http://localhost:5625/__browserLink/requestData/c9a0bf17f9ef4f60b3a3e456854e4e00?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:43:37,525 [6] INFO  App - 2017-12-05 15:43:37:523 请求 http://localhost:5625/admins/Depts.aspx, IP地址 ::1, 耗时 0.5940 秒
+2017-12-05 15:43:37,626 [5] INFO  App - 2017-12-05 15:43:37:544 请求 http://localhost:5625/__browserLink/requestData/4e55a70af3994dee8fb0200e3472c3be?version=2, IP地址 ::1, 耗时 0.0020 秒
+2017-12-05 15:43:38,428 [9] INFO  App - 2017-12-05 15:43:38:417 请求 http://localhost:5625/__browserLink/requestData/2c6cdc5426024a5295f9a4f65b16006a?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:43:39,934 [6] INFO  App - 2017-12-05 15:43:39:908 请求 http://localhost:5625/__browserLink/requestData/fb9a1620e1284194b7d9f34331126138?version=2, IP地址 ::1, 耗时 0.0020 秒
+2017-12-05 15:43:40,389 [5] INFO  App - 2017-12-05 15:43:40:387 请求 http://localhost:5625/admins/Titles.aspx, IP地址 ::1, 耗时 0.4820 秒
+2017-12-05 15:43:42,949 [6] INFO  App - 2017-12-05 15:43:42:947 请求 http://localhost:5625/__browserLink/requestData/bf7ce9d227094b9cb56ae49302b50271?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:43:43,268 [5] INFO  App - 2017-12-05 15:43:43:265 请求 http://localhost:5625/admins/Articles.aspx, IP地址 ::1, 耗时 0.3900 秒
+2017-12-05 15:43:45,979 [5] INFO  App - 2017-12-05 15:43:45:977 请求 http://localhost:5625/admins/Onlines.aspx, IP地址 ::1, 耗时 0.2390 秒
+2017-12-05 15:43:48,185 [5] INFO  App - 2017-12-05 15:43:48:184 请求 http://localhost:5625/__browserLink/requestData/fddee0c531de4408981fa2837d4fed6c?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:43:48,338 [6] INFO  App - 2017-12-05 15:43:48:328 请求 http://localhost:5625/__browserLink/requestData/7b369093789d4fcc9704a75d7892c2a5?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:43:51,270 [6] INFO  App - 2017-12-05 15:43:51:269 请求 http://localhost:5625/Reports/GDP.aspx, IP地址 ::1, 耗时 0.3790 秒
+2017-12-05 15:43:55,510 [5] INFO  App - 2017-12-05 15:43:55:275 请求 http://localhost:5625/__browserLink/requestData/20530ca9e08144478d402ed700e16dce?version=2, IP地址 ::1, 耗时 0.0050 秒
+2017-12-05 15:43:55,902 [6] INFO  App - 2017-12-05 15:43:55:881 请求 http://localhost:5625/admins/Users.aspx, IP地址 ::1, 耗时 1.4650 秒
+2017-12-05 15:43:58,855 [6] INFO  App - 2017-12-05 15:43:58:844 请求 http://localhost:5625/__browserLink/requestData/91cdea8654004463a2f67eb1f0f84d38?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:43:59,100 [5] INFO  App - 2017-12-05 15:43:59:073 请求 http://localhost:5625/admins/RolePowers.aspx, IP地址 ::1, 耗时 0.2260 秒
+2017-12-05 15:44:01,261 [5] INFO  App - 2017-12-05 15:44:01:259 请求 http://localhost:5625/Admins/Main.aspx, IP地址 ::1, 耗时 0.2460 秒
+2017-12-05 15:44:01,292 [6] INFO  App - 2017-12-05 15:44:01:289 请求 http://localhost:5625/__browserLink/requestData/2056f7b08832446e8baae7c7d1af2dc4?version=2, IP地址 ::1, 耗时 0.0070 秒
+2017-12-05 15:44:03,552 [5] INFO  App - 2017-12-05 15:44:03:551 请求 http://localhost:5625/admins/RolePowers.aspx, IP地址 ::1, 耗时 0.1690 秒
+2017-12-05 15:44:05,566 [6] INFO  App - 2017-12-05 15:44:05:564 请求 http://localhost:5625/admins/RolePowers.aspx, IP地址 ::1, 耗时 0.1610 秒
+2017-12-05 15:44:07,035 [6] INFO  App - 2017-12-05 15:44:07:033 请求 http://localhost:5625/admins/RolePowers.aspx, IP地址 ::1, 耗时 0.2230 秒
+2017-12-05 15:44:10,563 [6] INFO  App - 2017-12-05 15:44:10:561 请求 http://localhost:5625/admins/RolePowers.aspx, IP地址 ::1, 耗时 0.2870 秒
+2017-12-05 15:44:11,424 [9] INFO  App - 2017-12-05 15:44:11:422 请求 http://localhost:5625/admins/RolePowers.aspx, IP地址 ::1, 耗时 0.1220 秒
+2017-12-05 15:44:16,850 [6] INFO  App - 2017-12-05 15:44:16:848 请求 http://localhost:5625/admins/RolePowers.aspx, IP地址 ::1, 耗时 0.3090 秒
+2017-12-05 15:44:17,855 [9] INFO  App - 2017-12-05 15:44:17:854 请求 http://localhost:5625/admins/RolePowers.aspx, IP地址 ::1, 耗时 0.1280 秒
+2017-12-05 15:44:19,020 [5] INFO  App - 2017-12-05 15:44:19:019 请求 http://localhost:5625/admins/RolePowers.aspx, IP地址 ::1, 耗时 0.1760 秒
+2017-12-05 15:44:23,316 [5] INFO  App - 2017-12-05 15:44:23:315 请求 http://localhost:5625/admins/Areas.aspx, IP地址 ::1, 耗时 0.1270 秒
+2017-12-05 15:44:25,282 [5] INFO  App - 2017-12-05 15:44:25:267 请求 http://localhost:5625/extjs/res/images/elbow-empty.gif, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:44:25,828 [9] INFO  App - 2017-12-05 15:44:25:826 请求 http://localhost:5625/__browserLink/requestData/c36292e2060b4ddd924e505891bac700?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:44:26,352 [9] INFO  App - 2017-12-05 15:44:26:351 请求 http://localhost:5625/admins/Logs.aspx, IP地址 ::1, 耗时 0.2310 秒
+2017-12-05 15:44:28,018 [6] INFO  App - 2017-12-05 15:44:27:994 请求 http://localhost:5625/Res/Icon/Exclamation.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:44:28,039 [5] INFO  App - 2017-12-05 15:44:28:016 请求 http://localhost:5625/Res/Icon/Comment.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:44:28,776 [9] INFO  App - 2017-12-05 15:44:28:775 请求 http://localhost:5625/__browserLink/requestData/c4326d625abb4e129d125fb40ad48979?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:44:30,806 [5] INFO  App - 2017-12-05 15:44:30:805 请求 http://localhost:5625/admins/Configs.aspx, IP地址 ::1, 耗时 0.0970 秒
+2017-12-05 15:44:32,153 [9] INFO  App - 2017-12-05 15:44:32:151 请求 http://localhost:5625/res/icon/system_save.gif, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:44:34,159 [6] INFO  App - 2017-12-05 15:44:34:158 请求 http://localhost:5625/__browserLink/requestData/a16edc11a3354772bd03dbea569f8f1d?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:44:35,120 [5] INFO  App - 2017-12-05 15:44:35:118 请求 http://localhost:5625/admins/Logs.aspx, IP地址 ::1, 耗时 0.3470 秒
+2017-12-05 15:44:35,675 [9] INFO  App - 2017-12-05 15:44:35:591 请求 http://localhost:5625/extjs/res/ext-theme-neptune/images/shared/icon-info.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:44:43,251 [6] INFO  App - 2017-12-05 15:44:43:249 请求 http://localhost:5625/admins/API.aspx, IP地址 ::1, 耗时 0.0510 秒
+2017-12-05 15:44:45,685 [5] INFO  App - 2017-12-05 15:44:45:619 请求 http://localhost:5625/__browserLink/requestData/2296a85abfb74ed1b372d7af91aae552?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:44:48,721 [5] INFO  App - 2017-12-05 15:44:48:719 请求 http://localhost:5625/Admins/DbSchema.ashx, IP地址 ::1, 耗时 1.1060 秒
+2017-12-05 15:44:56,225 [6] INFO  App - 2017-12-05 15:44:56:223 请求 http://localhost:5625/Admins/DbGrid.aspx?table=dbo.VerifyCodes, IP地址 ::1, 耗时 0.9680 秒
+2017-12-05 15:44:57,800 [5] INFO  App - 2017-12-05 15:44:57:799 请求 http://localhost:5625/__browserLink/requestData/acfa53f977674113bea8f9e1143137eb?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:45:18,060 [5] INFO  App - 2017-12-05 15:45:18:058 请求 http://localhost:5625/Admins/DbGrid.aspx?table=dbo.VerifyCodes, IP地址 ::1, 耗时 0.1060 秒
+2017-12-05 15:45:18,829 [8] INFO  App - 2017-12-05 15:45:18:755 请求 http://localhost:5625/res/loading/_3/ffffff_444444.gif, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:45:18,943 [9] INFO  App - 2017-12-05 15:45:18:827 请求 http://localhost:5625/extjs/res/ext-theme-neptune/theme-neptune-all_1.css?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:45:18,958 [6] INFO  App - 2017-12-05 15:45:18:937 请求 http://localhost:5625/extjs/res/theme-neptune.css?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:45:18,973 [10] INFO  App - 2017-12-05 15:45:18:850 请求 http://localhost:5625/extjs/ext-all.js?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:45:19,001 [12] INFO  App - 2017-12-05 15:45:18:879 请求 http://localhost:5625/extjs/ext-fineui.js?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:45:19,150 [11] INFO  App - 2017-12-05 15:45:18:952 请求 http://localhost:5625/extjs/res/ext-theme-neptune/theme-neptune.js?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:45:19,157 [13] INFO  App - 2017-12-05 15:45:19:149 请求 http://localhost:5625/extjs/lang/zh_CN.js?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:45:19,165 [5] INFO  App - 2017-12-05 15:45:18:935 请求 http://localhost:5625/extjs/res/ext-theme-neptune/theme-neptune-all_2.css?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 15:45:20,824 [9] INFO  App - 2017-12-05 15:45:20:816 请求 http://localhost:5625/__browserLink/requestData/86032342ae48420684e23dc1bde4e2ee?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:46:08,927 [9] INFO  App - 2017-12-05 15:46:08:876 请求 http://localhost:5625/admins/API.aspx, IP地址 ::1, 耗时 11.6410 秒
+2017-12-05 15:46:11,865 [9] INFO  App - 2017-12-05 15:46:11:861 请求 http://localhost:5625/__browserLink/requestData/0d9496e5be664c33b2bba3ed101e4747?version=2, IP地址 ::1, 耗时 0.0020 秒
+2017-12-05 15:46:13,450 [14] INFO  App - 2017-12-05 15:46:13:409 请求 http://localhost:5625/WebCall.App.DAL.DbVerifyCode.axd/api, IP地址 ::1, 耗时 0.0300 秒
+2017-12-05 15:46:20,390 [8] INFO  App - 2017-12-05 15:46:20:248 请求 http://localhost:5625/WebCall.App.DAL.DbUser.axd/api, IP地址 ::1, 耗时 0.0020 秒
+2017-12-05 15:46:26,093 [9] INFO  App - 2017-12-05 15:46:26:090 请求 http://localhost:5625/Admins/DbSchema.ashx, IP地址 ::1, 耗时 1.1650 秒
+2017-12-05 15:46:28,357 [9] INFO  App - 2017-12-05 15:46:28:355 请求 http://localhost:5625/Admins/DbGrid.aspx?table=dbo.AccountLogs, IP地址 ::1, 耗时 0.0500 秒
+2017-12-05 15:46:29,968 [14] INFO  App - 2017-12-05 15:46:29:967 请求 http://localhost:5625/__browserLink/requestData/2ef5ac8383e747b49eb9cc2fc5880370?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:46:37,125 [9] INFO  App - 2017-12-05 15:46:37:115 请求 http://localhost:5625/Admins/DbGrid.aspx?table=dbo.Articles, IP地址 ::1, 耗时 0.0840 秒
+2017-12-05 15:46:38,807 [14] INFO  App - 2017-12-05 15:46:38:805 请求 http://localhost:5625/__browserLink/requestData/a5e4a9e1f13c4740817d8af7f27efb90?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:46:50,360 [9] INFO  App - 2017-12-05 15:46:50:358 请求 http://localhost:5625/admins/Profiles.aspx, IP地址 ::1, 耗时 0.1230 秒
+2017-12-05 15:46:52,489 [9] INFO  App - 2017-12-05 15:46:52:473 请求 http://localhost:5625/__browserLink/requestData/85f73088ede24a17baa634c59310945b?version=2, IP地址 ::1, 耗时 0.0030 秒
+2017-12-05 15:46:54,251 [8] INFO  App - 2017-12-05 15:46:54:250 请求 http://localhost:5625/handlers/Logout.ashx, IP地址 ::1, 耗时 0.0140 秒
+2017-12-05 15:46:54,316 [8] INFO  App - 2017-12-05 15:46:54:315 请求 http://localhost:5625/Default.aspx?ReturnUrl=%2fhandlers%2fLogout.ashx, IP地址 ::1, 耗时 0.0350 秒
+2017-12-05 15:46:55,590 [9] INFO  App - 2017-12-05 15:46:55:557 请求 http://localhost:5625/Handlers/VerifyCode.ashx, IP地址 ::1, 耗时 0.2020 秒
+2017-12-05 15:46:55,855 [9] INFO  App - 2017-12-05 15:46:55:850 请求 http://localhost:5625/Default.aspx?ReturnUrl=%2fhandlers%2fLogout.ashx, IP地址 ::1, 耗时 0.0460 秒
+2017-12-05 15:46:58,172 [9] INFO  App - 2017-12-05 15:46:58:138 请求 http://localhost:5625/Handlers/VerifyCode.ashx, IP地址 ::1, 耗时 0.0260 秒
+2017-12-05 15:46:58,797 [14] INFO  App - 2017-12-05 15:46:58:794 请求 http://localhost:5625/__browserLink/requestData/28e21d5695c243f1aa678315e9c92814?version=2, IP地址 ::1, 耗时 0.0060 秒
+2017-12-05 15:47:06,644 [8] INFO  App - 更新数据，ID=1, Type=App.DAL.User, Data={"InUsed":true,....
+2017-12-05 15:47:06,853 [8] INFO  App - 登录成功
+2017-12-05 15:47:06,972 [8] INFO  App - 2017-12-05 15:47:06:971 请求 http://localhost:5625/WebCall.App.DAL.DbUser.axd/Login?userName=admin&password=admin&verifyCode=2agt, IP地址 ::1, 耗时 0.6140 秒
+2017-12-05 15:47:07,094 [14] INFO  App - 2017-12-05 15:47:07:086 请求 http://localhost:5625/admins/main.aspx, IP地址 ::1, 耗时 0.0590 秒
+2017-12-05 15:47:10,401 [14] INFO  App - 2017-12-05 15:47:10:375 请求 http://localhost:5625/__browserLink/requestData/73b1e9336bfd41bbba678c8e582cb4c3?version=2, IP地址 ::1, 耗时 0.0020 秒
+2017-12-05 15:47:10,485 [15] INFO  App - 2017-12-05 15:47:10:468 请求 http://localhost:5625/admins/Welcome.aspx, IP地址 ::1, 耗时 1.1890 秒
+2017-12-05 15:47:15,352 [9] INFO  App - 2017-12-05 15:47:15:351 请求 http://localhost:5625/__browserLink/requestData/93a179ec3b6b4ca3aabea5e5daf738ac?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:50:46,096 [1] INFO  App - App logger start
+2017-12-05 15:50:46,112 [1] INFO  App - ==== Application_Start ====
+2017-12-05 15:50:57,467 [6] INFO  App - 2017-12-05 15:50:57:437 请求 http://localhost:5625/Admins/Main.aspx, IP地址 ::1, 耗时 1.0230 秒
+2017-12-05 15:51:03,550 [5] INFO  App - 2017-12-05 15:51:03:546 请求 http://localhost:5625/__browserLink/requestData/ccb9ae0971624375ac41d848e64f3a80?version=2, IP地址 ::1, 耗时 0.1010 秒
+2017-12-05 15:51:03,677 [8] INFO  App - 2017-12-05 15:51:03:674 请求 http://localhost:5625/admins/Welcome.aspx, IP地址 ::1, 耗时 3.2420 秒
+2017-12-05 15:51:08,869 [5] INFO  App - 2017-12-05 15:51:08:864 请求 http://localhost:5625/__browserLink/requestData/7ff0a113e2104595b86af6aea7eb1b71?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 15:59:25,671 [1] INFO  App - App logger start
+2017-12-05 15:59:25,690 [1] INFO  App - ==== Application_Start ====
+2017-12-05 15:59:35,756 [5] INFO  App - 2017-12-05 15:59:35:753 请求 http://localhost:5625/Admins/Main.aspx, IP地址 ::1, 耗时 1.1910 秒
+2017-12-05 15:59:36,748 [5] INFO  App - 2017-12-05 15:59:36:747 请求 http://localhost:5625/Admins/Main.aspx, IP地址 ::1, 耗时 0.4960 秒
+2017-12-05 15:59:38,875 [5] INFO  App - 2017-12-05 15:59:38:873 请求 http://localhost:5625/admins/Welcome.aspx, IP地址 ::1, 耗时 0.7080 秒
+2017-12-05 16:00:18,908 [8] INFO  App - 2017-12-05 16:00:18:887 请求 http://localhost:5625/Admins/Main.aspx, IP地址 ::1, 耗时 0.0850 秒
+2017-12-05 16:00:19,086 [5] INFO  App - 2017-12-05 16:00:19:084 请求 http://localhost:5625/Admins/Main.aspx, IP地址 ::1, 耗时 0.0450 秒
+2017-12-05 16:00:31,248 [8] INFO  App - 2017-12-05 16:00:31:183 请求 http://localhost:5625/extjs/res/ext-theme-neptune/theme-neptune-all_1.css?v6.0.3, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 16:00:31,255 [5] INFO  App - 2017-12-05 16:00:31:246 请求 http://localhost:5625/extjs/res/ext-theme-neptune/theme-neptune-all_2.css?v6.0.3, IP地址 ::1, 耗时 0.0640 秒
+2017-12-05 16:00:31,319 [8] INFO  App - 2017-12-05 16:00:31:295 请求 http://localhost:5625/extjs/ext-all.js?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:00:31,329 [9] INFO  App - 2017-12-05 16:00:31:308 请求 http://localhost:5625/extjs/res/theme-neptune.css?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:00:31,424 [8] INFO  App - 2017-12-05 16:00:31:402 请求 http://localhost:5625/res/css/main.css, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:00:31,486 [5] INFO  App - 2017-12-05 16:00:31:408 请求 http://localhost:5625/extjs/ext-fineui.js?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:00:31,539 [9] INFO  App - 2017-12-05 16:00:31:478 请求 http://localhost:5625/extjs/res/ext-theme-neptune/theme-neptune.js?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:00:31,576 [9] INFO  App - 2017-12-05 16:00:31:563 请求 http://localhost:5625/res/loading/_3/ffffff_444444.gif, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:00:31,581 [5] INFO  App - 2017-12-05 16:00:31:574 请求 http://localhost:5625/extjs/lang/zh_CN.js?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:00:32,846 [5] INFO  App - 2017-12-05 16:00:32:844 请求 http://localhost:5625/admins/Welcome.aspx, IP地址 ::1, 耗时 0.3290 秒
+2017-12-05 16:03:37,172 [1] INFO  App - App logger start
+2017-12-05 16:03:37,194 [1] INFO  App - ==== Application_Start ====
+2017-12-05 16:03:54,371 [6] INFO  App - 2017-12-05 16:03:54:368 请求 http://localhost:5625/Default.aspx, IP地址 ::1, 耗时 4.4760 秒
+2017-12-05 16:03:54,713 [5] INFO  App - 2017-12-05 16:03:54:712 请求 http://localhost:5625/Default.aspx, IP地址 ::1, 耗时 4.8290 秒
+2017-12-05 16:03:54,861 [8] INFO  App - 2017-12-05 16:03:54:793 请求 http://localhost:5625/res/css/login.css, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 16:03:54,894 [5] INFO  App - 2017-12-05 16:03:54:836 请求 http://localhost:5625/res/js/jquery-1.10.2.min.js, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:03:54,916 [8] INFO  App - 2017-12-05 16:03:54:891 请求 http://localhost:5625/res/js/dd_png.js, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:03:55,046 [6] INFO  App - 2017-12-05 16:03:54:837 请求 http://localhost:5625/res/js/function.js, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:03:55,868 [8] INFO  App - 2017-12-05 16:03:55:656 请求 http://localhost:5625/res/images/formBg.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:03:55,937 [10] INFO  App - 2017-12-05 16:03:55:754 请求 http://localhost:5625/res/images/formUser.gif, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:03:56,030 [6] INFO  App - 2017-12-05 16:03:55:892 请求 http://localhost:5625/Handlers/VerifyCode.ashx, IP地址 ::1, 耗时 0.1610 秒
+2017-12-05 16:03:56,077 [8] INFO  App - 2017-12-05 16:03:55:983 请求 http://localhost:5625/res/images/formpassword.gif, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:03:56,109 [6] INFO  App - 2017-12-05 16:03:56:072 请求 http://localhost:5625/res/images/formVFcode.gif, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:03:56,153 [10] INFO  App - 2017-12-05 16:03:56:094 请求 http://localhost:5625/res/images/btnLogin.gif, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:03:56,160 [5] INFO  App - 2017-12-05 16:03:55:734 请求 http://localhost:5625/res/images/bg.jpg, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:03:56,595 [8] INFO  App - 2017-12-05 16:03:56:566 请求 http://localhost:5625/favicon.ico, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:03:56,743 [6] INFO  App - 2017-12-05 16:03:56:742 请求 http://localhost:5625/__browserLink/requestData/2a942433b8214ab084f16645a4ead417?version=2, IP地址 ::1, 耗时 0.0610 秒
+2017-12-05 16:04:02,542 [10] INFO  App - 更新数据，ID=1, Type=App.DAL.User, Data={"InUsed":true,....
+2017-12-05 16:04:02,661 [10] INFO  App - 登录成功
+2017-12-05 16:04:02,815 [10] INFO  App - 2017-12-05 16:04:02:814 请求 http://localhost:5625/WebCall.App.DAL.DbUser.axd/Login?userName=admin&password=admin&verifyCode=as2p, IP地址 ::1, 耗时 0.7880 秒
+2017-12-05 16:04:06,654 [6] INFO  App - 2017-12-05 16:04:06:648 请求 http://localhost:5625/admins/main.aspx, IP地址 ::1, 耗时 0.5960 秒
+2017-12-05 16:04:07,087 [6] INFO  App - 2017-12-05 16:04:06:825 请求 http://localhost:5625/extjs/res/ext-theme-neptune/theme-neptune-all_1.css?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:04:07,164 [10] INFO  App - 2017-12-05 16:04:06:847 请求 http://localhost:5625/extjs/res/theme-neptune.css?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:04:07,171 [8] INFO  App - 2017-12-05 16:04:06:874 请求 http://localhost:5625/extjs/res/ext-theme-neptune/theme-neptune-all_2.css?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:04:07,175 [5] INFO  App - 2017-12-05 16:04:07:133 请求 http://localhost:5625/res/css/main.css, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:04:07,431 [8] INFO  App - 2017-12-05 16:04:07:390 请求 http://localhost:5625/extjs/ext-all.js?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:04:07,440 [5] INFO  App - 2017-12-05 16:04:07:430 请求 http://localhost:5625/extjs/lang/zh_CN.js?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:04:07,464 [10] INFO  App - 2017-12-05 16:04:07:407 请求 http://localhost:5625/extjs/ext-fineui.js?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:04:07,527 [5] INFO  App - 2017-12-05 16:04:07:498 请求 http://localhost:5625/res/loading/_3/ffffff_444444.gif, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:04:07,573 [6] INFO  App - 2017-12-05 16:04:07:438 请求 http://localhost:5625/extjs/res/ext-theme-neptune/theme-neptune.js?v6.0.3, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:04:09,690 [8] INFO  App - 2017-12-05 16:04:09:506 请求 http://localhost:5625/res/icon/reload.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:04:10,060 [10] INFO  App - 2017-12-05 16:04:09:506 请求 http://localhost:5625/res/icon/help.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:04:10,521 [6] INFO  App - 2017-12-05 16:04:09:676 请求 http://localhost:5625/res/images/barbg.jpg, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:04:11,157 [10] INFO  App - 2017-12-05 16:04:10:422 请求 http://localhost:5625/res/icon/cross.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:04:11,258 [8] INFO  App - 2017-12-05 16:04:10:166 请求 http://localhost:5625/res/icon/arrow_out.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:04:11,354 [10] INFO  App - 2017-12-05 16:04:11:302 请求 http://localhost:5625/extjs/res/ext-theme-neptune/images/button/default-small-arrow.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:04:11,401 [6] INFO  App - 2017-12-05 16:04:11:121 请求 http://localhost:5625/extjs/res/ext-theme-neptune/images/tab/tab-default-close.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:04:11,402 [8] INFO  App - 2017-12-05 16:04:11:337 请求 http://localhost:5625/res/icon/house.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:04:11,551 [10] INFO  App - 2017-12-05 16:04:11:516 请求 http://localhost:5625/res/icon/door_out.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:04:11,566 [6] INFO  App - 2017-12-05 16:04:11:507 请求 http://localhost:5625/extjs/res/ext-theme-neptune/images/tools/tool-sprites.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:04:11,637 [8] INFO  App - 2017-12-05 16:04:11:533 请求 http://localhost:5625/extjs/res/ext-theme-neptune/images/util/splitter/mini-left.png, IP地址 ::1, 耗时 0.0020 秒
+2017-12-05 16:04:11,644 [10] INFO  App - 2017-12-05 16:04:11:593 请求 http://localhost:5625/res/icon/page.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:04:11,705 [6] INFO  App - 2017-12-05 16:04:11:609 请求 http://localhost:5625/res/icon/folder.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:04:11,730 [10] INFO  App - 2017-12-05 16:04:11:693 请求 http://localhost:5625/extjs/res/ext-theme-neptune/images/tree/arrows.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:04:11,786 [10] INFO  App - 2017-12-05 16:04:11:783 请求 http://localhost:5625/extjs/res/ext-theme-neptune/images/tab-bar/default-scroll-left.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:04:11,827 [10] INFO  App - 2017-12-05 16:04:11:815 请求 http://localhost:5625/extjs/res/ext-theme-neptune/images/tab-bar/default-scroll-right.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:04:11,836 [6] INFO  App - 2017-12-05 16:04:11:826 请求 http://localhost:5625/__browserLink/requestData/c69c9dd992b843d1acdb8fb6c34531e4?version=2, IP地址 ::1, 耗时 0.0320 秒
+2017-12-05 16:04:12,242 [5] INFO  App - 2017-12-05 16:04:12:240 请求 http://localhost:5625/admins/Welcome.aspx, IP地址 ::1, 耗时 2.5070 秒
+2017-12-05 16:04:12,352 [5] INFO  App - 2017-12-05 16:04:12:338 请求 http://localhost:5625/res/js/echarts.min.js, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:04:16,070 [5] INFO  App - 2017-12-05 16:04:16:007 请求 http://localhost:5625/__browserLink/requestData/a6bd05a6991a408a8eb9e4f112a55f1d?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 16:05:06,707 [1] INFO  App - App logger start
+2017-12-05 16:05:06,718 [1] INFO  App - ==== Application_Start ====
+2017-12-05 16:05:14,487 [6] INFO  App - 2017-12-05 16:05:14:486 请求 http://localhost:5625/Admins/Main.aspx, IP地址 ::1, 耗时 0.4950 秒
+2017-12-05 16:05:16,485 [8] INFO  App - 2017-12-05 16:05:16:485 请求 http://localhost:5625/admins/Welcome.aspx, IP地址 ::1, 耗时 0.4870 秒
+2017-12-05 16:05:17,543 [6] INFO  App - 2017-12-05 16:05:17:543 请求 http://localhost:5625/__browserLink/requestData/1ba5d12838ee485fbed347f2808d4fb8?version=2, IP地址 ::1, 耗时 0.1220 秒
+2017-12-05 16:05:18,353 [8] INFO  App - 2017-12-05 16:05:18:352 请求 http://localhost:5625/__browserLink/requestData/4c7f5428ecdb4284b3e698bc9ef396da?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 16:05:22,999 [6] INFO  App - 2017-12-05 16:05:22:999 请求 http://localhost:5625/admins/Users.aspx, IP地址 ::1, 耗时 0.7460 秒
+2017-12-05 16:05:23,741 [8] INFO  App - 2017-12-05 16:05:23:741 请求 http://localhost:5625/res/icon/add.png, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 16:05:23,741 [9] INFO  App - 2017-12-05 16:05:23:741 请求 http://localhost:5625/res/icon/delete.png, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 16:05:23,771 [6] INFO  App - 2017-12-05 16:05:23:771 请求 http://localhost:5625/extjs/res/ext-theme-neptune/images/grid/page-first.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:23,774 [9] INFO  App - 2017-12-05 16:05:23:774 请求 http://localhost:5625/extjs/res/ext-theme-neptune/images/grid/page-next.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:23,777 [8] INFO  App - 2017-12-05 16:05:23:777 请求 http://localhost:5625/extjs/res/ext-theme-neptune/images/form/trigger.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:23,783 [6] INFO  App - 2017-12-05 16:05:23:783 请求 http://localhost:5625/extjs/res/ext-theme-neptune/images/grid/page-prev.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:23,792 [6] INFO  App - 2017-12-05 16:05:23:791 请求 http://localhost:5625/extjs/res/ext-theme-neptune/images/grid/page-last.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:23,915 [9] INFO  App - 2017-12-05 16:05:23:915 请求 http://localhost:5625/extjs/res/ext-theme-neptune/images/form/checkbox.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:23,922 [6] INFO  App - 2017-12-05 16:05:23:922 请求 http://localhost:5625/extjs/res/images/bullet_cross.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:23,925 [9] INFO  App - 2017-12-05 16:05:23:925 请求 http://localhost:5625/extjs/res/ext-theme-neptune/images/grid/sort_asc.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:24,030 [8] INFO  App - 2017-12-05 16:05:24:030 请求 http://localhost:5625/res/icon/information.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:24,031 [6] INFO  App - 2017-12-05 16:05:24:030 请求 http://localhost:5625/res/icon/pencil.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:24,033 [6] INFO  App - 2017-12-05 16:05:24:033 请求 http://localhost:5625/res/icon/key.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:24,035 [6] INFO  App - 2017-12-05 16:05:24:035 请求 http://localhost:5625/extjs/res/s.gif, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:24,037 [6] INFO  App - 2017-12-05 16:05:24:037 请求 http://localhost:5625/Res/Images/defaultUser.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:24,063 [6] INFO  App - 2017-12-05 16:05:24:063 请求 http://localhost:5625/Files/Users/201711081019121372757-banner3.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:24,063 [9] INFO  App - 2017-12-05 16:05:24:063 请求 http://localhost:5625/Files/Users/201711082301338185514-banner2.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:24,066 [6] INFO  App - 2017-12-05 16:05:24:066 请求 http://localhost:5625/Files/Users/201711080927158465985-banner2.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:24,081 [9] INFO  App - 2017-12-05 16:05:24:080 请求 http://localhost:5625/Files/Users/636432292167317403_manage_r.gif, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:24,132 [6] INFO  App - 2017-12-05 16:05:24:132 请求 http://localhost:5625/Files/Users/201711051628110901360-TB2iEE1wl8lpuFjy0FnXXcZyXXa_!!0-rate.jpg_400x400.jpg, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:24,135 [6] INFO  App - 2017-12-05 16:05:24:135 请求 http://localhost:5625/Files/Users/636396201176205158_cat.jpg, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:24,247 [6] INFO  App - 2017-12-05 16:05:24:247 请求 http://localhost:5625/Files/Users/201711050056508939930-TB2iEE1wl8lpuFjy0FnXXcZyXXa_!!0-rate.jpg_400x400.jpg, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:24,248 [8] INFO  App - 2017-12-05 16:05:24:247 请求 http://localhost:5625/res/images/blank.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:24,255 [9] INFO  App - 2017-12-05 16:05:24:254 请求 http://localhost:5625/Files/Users/201710251601342380268-TB2pgcPaVT.F1JjSZFEXXc1TVXa_!!0-rate.jpg_400x400.jpg, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:24,275 [6] INFO  App - 2017-12-05 16:05:24:274 请求 http://localhost:5625/Files/Users/201711050112257968980-TB2RoOwX1IPyuJjSspcXXXiApXa_!!0-rate.jpg_400x400.jpg, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:24,289 [6] INFO  App - 2017-12-05 16:05:24:289 请求 http://localhost:5625/Files/Users/201710271501565026094-defaultUser.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:24,317 [6] INFO  App - 2017-12-05 16:05:24:317 请求 http://localhost:5625/Files/Users/201711050057323840037-TB24txGabMlyKJjSZFAXXbkLXXa_!!0-rate.jpg_400x400.jpg, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:24,323 [6] INFO  App - 2017-12-05 16:05:24:319 请求 http://localhost:5625/Files/Users/201711050121395787709-TB24txGabMlyKJjSZFAXXbkLXXa_!!0-rate.jpg_400x400.jpg, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:24,325 [9] INFO  App - 2017-12-05 16:05:24:324 请求 http://localhost:5625/Files/Users/201711050106186009983-TB2NHZuriC9MuFjSZFoXXbUzFXa_!!0-rate.jpg_400x400.jpg, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:24,802 [6] INFO  App - 2017-12-05 16:05:24:802 请求 http://localhost:5625/__browserLink/requestData/c2b42c655a8148019b6a912bfd98c221?version=2, IP地址 ::1, 耗时 0.0040 秒
+2017-12-05 16:05:24,803 [9] INFO  App - 2017-12-05 16:05:24:803 请求 http://localhost:5625/admins/RolePowers.aspx, IP地址 ::1, 耗时 0.1600 秒
+2017-12-05 16:05:24,894 [6] INFO  App - 2017-12-05 16:05:24:893 请求 http://localhost:5625/extjs/Ext.ux.Notification.js, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:25,949 [9] INFO  App - 2017-12-05 16:05:25:949 请求 http://localhost:5625/res/icon/accept.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:25,955 [9] INFO  App - 2017-12-05 16:05:25:954 请求 http://localhost:5625/res/icon/group_edit.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:26,403 [6] INFO  App - 2017-12-05 16:05:26:403 请求 http://localhost:5625/__browserLink/requestData/a7f63bc6c1c94f8db22dfdf34fcd3b4e?version=2, IP地址 ::1, 耗时 0.0050 秒
+2017-12-05 16:05:26,701 [9] INFO  App - 2017-12-05 16:05:26:701 请求 http://localhost:5625/admins/Menus.aspx, IP地址 ::1, 耗时 0.0810 秒
+2017-12-05 16:05:27,508 [6] INFO  App - 2017-12-05 16:05:27:508 请求 http://localhost:5625/extjs/res/images/elbow.gif, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:27,517 [6] INFO  App - 2017-12-05 16:05:27:516 请求 http://localhost:5625/extjs/res/images/elbow-end.gif, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:27,934 [9] INFO  App - 2017-12-05 16:05:27:934 请求 http://localhost:5625/__browserLink/requestData/451fe633cd6a46bcb5faf7e6724030c1?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 16:05:28,349 [9] INFO  App - 2017-12-05 16:05:28:349 请求 http://localhost:5625/admins/Areas.aspx, IP地址 ::1, 耗时 0.1240 秒
+2017-12-05 16:05:29,153 [9] INFO  App - 2017-12-05 16:05:29:153 请求 http://localhost:5625/res/icon/system_saveclose.gif, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:29,198 [6] INFO  App - 2017-12-05 16:05:29:198 请求 http://localhost:5625/extjs/res/images/elbow-empty.gif, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:29,543 [9] INFO  App - 2017-12-05 16:05:29:543 请求 http://localhost:5625/__browserLink/requestData/502353d44c7845eea5cc20db5f5628d9?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 16:05:29,891 [6] INFO  App - 2017-12-05 16:05:29:891 请求 http://localhost:5625/admins/Logs.aspx, IP地址 ::1, 耗时 0.1420 秒
+2017-12-05 16:05:30,675 [6] INFO  App - 2017-12-05 16:05:30:675 请求 http://localhost:5625/res/icon/system_search.gif, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:30,963 [6] INFO  App - 2017-12-05 16:05:30:963 请求 http://localhost:5625/Res/Icon/Exclamation.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:30,964 [9] INFO  App - 2017-12-05 16:05:30:963 请求 http://localhost:5625/Res/Icon/Comment.png, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:31,300 [9] INFO  App - 2017-12-05 16:05:31:300 请求 http://localhost:5625/__browserLink/requestData/234600f7581e471c86e474c73d88c8d7?version=2, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 16:05:31,473 [9] INFO  App - 2017-12-05 16:05:31:473 请求 http://localhost:5625/admins/Configs.aspx, IP地址 ::1, 耗时 0.0910 秒
+2017-12-05 16:05:32,203 [9] INFO  App - 2017-12-05 16:05:32:203 请求 http://localhost:5625/res/icon/system_save.gif, IP地址 ::1, 耗时 0.0000 秒
+2017-12-05 16:05:32,211 [9] INFO  App - 2017-12-05 16:05:32:210 请求 http://localhost:5625/extjs/res/ext-theme-neptune/images/form/spinner.png, IP地址 ::1, 耗时 0.0010 秒
+2017-12-05 16:05:32,653 [6] INFO  App - 2017-12-05 16:05:32:653 请求 http://localhost:5625/__browserLink/requestData/9dd3874f4fe34bbd80c4ec84b8030128?version=2, IP地址 ::1, 耗时 0.0010 秒

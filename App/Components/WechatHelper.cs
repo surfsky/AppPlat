@@ -12,7 +12,7 @@ using System.Web;
 using System.Web.Caching;
 using App.Components;
 using App.DAL;
-using Kingsoc.Web.WebCall;
+using App.HttpApi;
 
 
 namespace App.Components
@@ -42,10 +42,10 @@ namespace App.Components
         //---------------------------------------------------------------------------------------------------------------
         // 接口（建议移到其他文件去）
         //---------------------------------------------------------------------------------------------------------------
-        [WebCall("获取微信JS-SDK凭证", Wrap = true)]
+        [HttpApi("获取微信JS-SDK凭证", Wrap = true)]
         public static JsSdkUiPackage GetJsSdkUiPackage(string url)
         {
-            //webCall 传的url 不知道为什么会有   ,/WebCall.App.WeiXin.WeChatHelper.axd   带这么一串
+            //webCall 传的url 不知道为什么会有   ,/HttpApi.App.WeiXin.WeChatHelper.axd   带这么一串
             url = url.Split(',')[0];
             try
             {

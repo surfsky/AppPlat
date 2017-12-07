@@ -1,11 +1,11 @@
-﻿using App.Components;
-using Kingsoc.Web.WebCall;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using System.Text;
 using System.Web;
+using App.Components;
+using App.HttpApi;
 
 namespace App.DAL
 {
@@ -44,7 +44,7 @@ namespace App.DAL
         /// </summary>
         /// <param name="mobile"></param>
         /// <param name="source"></param>
-        [WebCall("发送短信验证码")]
+        [HttpApi("发送短信验证码")]
         public static DataResult SendSms(string mobile, int sourceType)
         {
             string source = sourceType == 1 ? "微信" : sourceType == 2 ? "安卓" : sourceType == 3 ? "苹果" : "";

@@ -19,7 +19,7 @@ namespace App.WeiXin
         // 构建接口地址
         private static string GetUrl(Type type, string method)
         {
-            return string.Format("{0}/WebCall.{1}.axd/{2}", Asp.Host, type.FullName, method);
+            return string.Format("{0}/HttpApi.{1}.axd/{2}", Asp.Host, type.FullName, method);
         }
 
         // common

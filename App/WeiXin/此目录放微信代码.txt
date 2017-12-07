@@ -1,7 +1,7 @@
 ﻿数据接口层
 	数据访问层在实体类直接实现: /DAL/Models/
 	数据接口层（http接口）
-		由若干DbXXX类实现，用WebCall方式导出
+		由若干DbXXX类实现，用HttpApi方式导出
 		可聚合多个实体类功能，如用户、角色、部门、权限归一类
 
 
@@ -36,7 +36,7 @@
 
 
 
-		  [WebCall(Description = "获取教练列表", Type = ResponseDataType.JSON, CacheDuration = 60)]
+		  [HttpApi(Description = "获取教练列表", Type = ResponseDataType.JSON, CacheDuration = 60)]
         public DataResult GetCoaches()
         {
             List<FitCoach> list = FitCoach.Search().OrderByDescending(s => s.PositiveCnt).ToList();
@@ -44,7 +44,7 @@
         }
 
 		
-        [WebCall(Description = "教练登录", Type = ResponseDataType.JSON)]
+        [HttpApi(Description = "教练登录", Type = ResponseDataType.JSON)]
         public static DataResult CoachLogin(string userName, string password, string msgCode)
         {
 
@@ -94,7 +94,7 @@
         ///// <param name="password"></param>
         ///// <param name="OS">客户端操作系统(android, ios...)</param>
         ///// <returns></returns>
-        //[WebCall(Description = "用户登录", Type = ResponseDataType.JSON)]
+        //[HttpApi(Description = "用户登录", Type = ResponseDataType.JSON)]
         //public DataResult LoginMobile(string userName, string password, string OS)
         //{
         //    // 校验账户和密码

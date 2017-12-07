@@ -5,7 +5,7 @@ using System.Web;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data.Entity;
-using Kingsoc.Web.WebCall;
+using App.HttpApi;
 using EntityFramework;
 using EntityFramework.Extensions;
 using App.Components;

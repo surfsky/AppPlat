@@ -2,19 +2,14 @@
 using System.Collections.Generic;
 using System.Web;
 using System.Linq;
-using System.Data.Entity;
-using Kingsoc.Web.WebCall;
-using System.Data;
-using System.Web.Security;
-using EntityFramework.Extensions;
-using App.Components;
-using Senparc.Weixin.MP.AdvancedAPIs.OAuth;
-using Senparc.Weixin.MP.AdvancedAPIs;
-using App.WeiXin;
-using Newtonsoft.Json;
-using System.Configuration;
 using System.IO;
 using System.Drawing;
+using System.Data;
+using System.Web.Security;
+using Senparc.Weixin.MP.AdvancedAPIs.OAuth;
+using Senparc.Weixin.MP.AdvancedAPIs;
+using App.HttpApi;
+using App.Components;
 
 namespace App.DAL
 {
@@ -27,7 +22,7 @@ namespace App.DAL
         // 登录和注销
         //----------------------------------------------------
         // 注销
-        [WebCall("注销")]
+        [HttpApi("注销")]
         public static void Logout(bool redirectToLoginPage = false)
         {
             Components.AuthHelper.Logout();
@@ -35,7 +30,7 @@ namespace App.DAL
                 FormsAuthentication.RedirectToLoginPage();
         }
 
-        [WebCall("微信端注销", AuthLogin = true)]
+        [HttpApi("微信端注销", AuthLogin = true)]
         public static DataResult LogoutWeChat()
         {
             var user = User.Get(Common.LoginUser.ID);
@@ -46,7 +41,7 @@ namespace App.DAL
         }
 
         // Web 客户端登陆
-        [WebCall("Web 客户端端登陆（含验证码）")]
+        [HttpApi("Web 客户端端登陆（含验证码）")]
         public DataResult Login(string userName, string password, string verifyCode)
         {
             // 验证验证码
@@ -133,7 +128,7 @@ namespace App.DAL
         //----------------------------------------------------
         // 用户属性
         //----------------------------------------------------
-        [WebCall("修改头像")]
+        [HttpApi("修改头像")]
         public static DataResult EditUserPhoto(int userId, string photo)
         {
             var user = User.Set.Where(u => u.ID == userId).FirstOrDefault();
@@ -142,7 +137,7 @@ namespace App.DAL
             return new DataResult("true", "修改成功", null, null);
         }
 
-        [WebCall("修改用户密码")]
+        [HttpApi("修改用户密码")]
         public static DataResult EditUserPassword(int userId, string oldPassword, string newPassword)
         {
             var user = User.Set.Where(u => u.ID == userId).FirstOrDefault();
@@ -165,14 +160,14 @@ namespace App.DAL
         //----------------------------------------------------
         // 用户 & 部门
         //----------------------------------------------------
-        [WebCall("根据部门编号获取用户列表", Wrap = true)]
+        [HttpApi("根据部门编号获取用户列表", Wrap = true)]
         public static dynamic GetDeptUsers(int DeptID)
         {
             var users = User.Set.Where(u => u.Dept.ID == DeptID).Select(e => new { e.ID, e.RealName }).ToList();//&& u.CompanyID == CompanyID
             return users;
         }
 
-        [WebCall("获取拥有某个角色的用户列表", Wrap = true)]
+        [HttpApi("获取拥有某个角色的用户列表", Wrap = true)]
         public static dynamic GetUsersInRole(int RoleID)
         {
             var users = User.Set.Where(u => u.Roles.Contains((RoleType)RoleID))
@@ -184,7 +179,7 @@ namespace App.DAL
         //------------------------------------------------
         // 微信客户端用户相关接口
         //------------------------------------------------
-        [WebCall("默认登录")]
+        [HttpApi("默认登录")]
         public DataResult LoginDefault(string code)
         {
             try
@@ -218,7 +213,7 @@ namespace App.DAL
             return new DataResult("false", "未绑定微信号", "Login.aspx", null);
         }
 
-        [WebCall("绑定用户手机")]
+        [HttpApi("绑定用户手机")]
         public DataResult BindTel(string mobile, string password, string msgCode, string inviterId)
         {
             var result = new DataResult("true", "绑定成功", null, null);
@@ -276,7 +271,7 @@ namespace App.DAL
             return result;
         }
 
-        [WebCall("用户登录")]
+        [HttpApi("用户登录")]
         public static DataResult LoginMobile(string mobile, string password, string verifyCode, string OS)
         {
             var result = new DataResult("false", "账户或密码错误", null, null);
@@ -309,7 +304,7 @@ namespace App.DAL
             return result;
         }
 
-        [WebCall("通过短信登录")]
+        [HttpApi("通过短信登录")]
         public static DataResult LoginByMsgCode(string mobile, string msgCode)
         {
             var result = new DataResult("false", "验证码错误", null, null);
@@ -339,7 +334,7 @@ namespace App.DAL
             return result;
         }
 
-        [WebCall("获取登录用户的信息", AuthLogin = true)]
+        [HttpApi("获取登录用户的信息", AuthLogin = true)]
         public DataResult GetLoginUser()
         {
             var result = new DataResult("false", "当前用户未登录", null, null);
@@ -363,7 +358,7 @@ namespace App.DAL
             return result;
         }
 
-        [WebCall("修改用户信息", AuthLogin = true)]
+        [HttpApi("修改用户信息", AuthLogin = true)]
         public DataResult EditUser(string name, string nickName, string email, string realName, string idCard, string birthday, string openId, string headImg)
         {
             var user = User.Get(name: name);
@@ -395,7 +390,7 @@ namespace App.DAL
             return new DataResult("true", "修改成功", null, null);
         }
 
-        [WebCall("更换用户手机号码（账号）", AuthLogin = true)]
+        [HttpApi("更换用户手机号码（账号）", AuthLogin = true)]
         public DataResult EditMobile(string newMobile, string msgCode, string password)
         {
             var result = new DataResult("false", "密码错误", null, null);
@@ -422,7 +417,7 @@ namespace App.DAL
             return result;
         }
 
-        [WebCall("忘记密码")]
+        [HttpApi("忘记密码")]
         public DataResult SetPassword(string mobile, string password, string msgCode)
         {
             var result = new DataResult("false", "当前用户不存在", null, null);
@@ -443,7 +438,7 @@ namespace App.DAL
             return result;
         }
 
-        [WebCall("获取用户信息，考虑跟GetLoginUser合并", AuthLogin = true)]
+        [HttpApi("获取用户信息，考虑跟GetLoginUser合并", AuthLogin = true)]
         public DataResult GetUserView(int userId)
         {
             var result = new DataResult("false", "找不到该用户", null, null);

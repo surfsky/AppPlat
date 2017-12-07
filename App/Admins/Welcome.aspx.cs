@@ -3,7 +3,7 @@ using App.Controls;
 using App.Controls.ECharts;
 using App.DAL;
 using App.Reports;
-using Kingsoc.Web.WebCall;
+using App.HttpApi;
 using System;
 using System.Collections.Generic;
 using System.Linq;

@@ -160,7 +160,7 @@
 
         // 去服务器端验证
         $.ajax({
-            url: "WebCall.App.DAL.DbUser.axd/Login",
+            url: "HttpApi.App.DAL.DbUser.axd/Login",
             data: { userName: userName, password: password, verifyCode: code }
         }).always(function (json) {
             if (json.Result == "true") {

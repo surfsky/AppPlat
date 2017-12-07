@@ -1,6 +1,6 @@
 ﻿using App.Components;
 using EntityFramework.Extensions;
-using Kingsoc.Web.WebCall;
+using App.HttpApi;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
