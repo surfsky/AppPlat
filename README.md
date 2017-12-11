@@ -42,3 +42,12 @@ About
 --------
 
     - 后台登录账户：admin/admin
+
+
+历史
+--------
+
+    Date       | Author  | Done
+	-----------|---------|----------------------------------
+    2017-12-01 | surfsky | init 
+	2017-12-11 | surfsky | 剥离App.Schedule/App.Consoler项目

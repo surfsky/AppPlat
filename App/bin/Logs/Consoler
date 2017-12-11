@@ -1,0 +1,34 @@
+2017-12-11 09:03:33,337 [3] INFO  Consoler - Logger start
+2017-12-11 09:03:33,356 [3] INFO  Consoler - 连接网站 http://www.baidu.com/ ok
+2017-12-11 09:13:36,178 [3] INFO  Consoler - Logger start
+2017-12-11 09:13:36,194 [3] INFO  Consoler - 连接网站 http://www.baidu.com/ ok
+2017-12-11 09:13:40,198 [3] INFO  Consoler - 睡一会 4 ok
+2017-12-11 09:13:42,376 [3] INFO  Consoler - 运行外部程序 notepad.exe ok
+2017-12-11 09:13:42,384 [3] WARN  Consoler - 子任务1  fail, times=1, info=
+2017-12-11 09:13:42,684 [3] WARN  Consoler - 子任务1  fail, times=2, info=
+2017-12-11 09:13:44,696 [3] WARN  Consoler - 子任务1  fail, times=3, info=
+2017-12-11 09:16:51,566 [3] INFO  Consoler - Logger start
+2017-12-11 09:16:51,592 [3] INFO  Consoler - 连接网站 http://www.baidu.com/ ok
+2017-12-11 09:16:55,601 [3] INFO  Consoler - 睡一会 4 ok
+2017-12-11 09:16:57,784 [3] INFO  Consoler - 运行外部程序 notepad.exe ok
+2017-12-11 09:16:57,787 [3] WARN  Consoler - 子任务1  fail, times=1, info=
+2017-12-11 09:16:58,144 [3] INFO  Consoler - 子任务1  ok
+2017-12-11 09:16:58,146 [3] WARN  Consoler - 子任务2  fail, times=1, info=
+2017-12-11 09:17:00,154 [3] INFO  Consoler - 子任务2  ok
+2017-12-11 09:17:00,155 [3] INFO  Consoler - 父任务  ok
+2017-12-11 09:17:10,192 [3] WARN  Consoler - 子任务1  fail, times=1, info=
+2017-12-11 09:17:12,199 [3] INFO  Consoler - 子任务1  ok
+2017-12-11 09:17:12,200 [3] WARN  Consoler - 子任务2  fail, times=1, info=
+2017-12-11 09:17:14,210 [3] INFO  Consoler - 子任务2  ok
+2017-12-11 09:17:14,210 [3] INFO  Consoler - 父任务  ok
+2017-12-11 09:17:34,283 [3] INFO  Consoler - Logger start
+2017-12-11 09:17:34,298 [3] INFO  Consoler - 连接网站 http://www.baidu.com/ ok
+2017-12-11 09:17:38,302 [3] INFO  Consoler - 睡一会 4 ok
+2017-12-11 09:17:38,304 [3] INFO  Consoler - 每日报表  ok
+2017-12-11 09:17:40,479 [3] INFO  Consoler - 运行外部程序 notepad.exe ok
+2017-12-11 09:17:40,480 [3] INFO  Consoler - 子任务1  ok
+2017-12-11 09:17:40,481 [3] INFO  Consoler - 子任务2  ok
+2017-12-11 09:17:40,482 [3] WARN  Consoler - 父任务  fail, times=1, info=
+2017-12-11 09:17:40,823 [3] WARN  Consoler - 父任务  fail, times=2, info=
+2017-12-11 09:17:42,832 [3] WARN  Consoler - 父任务  fail, times=3, info=
+2017-12-11 09:17:44,840 [3] WARN  Consoler - 子任务1  fail, times=1, info=

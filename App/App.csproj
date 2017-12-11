@@ -62,6 +62,10 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\App.HttpApi.dll</HintPath>
     </Reference>
+    <Reference Include="App.Schedule, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\App.Schedule.dll</HintPath>
+    </Reference>
     <Reference Include="Aspose.Cells, Version=8.3.2.1, Culture=neutral, PublicKeyToken=00725b1ceb58d0a9, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>bin\Aspose.Cells.dll</HintPath>
@@ -485,8 +489,7 @@
     </Compile>
     <Compile Include="Res\ueditor\net\Uploader.cs" />
     <Compile Include="Components\SiteConfig.cs" />
-    <Compile Include="Tasks\ReportTasks.cs" />
-    <Compile Include="Tasks\Tasks.cs" />
+    <Compile Include="Jobs\Tasks.cs" />
     <Compile Include="Test\UITest.aspx.cs">
       <DependentUpon>UITest.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -561,7 +564,7 @@
     <Content Include="Res\WeiXin\image\t4.png" />
     <Content Include="Res\WeiXin\image\weibofit_qrcode.jpg" />
     <Content Include="Task.Codes.txt" />
-    <Content Include="Tasks\此目录放定时任务代码.txt" />
+    <Content Include="Jobs\此目录放定时任务代码.txt" />
     <Content Include="WeiXin\此目录放微信代码.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -1793,10 +1796,6 @@
     <ProjectReference Include="..\App.Controls\App.Controls.csproj">
       <Project>{06a03549-06e9-4f1f-ba62-d99f067a1547}</Project>
       <Name>App.Controls</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\App.Schedule\App.Schedule.csproj">
-      <Project>{95636ae7-b639-41d5-a17b-8198204b6a06}</Project>
-      <Name>App.Schedule</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

@@ -37,7 +37,7 @@ namespace App.DAL
             // 更新状态表数据
             // 将备注信息写入数据库
             //ResetEnumData();
-            //context.WriteComments();
+            //WriteComments();
         }
 
 
