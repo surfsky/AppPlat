@@ -73,8 +73,9 @@ namespace App.Admins
         }
 
         // 保存完毕后刷新部门数据
-        protected override void AfterSaveData(Dept item)
+        public override void SaveData(Dept item)
         {
+            item.Save();
             Dept.Reload();
         }
 

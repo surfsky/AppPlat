@@ -2,13 +2,12 @@
 任务
 -------------------------------------------------
 功能
-	将HttpApi更改命名为HttpApi
     实现后台布局样式2
     完成工作流引擎
     部署简单的微信框架
     实现简单的商店管理：门店、商品、订单
     实现文件选择窗口（可用于菜单管理、图片选择），仅admin可用
-	子网站开发和部署方式
+    子网站开发和部署方式
     实现一个简单的前台页面，套用一个框架，
 
 
@@ -19,17 +18,17 @@
     DD_PNG.JS/IEPNG.JS 选一个
 
 通用数据表管理系统（未完成）
-	用 GridPro & SimplyForm 快速完成表单管理页面
-	数据表清单（从AppContext获取）
-	展示
-	新增
-	编辑
-	删除
+    用 GridPro & SimplyForm 快速完成表单管理页面
+    数据表清单（从AppContext获取）
+    展示
+    新增
+    编辑
+    删除
 
 实现和简化内容管理系统: 
-	文本、图片、资源; 
-	批量上传图片; 
-	上传大文件
+    文本、图片、资源; 
+    批量上传图片; 
+    上传大文件
 
 实现工作流
     处理历史
@@ -72,14 +71,19 @@
 -------------------------------------------------
 已完成
 -------------------------------------------------
+2017-12-22
+    /删除FormPage.AfterSaveData()方法
+    /将WebCall更改命名为HttpApi
+
+
 2017-12-07
-	/数据库文件
-		/排除数据库文件，作为附件提供
-		压缩ldf文件大小，控制在50M内
-	/TaskStatus 用文本表示 Newtonsoft.Json.Converters.StringEnumConverter
-	/完善readme
-	/删除无用的项目
-	/DbBase->EntityBase, Save() | SaveNew()
+    /数据库文件
+        /排除数据库文件，作为附件提供
+        压缩ldf文件大小，控制在50M内
+    /TaskStatus 用文本表示 Newtonsoft.Json.Converters.StringEnumConverter
+    /完善readme
+    /删除无用的项目
+    /DbBase->EntityBase, Save() | SaveNew()
 
 
 

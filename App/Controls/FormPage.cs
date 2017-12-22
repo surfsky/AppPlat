@@ -25,7 +25,7 @@ namespace App.Controls
     /// }
     /// 重载三个虚方法：NewData(), ShowData(), CollectData()
     /// </example>
-    public class FormPage<T> : PageBase, IDataForm<T> 
+    public class FormPage<T> : PageBase, IDataForm<T>
         where T : EntityBase<T>
     {
         //---------------------------------------------
@@ -57,6 +57,18 @@ namespace App.Controls
         public virtual void CollectData(ref T item) { }
 
 
+        /// <summary>数据</summary>
+        public T Data
+        {
+            get
+            {
+                var id = Asp.GetQueryIntValue("id");
+                if (id != null)
+                    return GetData(id.Value);
+                return null;
+            }
+        }
+
         //---------------------------------------------
         // 其它虚方法，可在子类中重载
         //---------------------------------------------
@@ -75,17 +87,8 @@ namespace App.Controls
         /// <summary>新增或修改实体数据（可考虑加上T返回类型）</summary>
         public virtual void SaveData(T item)
         {
-            if (this.Mode == PageMode.New)
-                item.Save();
-            else
-                item.Save();
+            item.Save();
         }
-
-        /// <summary>保存完毕后调用，可重载该方法进行保存后逻辑处理</summary>
-        protected virtual void AfterSaveData(T item)
-        {
-        }
-
 
         //---------------------------------------------
         // 公有方法
@@ -105,7 +108,7 @@ namespace App.Controls
             switch (this.Mode)
             {
                 case PageMode.View: Common.CheckPagePower(viewPower); break;
-                case PageMode.New:  Common.CheckPagePower(newPower);  break;
+                case PageMode.New: Common.CheckPagePower(newPower); break;
                 case PageMode.Edit: Common.CheckPagePower(editPower); break;
             }
 
@@ -203,7 +206,7 @@ namespace App.Controls
                 Alert.Show("参数错误！", String.Empty, ActiveWindow.GetHideReference());
                 return;
             }
-            
+
             // 显示表单数据
             ShowData(item);
 
@@ -236,7 +239,6 @@ namespace App.Controls
             if (CheckData(item))
             {
                 SaveData(item);
-                AfterSaveData(item);
                 return true;
             }
             return false;

@@ -85,7 +85,7 @@ namespace App.Admins
             if (ddlParentMenu.SelectedIndex != -1)
             {
                 int parentID = Convert.ToInt32(ddlParentMenu.SelectedValue);
-                item.Parent = DAL.Menu.Get(parentID); // Common.Db.Menus.Where(p => p.ID == parentID).FirstOrDefault();
+                item.Parent = DAL.Menu.Get(parentID);
             }
             if (ddlViewPower.SelectedIndex != -1)
             {
@@ -94,8 +94,9 @@ namespace App.Admins
             }
         }
 
-        protected override void AfterSaveData(DAL.Menu item)
+        public override void SaveData(DAL.Menu item)
         {
+            item.Save();
             DAL.Menu.Reload();
             Common.RefreshLoginUser();
         }
