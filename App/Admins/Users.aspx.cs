@@ -50,13 +50,22 @@ namespace App.Admins
         void BindGrid()
         {
             string name = tbName.Text.Trim();
+            string mobile = tbMobile.Text.Trim();
             int? deptId = UI.GetDDLValue(ddlDept);
             int? titleId = UI.GetDDLValue(ddlTitle);
             RoleType? roleId = UI.GetDDLEnumValue(ddlRole, typeof(RoleType));
             bool? enable = ddlStatus.SelectedItemArray.Length == 0 ? null : new bool?(ddlStatus.SelectedValue == "enabled");
             bool includeAdmin = Common.LoginUser.Name == "admin";
 
-            IQueryable<User> q = DAL.User.Search(name:name, role: roleId, inUsed: enable, deptId: deptId, titleId: titleId, includeAdmin: includeAdmin);
+            IQueryable<User> q = DAL.User.Search(
+                name:name, 
+                mobile: mobile,
+                role: roleId, 
+                inUsed: enable, 
+                deptId: deptId, 
+                titleId: titleId, 
+                includeAdmin: includeAdmin
+                );
             Grid1.BindGrid(q);
         }
 
@@ -95,7 +104,7 @@ namespace App.Admins
             if (roleField != null)
             {
                 string roles = "";
-                foreach (var item in user.RolesText)
+                foreach (var item in user.Roles)
                     roles += item.GetDescription() + ",";
                 roles = roles.TrimEnd(',');
                 roleField.DataFormatString = " " + roles;

@@ -32,6 +32,7 @@
                                 <f:DropDownList runat="server" ID="ddlRole" EmptyText="角色" Width="100" />
                                 <f:DropDownList runat="server" ID="ddlStatus" EmptyText="用户状态" Width="100" />
                                 <f:TextBox runat="server" ID="tbName" EmptyText="用户名" Width="100" />
+                                <f:TextBox runat="server" ID="tbMobile" EmptyText="手机号" Width="100" />
                                 <f:Button runat="server" ID="btnSearch" Text="查找" OnClick="btnSearch_Click"  Type="Submit" />
                             </Items>
                         </f:Toolbar>
