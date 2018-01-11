@@ -139,24 +139,20 @@ namespace App.Admins
 
 
         // 保存数据前判断(若为false则阻止保存)
-        public override bool CheckData(User item)
+        public override string CheckData(User item)
         {   
             if (this.Mode == PageMode.New)
             {
                 User user = DAL.User.Get(name:item.Name);
                 if (user != null)
-                {
-                    Alert.Show("用户名 " + item.Name + " 已被注册使用。");
-                    return false;
-                }
+                    return string.Format("用户名 " + item.Name + " 已被注册使用。");
                 user = DAL.User.Get(mobile:item.Mobile);
                 if (user != null)
                 {
-                    Alert.Show("手机号 " + item.Mobile + " 已被注册使用，请更换手机号。");
-                    return false;
+                    return string.Format("手机号 " + item.Mobile + " 已被注册使用，请更换手机号。");
                 }
             }
-            return true;
+            return "";
         }
 
         // 图片上传

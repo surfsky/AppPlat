@@ -563,7 +563,6 @@
     <Content Include="Res\WeiXin\image\t3.png" />
     <Content Include="Res\WeiXin\image\t4.png" />
     <Content Include="Res\WeiXin\image\weibofit_qrcode.jpg" />
-    <Content Include="Task.Codes.txt" />
     <Content Include="Jobs\此目录放定时任务代码.txt" />
     <Content Include="WeiXin\此目录放微信代码.txt" />
   </ItemGroup>
@@ -1675,7 +1674,6 @@
     <Content Include="Res\WeiXin\image\wxScan.png" />
     <Content Include="Res\此目录放辅助资源.txt" />
     <Content Include="README.txt" />
-    <Content Include="Task.txt" />
     <Content Include="Test\UITest.aspx" />
     <Content Include="Test\WeChatTestMenu.aspx" />
     <Content Include="Test\此目录放临时测试代码.txt" />

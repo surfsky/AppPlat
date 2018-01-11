@@ -78,10 +78,10 @@ namespace App.Controls
             return AppContext.Current.Set<T>().Find(id);
         }
 
-        /// <summary>保存数据前预处理。若为false则不进行后继存储操作。</summary>
-        public virtual bool CheckData(T item)
+        /// <summary>保存数据前做校验。若返回值不为空，这不进行后继存储操作。</summary>
+        public virtual string CheckData(T item)
         {
-            return true;
+            return "";
         }
 
         /// <summary>新增或修改实体数据（可考虑加上T返回类型）</summary>
@@ -130,6 +130,12 @@ namespace App.Controls
             this.ShowBtnClose = Asp.GetQueryBoolValue("showBtnClose") ?? false;
         }
 
+        /// <summary>显示信息</summary>
+        public void ShowInfo(string format, params object[] param)
+        {
+            this.lblInfo.Text = string.Format(format, param);
+        }
+
         // 初始化工具栏控件
         // <f:Button runat="server" ID = "btnClose" Icon="SystemClose" EnablePostBack="false" Text="关闭" />
         // <f:Button runat="server" ID = "btnSaveClose" ValidateForms="SimpleForm1" Icon="SystemSaveClose" OnClick="btnSaveClose_Click" Text="保存后关闭" />
@@ -151,11 +157,11 @@ namespace App.Controls
             {
                 if (Save())
                 {
-                    this.lblInfo.Text = string.Format("成功保存({0:HH:mm:ss})", DateTime.Now);
+                    ShowInfo("成功保存({0:HH:mm:ss})", DateTime.Now);
                     //PageContext.RegisterStartupScript(ActiveWindow.GetHidePostBackReference());
                 }
                 else
-                    this.lblInfo.Text = "保存失败";
+                    ShowInfo("保存失败");
             };
 
             // 保存并新增按钮
@@ -165,11 +171,11 @@ namespace App.Controls
             {
                 if (Save())
                 {
-                    this.lblInfo.Text = string.Format("成功保存({0:HH:mm:ss})，新增中", DateTime.Now);
+                    ShowInfo("成功保存({0:HH:mm:ss})，新增中", DateTime.Now);
                     NewData();
                 }
                 else
-                    this.lblInfo.Text = "保存失败";
+                    ShowInfo("保存失败");
             };
 
             // 添加到工具栏上
@@ -234,14 +240,27 @@ namespace App.Controls
         /// <summary>保存（含新增或修改逻辑）</summary>
         public virtual bool Save()
         {
-            T item = (this.Mode == PageMode.New) ? AppContext.Current.Set<T>().Create() : GetData(Asp.GetQueryIntValue("id").Value);
-            CollectData(ref item);
-            if (CheckData(item))
+            try
             {
-                SaveData(item);
-                return true;
+                T item = (this.Mode == PageMode.New) ? AppContext.Current.Set<T>().Create() : GetData(Asp.GetQueryIntValue("id").Value);
+                CollectData(ref item);
+                var error = CheckData(item);
+                if (!error.IsNullOrEmpty())
+                {
+                    UI.ShowAlert(error);
+                    return false;
+                }
+                else
+                {
+                    SaveData(item);
+                    return true;
+                }
             }
-            return false;
+            catch (Exception ex)
+            {
+                UI.ShowAlert("保存失败。{0}", ex.Message);
+                return false;
+            }
         }
 
     }

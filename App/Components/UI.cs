@@ -58,9 +58,10 @@ namespace App.Components
         // 权限检测
         //------------------------------------------------------
         /// <summary>显示错误警告框</summary>
-        public static void ShowAlert(string info)
+        public static void ShowAlert(string format, params object[] param)
         {
-            PageContext.RegisterStartupScript(Alert.GetShowInTopReference(info));
+            var msg = string.Format(format, param);
+            PageContext.RegisterStartupScript(Alert.GetShowInTopReference(msg));
         }
 
         /// <summary>显示权限错误警告框</summary>
